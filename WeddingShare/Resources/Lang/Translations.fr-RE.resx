@@ -532,6 +532,12 @@
   <data name="Settings_Gallery_BannerImage_Label" xml:space="preserve">
     <value>Image de bannière</value>
   </data>
+  <data name="Settings_Gallery_CameraUploads_Help" xml:space="preserve">
+    <value>Si les clients ont l'option entre le sélectionneur de fichiers ou la caméra</value>
+  </data>
+  <data name="Settings_Gallery_CameraUploads_Label" xml:space="preserve">
+    <value>Téléchargement de la caméra</value>
+  </data>
   <data name="Settings_Gallery_Columns_Help" xml:space="preserve">
     <value>Le nombre de colonnes à afficher</value>
   </data>

@@ -532,6 +532,12 @@
   <data name="Settings_Gallery_BannerImage_Label" xml:space="preserve">
     <value>צילום</value>
   </data>
+  <data name="Settings_Gallery_CameraUploads_Help" xml:space="preserve">
+    <value>האורחים צריכים לקבל את האפשרות בין איסוף קבצים או מצלמה</value>
+  </data>
+  <data name="Settings_Gallery_CameraUploads_Label" xml:space="preserve">
+    <value>מצלמות</value>
+  </data>
   <data name="Settings_Gallery_Columns_Help" xml:space="preserve">
     <value>מספר העמודות להציג</value>
   </data>

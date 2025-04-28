@@ -532,6 +532,12 @@
   <data name="Settings_Gallery_BannerImage_Label" xml:space="preserve">
     <value>بنر تصویر</value>
   </data>
+  <data name="Settings_Gallery_CameraUploads_Help" xml:space="preserve">
+    <value>مہمانوں کے پاس فائل کے رکن یا کیمرے کے درمیان انتخاب ہونا چاہئے</value>
+  </data>
+  <data name="Settings_Gallery_CameraUploads_Label" xml:space="preserve">
+    <value>کیمرون اپلوڈ کرتا ہے۔</value>
+  </data>
   <data name="Settings_Gallery_Columns_Help" xml:space="preserve">
     <value>نمائش کے لیے ستونوں کی تعداد</value>
   </data>

@@ -532,6 +532,12 @@
   <data name="Settings_Gallery_BannerImage_Label" xml:space="preserve">
     <value>تصویر بنر</value>
   </data>
+  <data name="Settings_Gallery_CameraUploads_Help" xml:space="preserve">
+    <value>مهمانان باید گزینه بین انتخاب کننده فایل یا دوربین را داشته باشند</value>
+  </data>
+  <data name="Settings_Gallery_CameraUploads_Label" xml:space="preserve">
+    <value>آپلود دوربین</value>
+  </data>
   <data name="Settings_Gallery_Columns_Help" xml:space="preserve">
     <value>تعداد ستون ها برای نمایش</value>
   </data>

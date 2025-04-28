@@ -120,7 +120,7 @@
             @if (await _settings.GetOrDefault(Settings.Gallery.Download, true, Model?.GalleryName) || (User?.Identity != null && User.Identity.IsAuthenticated))
             {
                 <div class="btn-group w-100 mb-2">
-                    <button class="btnDownloadGallery btn btn-primary btn-sm" type="button" data-gallery-id="@Model?.GalleryId">
+                    <button class="btnDownloadGallery btn btn-primary btn-sm" type="button" data-gallery-id="@Model?.GalleryId" data-gallery-key="@(await _settings.GetOrDefault(Settings.Gallery.SecretKey, string.Empty, Model?.GalleryName))">
                         @_localizer["Download"].Value
                     </button>
                 </div>

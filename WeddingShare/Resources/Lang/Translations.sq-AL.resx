@@ -532,6 +532,12 @@
   <data name="Settings_Gallery_BannerImage_Label" xml:space="preserve">
     <value>Figura e hyrjes</value>
   </data>
+  <data name="Settings_Gallery_CameraUploads_Help" xml:space="preserve">
+    <value>Nëse të ftuarit duhet të kenë opsionin midis zgjedhësit apo kamerave</value>
+  </data>
+  <data name="Settings_Gallery_CameraUploads_Label" xml:space="preserve">
+    <value>Ngarkimet në kamera</value>
+  </data>
   <data name="Settings_Gallery_Columns_Help" xml:space="preserve">
     <value>Nga</value>
   </data>

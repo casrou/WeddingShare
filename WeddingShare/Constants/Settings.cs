@@ -61,6 +61,7 @@
             public const string DefaultView = "Settings:Gallery:Default_View";
             public const string UploadPeriod = "Settings:Gallery:Upload_Period";
             public const string AllowedFileTypes = "Settings:Gallery:Allowed_File_Types";
+            public const string CameraUploads = "Settings:Gallery:Camera_Uploads";
 
             public class QRCode
             {

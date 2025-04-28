@@ -15,7 +15,7 @@
     document.addEventListener('DOMContentLoaded', function () {
 
         const triggerSelector = event => {
-            const identityReqiured = $('#frmFileUpload').attr('data-identity-required') == 'true';
+            const identityReqiured = $('form.file-uploader-form').attr('data-identity-required') == 'true';
             if (identityReqiured) {
                 displayIdentityCheck(true, function () {
                     triggerSelector(event);
@@ -23,19 +23,54 @@
                 return;
             }
 
-            const zone = event.target.closest('.upload_drop') || false;
-            const input = zone.querySelector('input[type="file"]') || false;
-            input.click();
+            const zone = event.target.closest('fieldset.upload_drop');
+            const input = $(zone.querySelector('input.upload-input'));
+            if (input.data('post-allow-camera') == true) {
+                displayPopup({
+                    Title: localization.translate('Upload'),
+                    Message: localization.translate('Upload_Method'),
+                    Buttons: [{
+                        Text: localization.translate('Gallery'),
+                        Class: "btn-primary",
+                        Callback: function () {
+                            input.attr('accept', 'image/*,video/*');
+                            input.attr('multiple', '');
+                            input.removeAttr('capture');
+                            input[0].click();
+                            hidePopup();
+                        }
+                    }, {
+                        Text: localization.translate('Camera'),
+                        Class: "btn-primary",
+                        Callback: function () {
+                            input.attr('accept', 'image/*');
+                            input.attr('capture', 'environment');
+                            input.removeAttr('multiple', '');
+                            input[0].click();
+                            hidePopup();
+                        }
+                    }, {
+                        Text: localization.translate('Close')
+                    }]
+                });
+            } else {
+                input.attr('accept', 'image/*,video/*');
+                input.attr('multiple', '');
+                input.removeAttr('capture');
+                input[0].click();
+            }
         }
 
-        const highlight = event =>
-            event.target.classList.add('highlight');
+        const highlight = (e) => {
+            $(e.target).closest('.upload_drop').addClass('highlight');
+        };
 
-        const unhighlight = event =>
-            event.target.classList.remove('highlight');
+        const unhighlight = (e) => {
+            $(e.target).closest('.upload_drop').removeClass('highlight');
+        };
 
         const getInputAndGalleryRefs = element => {
-            const zone = element.closest('.upload_drop') || false;
+            const zone = element.closest('fieldset.upload_drop') || false;
             const gallery = zone.querySelector('.upload_gallery') || false;
             const input = zone.querySelector('input[type="file"]') || false;
             return { input: input, gallery: gallery };
@@ -44,12 +79,15 @@
         const handleDrop = event => {
             const dataRefs = getInputAndGalleryRefs(event.target);
             dataRefs.files = event.dataTransfer.files;
-            const identityReqiured = $('#frmFileUpload').attr('data-identity-required') == 'true';
+
+            const identityReqiured = $('form.file-uploader-form').attr('data-identity-required') == 'true';
             if (identityReqiured) {
                 displayIdentityCheck(true, function () {
                     handleFiles(dataRefs);
                 });
                 return;
+            } else {
+                handleFiles(dataRefs);
             }
         }
 
@@ -59,20 +97,21 @@
             if (!dataRefs.input) return;
 
             // Prevent default drag behaviors
-            ;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(event => {
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(event => {
                 zone.addEventListener(event, preventDefaults, false);
                 document.body.addEventListener(event, preventDefaults, false);
             });
 
             // Open file browser on drop area click
-            ;['click', 'touch'].forEach(event => {
+            ['click', 'touch'].forEach(event => {
                 zone.addEventListener(event, triggerSelector, false);
             });
+
             // Highlighting drop area when item is dragged over it
-            ;['dragenter', 'dragover'].forEach(event => {
+            ['dragenter', 'dragover'].forEach(event => {
                 zone.addEventListener(event, highlight, false);
             });
-            ;['dragleave', 'drop'].forEach(event => {
+            ['dragleave', 'drop'].forEach(event => {
                 zone.addEventListener(event, unhighlight, false);
             });
 
@@ -87,7 +126,7 @@
         }
 
         // Initialise ALL dropzones
-        const dropZones = document.querySelectorAll('.upload_drop');
+        const dropZones = document.querySelectorAll('fieldset.upload_drop');
         for (const zone of dropZones) {
             eventHandlers(zone);
         }
@@ -99,7 +138,7 @@
 
         // Based on: https://flaviocopes.com/how-to-upload-files-fetch/
         const imageUpload = async dataRefs => {
-            const identityReqiured = $('#frmFileUpload').attr('data-identity-required') == 'true';
+            const identityReqiured = $('form.file-uploader-form').attr('data-identity-required') == 'true';
             if (identityReqiured) {
                 displayIdentityCheck(true, function () {
                     dataRefs.input.click();
@@ -113,8 +152,8 @@
                 return;
             }
 
-            const token = $('#frmFileUpload input[name=\'__RequestVerificationToken\']').val();
-            
+            const token = $('form.file-uploader-form input[name=\'__RequestVerificationToken\']').val();
+
             const galleryId = dataRefs.input.getAttribute('data-post-gallery-id');
             if (!galleryId) {
                 displayMessage(localization.translate('Upload'), localization.translate('Upload_Invalid_Gallery_Detected'));
@@ -163,7 +202,7 @@
 
                 postData({ url: '/Gallery/UploadCompleted', formData }).then(data => {
                     dataRefs.input.value = '';
-                    
+
                     let counter = $('.review-counter');
                     if (counter.length > 0) {
                         counter.find('.review-counter-total').text(data.counters.total);
@@ -192,7 +231,7 @@
         // Handle both selected and dropped files
         const handleFiles = async dataRefs => {
             let files = [...dataRefs.files];
-
+            
             // Remove unaccepted file types
             files = files.filter(item => {
                 var isAllowed = isImageFile(item) || isVideoFile(item);
@@ -216,7 +255,7 @@
 
         $(document).off('click', 'button.btnSaveQRCode').on('click', 'button.btnSaveQRCode', function (e) {
             preventDefaults(e);
-            
+
             if ($(this).attr('disabled') == 'disabled') {
                 return;
             }
@@ -229,7 +268,7 @@
             link.click();
         });
 
-        $(document).off('click', 'button.btnDownloadGallery').on('click', 'button.btnDownloadGallery', function (e) {
+        $(document).off('click', 'i.btnDownloadGroup').on('click', 'i.btnDownloadGroup', function (e) {
             preventDefaults(e);
 
             if ($(this).attr('disabled') == 'disabled') {
@@ -239,11 +278,13 @@
             displayLoader(localization.translate('Loading'));
 
             let id = $(this).data('gallery-id');
+            let secretKey = $(this).data('gallery-key');
+            let group = $(this).data('group-name');
 
             $.ajax({
                 url: '/Gallery/DownloadGallery',
                 method: 'POST',
-                data: { Id: id }
+                data: { Id: id, SecretKey: secretKey, Group: group }
             })
                 .done(data => {
                     hideLoader();
@@ -261,7 +302,41 @@
                     displayMessage(localization.translate('Download'), localization.translate('Download_Failed'), [error]);
                 });
         });
-        
+
+        $(document).off('click', 'button.btnDownloadGallery').on('click', 'button.btnDownloadGallery', function (e) {
+            preventDefaults(e);
+
+            if ($(this).attr('disabled') == 'disabled') {
+                return;
+            }
+
+            displayLoader(localization.translate('Loading'));
+
+            let id = $(this).data('gallery-id');
+            let secretKey = $(this).data('gallery-key');
+
+            $.ajax({
+                url: '/Gallery/DownloadGallery',
+                method: 'POST',
+                data: { Id: id, SecretKey: secretKey }
+            })
+                .done(data => {
+                    hideLoader();
+
+                    if (data.success === true && data.filename) {
+                        window.location.href = data.filename;
+                    } else if (data.message) {
+                        displayMessage(localization.translate('Download'), localization.translate('Download_Failed'), [data.message]);
+                    } else {
+                        displayMessage(localization.translate('Download'), localization.translate('Download_Failed'));
+                    }
+                })
+                .fail((xhr, error) => {
+                    hideLoader();
+                    displayMessage(localization.translate('Download'), localization.translate('Download_Failed'), [error]);
+                });
+        });
+
         $(document).off('click', 'button.btnDeletePhoto').on('click', 'button.btnDeletePhoto', function (e) {
             preventDefaults(e);
 

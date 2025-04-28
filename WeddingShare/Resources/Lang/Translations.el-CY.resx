@@ -532,6 +532,12 @@
   <data name="Settings_Gallery_BannerImage_Label" xml:space="preserve">
     <value>Εικόνα banner</value>
   </data>
+  <data name="Settings_Gallery_CameraUploads_Help" xml:space="preserve">
+    <value>Σε περίπτωση που οι επισκέπτες έχουν την επιλογή μεταξύ επιλογέα αρχείων ή κάμερας</value>
+  </data>
+  <data name="Settings_Gallery_CameraUploads_Label" xml:space="preserve">
+    <value>Αποστολή φωτογραφικής μηχανής</value>
+  </data>
   <data name="Settings_Gallery_Columns_Help" xml:space="preserve">
     <value>Ο αριθμός των στηλών προς εμφάνιση</value>
   </data>

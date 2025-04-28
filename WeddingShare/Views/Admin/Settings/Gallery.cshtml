@@ -143,6 +143,26 @@
 
     <div class="row mb-4 mb-lg-4">
         <div class="col-12">
+            <label>@_localizer["Settings_Gallery_CameraUploads_Label"].Value</label>
+            <select class="setting-field form-control" data-setting-name="@Settings.Gallery.CameraUploads">
+                @foreach (var option in ViewOptions.YesNo)
+                {
+                    if (Model.GetValue(Settings.Gallery.CameraUploads.ToUpper(), "false").Equals(option.Value, StringComparison.OrdinalIgnoreCase))
+                    {
+                        <option value="@option.Value" selected="selected">@option.Key</option>
+                    }
+                    else
+                    {
+                        <option value="@option.Value">@option.Key</option>
+                    }
+                }
+            </select>
+            <div class="form-text">@_localizer["Settings_Gallery_CameraUploads_Help"].Value</div>
+        </div>
+    </div>
+
+    <div class="row mb-4 mb-lg-4">
+        <div class="col-12">
             <label>@_localizer["Settings_Gallery_RequireReview_Label"].Value</label>
             <select class="setting-field form-control" data-setting-name="@Settings.Gallery.RequireReview">
                 @foreach (var option in ViewOptions.YesNo)

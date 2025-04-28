@@ -100,7 +100,7 @@ function displayIdentityCheck(required, callbackFn) {
                         data: { name }
                     })
                         .done(data => {
-                            $('#frmFileUpload').attr('data-identity-required', 'false');
+                            $('.file-uploader-form').attr('data-identity-required', 'false');
 
                             if (callbackFn !== undefined && callbackFn !== null) {
                                 callbackFn();
