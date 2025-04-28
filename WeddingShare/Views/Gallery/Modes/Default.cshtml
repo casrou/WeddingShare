@@ -99,7 +99,14 @@
     {
         if (Model?.GroupBy != GalleryGroup.None)
         {
-            <h1 class="display-7">@imageGroup.Key</h1>
+            <h1 class="display-7">@imageGroup.Key
+                <span class="header-actions">
+                    <span class="action text-success pointer">
+                        <i class="btnDownloadGroup fa-solid fa-download" data-gallery-id="@Model?.GalleryId" data-gallery-key="@(await _settings.GetOrDefault(Settings.Gallery.SecretKey, string.Empty, Model?.GalleryName))" data-group-name="@((int?)Model?.GroupBy)|@imageGroup.Key" alt="@_localizer["Download"].Value"></i>
+                        <span>@_localizer["Download"].Value</span>
+                    </span>
+                </span>
+            </h1>
         }
 
         var imageGroupImages = Model?.OrderBy == GalleryOrder.Random ? imageGroup.OrderBy(x => Guid.NewGuid()).ToList() : imageGroup.ToList();

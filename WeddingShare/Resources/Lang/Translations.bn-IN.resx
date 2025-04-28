@@ -532,6 +532,12 @@
   <data name="Settings_Gallery_BannerImage_Label" xml:space="preserve">
     <value>ব্যানার ছবি</value>
   </data>
+  <data name="Settings_Gallery_CameraUploads_Help" xml:space="preserve">
+    <value>ফাইল অথবা ক্যামেরার মধ্যে বিকল্প উপস্থিত থাকা আবশ্যক</value>
+  </data>
+  <data name="Settings_Gallery_CameraUploads_Label" xml:space="preserve">
+    <value>ক্যামেরা আপলোড ব্যবস্থা</value>
+  </data>
   <data name="Settings_Gallery_Columns_Help" xml:space="preserve">
     <value>যে কলাম প্রদর্শন করা হবে</value>
   </data>

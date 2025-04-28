@@ -79,9 +79,14 @@ tr td i {
 }
 
     .upload_drop.highlight {
+        color: #E80046 !important;
+        outline: 2px dashed #E80046 !important;
         outline-offset: -4px;
-        outline-color: #FFFFFF;
     }
+
+        .upload_drop.highlight.upload_svg {
+            fill: #E80046 !important;
+        }
 
 .upload_svg {
     fill: #FFFFFF;

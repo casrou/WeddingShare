@@ -8,7 +8,7 @@
 
 <header class="file-uploader bg-dark py-1 py-lg-4">
     <div class="container px-0 px-lg-2">
-        <form id="frmFileUpload" data-identity-required="@(((Model?.IdentityRequired ?? false) && string.IsNullOrWhiteSpace(Context?.Session?.GetString(SessionKey.ViewerIdentity))).ToString().ToLower())">
+        <form class="file-uploader-form" data-identity-required="@(((Model?.IdentityRequired ?? false) && string.IsNullOrWhiteSpace(Context?.Session?.GetString(SessionKey.ViewerIdentity))).ToString().ToLower())">
             @Html.AntiForgeryToken()
 
             <fieldset class="upload_drop text-center p-4 text-center text-white">
@@ -20,7 +20,7 @@
                 <p class="small my-2">@(ViewBag.IsMobile ?? false ? _localizer["Click_To_Upload"].Value : _localizer["Drag_And_Drop"].Value)</p>
                 <p class="small my-2">(@string.Join(", ", allowedFileTypes).ToLower())</p>
 
-                <input data-post-gallery-id="@Model?.GalleryId" data-post-url="@Model?.UploadUrl" data-post-key="@Model?.SecretKey" class="position-absolute invisible" type="file" multiple accept="image/*,video/*" />
+                <input class="position-absolute invisible upload-input" data-post-gallery-id="@Model?.GalleryId" data-post-url="@Model?.UploadUrl" data-post-key="@Model?.SecretKey" data-post-allow-camera="@(((ViewBag.IsMobile ?? false) && await _settings.GetOrDefault(Settings.Gallery.CameraUploads, false)).ToString().ToLower())" type="file" multiple accept="image/*,video/*" />
             </fieldset>
         </form>
     </div>

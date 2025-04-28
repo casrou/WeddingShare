@@ -532,6 +532,12 @@
   <data name="Settings_Gallery_BannerImage_Label" xml:space="preserve">
     <value>बैनर छवि</value>
   </data>
+  <data name="Settings_Gallery_CameraUploads_Help" xml:space="preserve">
+    <value>क्या मेहमानों को फ़ाइल पिकर या कैमरे के बीच विकल्प होना चाहिए</value>
+  </data>
+  <data name="Settings_Gallery_CameraUploads_Label" xml:space="preserve">
+    <value>कैमरा अपलोड</value>
+  </data>
   <data name="Settings_Gallery_Columns_Help" xml:space="preserve">
     <value>प्रदर्शित करने के लिए स्तंभों की संख्या</value>
   </data>

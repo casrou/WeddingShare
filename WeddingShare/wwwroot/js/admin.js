@@ -726,11 +726,12 @@ function selectActiveTab(tab) {
 
             let row = $(this).closest('tr');
             let id = row.data('gallery-id');
+            let secretKey = row.data('gallery-key');
 
             $.ajax({
                 url: '/Gallery/DownloadGallery',
                 method: 'POST',
-                data: { Id: id }
+                data: { Id: id, SecretKey: secretKey }
             })
                 .done(data => {
                     hideLoader();

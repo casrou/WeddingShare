@@ -10926,9 +10926,10 @@ textarea.form-control-lg {
 }
 
 .file-uploader {
-  --bs-file-uploader-bg-color: 33, 37, 41;
-  --bs-file-uploader-bg-opacity: 1;
-  background-color: rgba(var(--bs-file-uploader-bg-color), var(--bs-file-uploader-bg-opacity)) !important;
+    --bs-file-uploader-bg-color: 33, 37, 41;
+    --bs-file-uploader-bg-opacity: 1;
+    color: var(--bs-file-uploader-bg-color) !important;
+    background-color: rgba(var(--bs-file-uploader-bg-color), var(--bs-file-uploader-bg-opacity)) !important;
 }
 
 footer {

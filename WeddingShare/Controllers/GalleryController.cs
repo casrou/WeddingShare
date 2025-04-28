@@ -12,6 +12,7 @@ using WeddingShare.Helpers.Database;
 using WeddingShare.Helpers.Notifications;
 using WeddingShare.Models;
 using WeddingShare.Models.Database;
+using static WeddingShare.Constants.Notifications;
 
 namespace WeddingShare.Controllers
 {
@@ -457,18 +458,78 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> DownloadGallery(int id)
+        public async Task<IActionResult> DownloadGallery(int id, string? secretKey, string? group)
         {
             try
             {
                 var gallery = await _database.GetGallery(id);
                 if (gallery != null)
                 {
+                    if (secretKey != await _settings.GetOrDefault(Settings.Gallery.SecretKey, string.Empty, gallery.Name))
+                    {
+                        return Json(new { success = false, message = _localizer["Failed_Download_Gallery"].Value });
+                    }
+
                     if (await _settings.GetOrDefault(Settings.Gallery.Download, true, gallery?.Name) || (User?.Identity != null && User.Identity.IsAuthenticated))
                     {
                         var galleryDir = id > 0 ? Path.Combine(UploadsDirectory, gallery.Name) : UploadsDirectory;
                         if (_fileHelper.DirectoryExists(galleryDir))
                         {
+                            var keepFiles = new List<string>();
+                            if (!string.IsNullOrWhiteSpace(group))
+                            {
+                                var groupParts = group.Split('|', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
+                                if (groupParts != null && groupParts.Length == 2)
+                                {
+                                    var items = await _database.GetAllGalleryItems(id, GalleryItemState.Approved);
+                                    foreach (GalleryGroup type in Enum.GetValues(typeof(GalleryGroup)))
+                                    {
+                                        if (((int)type).ToString().Equals(groupParts[0]))
+                                        {
+                                            try
+                                            {
+                                                IEnumerable<IGrouping<string, GalleryItemModel>>? filtered = null;
+                                                switch (type)
+                                                {
+                                                    case GalleryGroup.Date:
+                                                        filtered = items?.GroupBy(x => x.UploadedDate != null ? x.UploadedDate.Value.ToString("dddd, d MMMM yyyy") : "Unknown");
+                                                        break;
+                                                    case GalleryGroup.MediaType:
+                                                        filtered = items?.GroupBy(x => x.MediaType.ToString());
+                                                        break;
+                                                    case GalleryGroup.Uploader:
+                                                        filtered = items?.GroupBy(x => x.UploadedBy ?? "Anonymous");
+                                                        break;
+                                                }
+
+                                                if (filtered != null)
+                                                {
+                                                    foreach (var f in filtered)
+                                                    {
+                                                        if (f.Key.Equals(groupParts[1]))
+                                                        {
+                                                            if (f.Any())
+                                                            {
+                                                                keepFiles.AddRange(f.Select(x => x.Title));
+                                                            }
+
+                                                            break;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            catch { }
+
+                                            break;
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    return Json(new { success = false, message = _localizer["Failed_Download_Gallery"].Value });
+                                }
+                            }
+
                             _fileHelper.CreateDirectoryIfNotExists(TempDirectory);
 
                             var tempZipFile = Path.Combine(TempDirectory, $"{gallery.Name}-{DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss")}.zip");
@@ -482,6 +543,14 @@ namespace WeddingShare.Controllers
                                     foreach (var entry in archive.Entries.Where(x => x.FullName.StartsWith("Pending/", StringComparison.OrdinalIgnoreCase) || x.FullName.StartsWith("Rejected/", StringComparison.OrdinalIgnoreCase)).ToList())
                                     {
                                         entry.Delete();
+                                    }
+
+                                    if (keepFiles.Any())
+                                    {
+                                        foreach (var entry in archive.Entries.Where(x => !keepFiles.Exists(y => Path.GetFileName(y).Equals(x.Name))).ToList())
+                                        {
+                                            entry.Delete();
+                                        }
                                     }
                                 }
                             }

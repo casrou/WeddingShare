@@ -532,6 +532,12 @@
   <data name="Settings_Gallery_BannerImage_Label" xml:space="preserve">
     <value>อิมเมจแบนเนอร์</value>
   </data>
+  <data name="Settings_Gallery_CameraUploads_Help" xml:space="preserve">
+    <value>แขกควรจะมีทางเลือกระหว่างการเลือกแฟ้มหรือกล้อง</value>
+  </data>
+  <data name="Settings_Gallery_CameraUploads_Label" xml:space="preserve">
+    <value>อัปโหลดกล้อง</value>
+  </data>
   <data name="Settings_Gallery_Columns_Help" xml:space="preserve">
     <value>จํานวนของคอลัมน์ที่จะแสดง</value>
   </data>
