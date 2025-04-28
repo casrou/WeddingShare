@@ -1000,7 +1000,7 @@ namespace WeddingShare.Controllers
         {
             if (!string.IsNullOrWhiteSpace(secret) && !string.IsNullOrWhiteSpace(code))
             {
-                if (User?.Identity != null && User.Identity.IsAuthenticated)
+                if (User?.Identity != null && User.Identity.IsAuthenticated && await _settings.GetOrDefault(Settings.IsDemoMode, false) == false)
                 {
                     try
                     {
