@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Erstellung</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Versäumt, benutzerdefinierte Ressourcen zu erhalten</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Bitte wählen Sie eine Bilddatei hochladen</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Benutzerdefinierte Ressourcen hochladen</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Nicht zu löschen benutzerdefinierte Ressource</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Nicht verfügbar, um benutzerdefinierte Ressource hochzuladen</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Gefährliche Zone</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Nicht verfügbar</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Eine Datei mit dem gleichen Namen existiert bereits</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filter</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Neue Artikel bewerten</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Keine benutzerdefinierten Ressourcen hochgeladen</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Keine Daten</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Name</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Ressourcen</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Überprüfung</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>QR speichern</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Versäumt, benutzerdefinierte Ressource zu speichern</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Versäumt, Bilder zur Galerie zu speichern</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Thumbnail Auflösung</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Nicht verfügbar, um Einstellungen zu erhalten</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Galerie Defaults</value>

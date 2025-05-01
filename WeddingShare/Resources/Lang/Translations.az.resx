@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Yapon</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Xüsusi Resurslar</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Xüsusi resursları almaq</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Yüklemek üçün bir image fayl seçin</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Daxil ol</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Xüsusi komponenti silməyə davam etdi</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Xüsusi komponentin yükləndirilməsi</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Qeydiyyat</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Yükleme faylını yükləmək</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Eyni adı ilə bir fayl artıq var</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value> Filter</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Yeni maddələr Pending Review</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>No xüsusi resurslar yüklənir</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>No Data</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Ad Soyad</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value> Resources</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value> Review</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Yadda saxla</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Xüsusi qurğu saxlamaq</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Gallery üçün image saxlamaq</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Daxili qaynaq</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Sığorta almaq</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Qeydiyyat</value>

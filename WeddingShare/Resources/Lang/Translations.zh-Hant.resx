@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>创建</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>自定义资源</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>获取自定义资源失败</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>请选择要上传的图像文件</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>上传自定义资源</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>删除自定义资源失败</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>上传自定义资源失败</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>危险区</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>上传文件失败</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>同名文件已经存在</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>过滤器</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>有待审查的新项目</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>没有上传自定义资源</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>无数据</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>重命名</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>资源</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>审查</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>保存 QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>保存自定义资源失败</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>保存图像到图片库失败</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>缩略图分辨率</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>获取设置失败</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>图片库默认值</value>

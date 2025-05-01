@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Nu s-au făcut modificări pentru a salva",
             "Update_Settings_Success": "Configurări actualizate cu succes",
             "Upload": "Încarcă",
+            "Upload_Failed": "Nu a fost o problemă încărcarea unor fișiere",
             "Upload_Invalid_Gallery_Detected": "Galerie nevalidă Id detectat",
             "Upload_Invalid_Upload_Url": "Nu am putut găsi upload Url",
             "Upload_Method": "Alegeți o metodă de încărcare",

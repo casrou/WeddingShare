@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "لم تطرأ أي تغييرات لإنقاذ",
             "Update_Settings_Success": "تم استكمال الهيكل بنجاح",
             "Upload": "تحميل",
+            "Upload_Failed": "كان هناك مشكلة تحميل بعض الملفات",
             "Upload_Invalid_Gallery_Detected": "معرض غير رسمي Id detected",
             "Upload_Invalid_Upload_Url": "لا يمكن العثور على تحميل Url",
             "Upload_Method": "يرجى اختيار طريقة تحميل",

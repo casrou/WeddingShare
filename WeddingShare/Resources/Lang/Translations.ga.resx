@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Tréimhse saoil: ilbhliantúil</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Acmhainní an Chustaim</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Failed a fháil acmhainní saincheaptha</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Roghnaigh comhad íomhá a uaslódáil</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Uaslódáil Acmhainn an Chustaim</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Failed a scriosadh acmhainn saincheaptha</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Failed a uaslódáil acmhainn saincheaptha</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Seirbhís do Chustaiméirí</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Failed a uaslódáil comhad</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Tá comhad leis an ainm céanna ann cheana</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Scagaire</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Míreanna Nua ar feitheamh Athbhreithniú</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Gan acmhainní saincheaptha a uaslódáil</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Níl aon sonraí</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Amharc ar gach eolas</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Acmhainní Daonna</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Athbhreithniú</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Sábháil Q</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Failed a shábháil acmhainn saincheaptha</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Failed íomhá a shábháil ar gailearaí</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Féachaint ar Fholúntais</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Failed chun suímh a fháil</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Déan Teagmháil Linn</value>

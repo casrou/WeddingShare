@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Aanmaken</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Aangepaste bronnen</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Kon aangepaste bronnen niet verkrijgen</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Selecteer een bestand om te uploaden</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Aangepaste bron uploaden</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Kon aangepaste hulpbron niet verwijderen</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Kon aangepaste hulpbron niet uploaden</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Gevaarszone</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Kon bestand niet uploaden</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Een bestand met dezelfde naam bestaat al</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filter</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Nieuwe items in behandeling</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Geen aangepaste bronnen geüpload</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Geen gegevens</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Hernoemen</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Middelen</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Evaluatie</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>QR opslaan</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Kon aangepaste hulpbron niet opslaan</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Opslaan van afbeelding in galerij is mislukt</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Miniatuurresolutie</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Kon instellingen niet verkrijgen</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Standaard Galerij</value>

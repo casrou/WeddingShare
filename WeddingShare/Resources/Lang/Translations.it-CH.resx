@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Creare</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Risorse personalizzate</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Non riuscito a ottenere risorse personalizzate</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Selezionare un file di immagine da caricare</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Carica risorse personalizzate</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Non riuscita a eliminare risorse personalizzate</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Non caricare risorse personalizzate</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Zona di pericolo</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Non caricare file</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Un file con lo stesso nome esiste già</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filtro</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Nuovi articoli in attesa recensione</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Nessuna risorsa personalizzata caricata</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Nessun dato</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Nome</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Risorse</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Recensione</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Salvare il QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Non riuscito a salvare la risorsa personalizzata</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Non riuscito a salvare l'immagine alla galleria</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Risoluzione del Thumbnail</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Non riuscito a ottenere le impostazioni</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Predefiniti della galleria</value>

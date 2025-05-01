@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "ไม่มีการเปลี่ยนแปลงที่จะบันทึก",
             "Update_Settings_Success": "ปรับปรุงการตั้งค่าเรียบร้อยแล้ว",
             "Upload": "อัปโหลด",
+            "Upload_Failed": "มีปัญหาในการอัปโหลดบางแฟ้ม",
             "Upload_Invalid_Gallery_Detected": "คลังภาพไม่ถูกต้อง พบหมายเลข",
             "Upload_Invalid_Upload_Url": "ไม่สามารถค้นพบการอัปโหลด Url",
             "Upload_Method": "โปรดเลือกวิธีอัปโหลด",

@@ -41,6 +41,26 @@ function updateUsersList() {
     });
 }
 
+function updateCustomResources() {
+    $.ajax({
+        type: 'GET',
+        url: `/Admin/CustomResources`,
+        success: function (data) {
+            $('#custom-resources').html(data);
+        }
+    });
+}
+
+function updateSettings() {
+    $.ajax({
+        type: 'GET',
+        url: `/Admin/SettingsPartial`,
+        success: function (data) {
+            $('#settings-list').html(data);
+        }
+    });
+}
+
 function updateGalleryList() {
     $.ajax({
         type: 'GET',
@@ -65,6 +85,8 @@ function updatePage() {
     updateUsersList();
     updateGalleryList();
     updatePendingReviews();
+    updateCustomResources();
+    updateSettings();
 }
 
 function initPasswordValidation() {
@@ -1023,6 +1045,96 @@ function selectActiveTab(tab) {
                             })
                             .fail((xhr, error) => {
                                 displayMessage(localization.translate('Gallery_Delete'), localization.translate('Gallery_Delete_Failed'), [error]);
+                            });
+                    }
+                }, {
+                    Text: localization.translate('Close')
+                }]
+            });
+        });
+
+        $(document).off('change', 'input#custom-resource-upload').on('change', 'input#custom-resource-upload', function (e) {
+            const files = $(this)[0].files;
+            if (files !== undefined && files.length > 0) {
+                const formData = new FormData();
+                formData.append(files[0].name, files[0]);
+
+                displayLoader(localization.translate('Upload_Progress', { index: 1, count: 1 }));
+
+                fetch('/Admin/UploadCustomResource', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        hideLoader();
+
+                        if (data !== undefined && data.success === true) {
+                            displayMessage(localization.translate('Upload'), localization.translate('Upload_Success', { count: 1 }));
+
+                            updateCustomResources();
+                            updateSettings();
+
+                            $('input#custom-resource-upload').val('');
+                        } else if (data.errors !== undefined && data.errors.length > 0) {
+                            displayMessage(localization.translate('Upload'), localization.translate('Upload_Failed'), [data.errors]);
+                        }
+                    });
+            }
+        });
+
+        $(document).off('click', 'button.custom-resource-delete').on('click', 'button.custom-resource-delete', function (e) {
+            preventDefaults(e);
+
+            if ($(this).attr('disabled') == 'disabled') {
+                return;
+            }
+
+            let id = $(this).data('id');
+            let name = $(this).data('name');
+            let element = $(this).closest('.custom-resource');
+
+            displayPopup({
+                Title: localization.translate('Delete_Item'),
+                Message: localization.translate('Delete_Item_Message', { name }),
+                Fields: [{
+                    Id: 'custom-resource-id',
+                    Value: id,
+                    Type: 'hidden'
+                }],
+                Buttons: [{
+                    Text: localization.translate('Delete'),
+                    Class: 'btn-danger',
+                    Callback: function () {
+                        displayLoader(localization.translate('Loading'));
+
+                        let id = $('#popup-modal-field-custom-resource-id').val();
+                        if (id == undefined || id.length == 0) {
+                            displayMessage(localization.translate('Delete_Item'), localization.translate('Delete_Item_Id_Missing'));
+                            return;
+                        }
+
+                        $.ajax({
+                            url: '/Admin/RemoveCustomResource',
+                            method: 'DELETE',
+                            data: { id }
+                        })
+                            .done(data => {
+                                if (data.success === true) {
+                                    displayMessage(localization.translate('Delete_Item'), localization.translate('Delete_Item_Success'));
+
+                                    updateCustomResources();
+                                    updateSettings();
+
+                                    element.remove();
+                                } else if (data.message) {
+                                    displayMessage(localization.translate('Delete_Item'), localization.translate('Delete_Item_Failed'), [data.message]);
+                                } else {
+                                    displayMessage(localization.translate('Delete_Item'), localization.translate('Delete_Item_Failed'));
+                                }
+                            })
+                            .fail((xhr, error) => {
+                                displayMessage(localization.translate('Delete_Item'), localization.translate('Delete_Item_Failed'), [error]);
                             });
                     }
                 }, {

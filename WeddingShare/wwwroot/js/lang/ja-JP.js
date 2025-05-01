@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "変更は保存されません",
             "Update_Settings_Success": "正常に更新された設定",
             "Upload": "アップロード",
+            "Upload_Failed": "いくつかのファイルをアップロードする問題がありました",
             "Upload_Invalid_Gallery_Detected": "無効なギャラリー 検出される Id",
             "Upload_Invalid_Upload_Url": "アップロードが見つかりませんでした ログイン",
             "Upload_Method": "アップロード方法を選択してください",

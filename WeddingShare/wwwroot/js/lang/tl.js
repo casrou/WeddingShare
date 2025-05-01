@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Walang mga pagbabagong ginawa upang magligtas",
             "Update_Settings_Success": "Matagumpay na inayos ang mga setting",
             "Upload": "Itaas",
+            "Upload_Failed": "Nagkaroon ng isyu na nagdidiskarga ng ilang files",
             "Upload_Invalid_Gallery_Detected": "Hindi tanggap na galerya Natuklasan ang Id",
             "Upload_Invalid_Upload_Url": "Hindi mahanap ang download Url",
             "Upload_Method": "Pumili ng upload method",

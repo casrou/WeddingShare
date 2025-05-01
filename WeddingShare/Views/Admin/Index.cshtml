@@ -8,19 +8,22 @@
             <div class="col-12">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="pnl-selector nav-link" href="#" data-tab="reviews">Review</a>
+                        <a class="pnl-selector nav-link" href="#" data-tab="reviews">@_localizer["Review"].Value</a>
                     </li>
                     <li class="nav-item">
-                        <a class="pnl-selector nav-link" href="#" data-tab="galleries">Galleries</a>
+                        <a class="pnl-selector nav-link" href="#" data-tab="galleries">@_localizer["Galleries"].Value</a>
                     </li>
                     <li class="nav-item">
-                        <a class="pnl-selector nav-link" href="#" data-tab="users">Users</a>
+                        <a class="pnl-selector nav-link" href="#" data-tab="users">@_localizer["Users"].Value</a>
                     </li>
                     <li class="nav-item">
-                        <a class="pnl-selector nav-link" href="#" data-tab="settings">Settings</a>
+                        <a class="pnl-selector nav-link" href="#" data-tab="custom-resources">@_localizer["Resources"].Value</a>
                     </li>
                     <li class="nav-item">
-                        <a class="pnl-selector nav-link" href="#" data-tab="data">Data</a>
+                        <a class="pnl-selector nav-link" href="#" data-tab="settings">@_localizer["Settings"].Value</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pnl-selector nav-link" href="#" data-tab="data">@_localizer["Data"].Value</a>
                     </li>
                 </ul>
             </div>
@@ -31,7 +34,8 @@
 <partial name="~/Views/Admin/Tabs/Reviews.cshtml" model="new ReviewsModel() { PendingRequests = Model?.PendingRequests }" />
 <partial name="~/Views/Admin/Tabs/Users.cshtml" model="new UsersModel() { Users = Model?.Users }" />
 <partial name="~/Views/Admin/Tabs/Galleries.cshtml" model="new GalleriesModel() { Galleries = Model?.Galleries }" />
-<partial name="~/Views/Admin/Tabs/Settings.cshtml" model="new SettingsModel() { Settings = Model?.Settings }" />
+<partial name="~/Views/Admin/Tabs/Resources.cshtml" model="new ResourcesModel() { CustomResources = Model?.CustomResources }" />
+<partial name="~/Views/Admin/Tabs/Settings.cshtml" model="new SettingsModel() { Settings = Model?.Settings, CustomResources = Model?.CustomResources }" />
 <partial name="~/Views/Admin/Tabs/Data.cshtml" model="new DataModel()" />
 
 <script src="~/js/admin.js" asp-append-version="true"></script>

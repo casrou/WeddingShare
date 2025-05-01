@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Nem történt változás a mentés érdekében",
             "Update_Settings_Success": "A beállítások frissítése sikeresen",
             "Upload": "Feltöltés",
+            "Upload_Failed": "Volt egy probléma a fájlok feltöltésével",
             "Upload_Invalid_Gallery_Detected": "Érvénytelen galéria Azonosítás",
             "Upload_Invalid_Upload_Url": "Nem található a feltöltés Url",
             "Upload_Method": "Válassza ki a feltöltési módot",

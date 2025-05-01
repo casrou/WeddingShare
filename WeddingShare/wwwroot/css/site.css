@@ -101,21 +101,26 @@ tr td i {
         background-color: #ff7563;
     }
 
-.pending-approval {
+.pending-approval, .custom-resource {
     display: inline-block;
 }
 
-.pending-approval .btn-group .btn {
-    height: 50px;
-}
+    .pending-approval .btn-group .btn, .custom-resource .btn-group .btn {
+        height: 50px;
+        opacity: 0.5;
+    }
 
-.pending-approval .btn-group .btn:first-child {
-    border-radius: 0px 0px 0px 5px;
-}
+        .pending-approval .btn-group .btn:hover, .custom-resource .btn-group .btn:hover {
+            opacity: 1;
+        }
 
-.pending-approval .btn-group .btn:last-child {
-    border-radius: 0px 0px 5px 0px;
-}
+        .pending-approval .btn-group .btn:first-child, .custom-resource .btn-group .btn:first-child {
+            border-radius: 0px 0px 0px 5px;
+        }
+
+        .pending-approval .btn-group .btn:last-child, .custom-resource .btn-group .btn:last-child {
+            border-radius: 0px 0px 5px 0px;
+        }
 
 .review-tile {
     height: 200px;

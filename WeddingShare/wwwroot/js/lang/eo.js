@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Neniuj ŝanĝoj estis faritaj por ŝpari",
             "Update_Settings_Success": "Settings ĝisdatigita sukcese",
             "Upload": "Ĝis la fino",
+            "Upload_Failed": "Ekzistis temo alŝutanta kelkajn dosierojn",
             "Upload_Invalid_Gallery_Detected": "Invalida galerio Mi detektis",
             "Upload_Invalid_Upload_Url": "Oni ne povas trovi la Url",
             "Upload_Method": "Bonvolu elekti alŝuti metodon",

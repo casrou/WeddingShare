@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "No s' ha fet cap canvi per desar",
             "Update_Settings_Success": "L' arranjament s' ha actualitzat correctament",
             "Upload": "Puja",
+            "Upload_Failed": "Hi ha hagut un problema en pujar alguns fitxers",
             "Upload_Invalid_Gallery_Detected": "Galeria no vàlida S' ha detectat",
             "Upload_Invalid_Upload_Url": "No s' ha pogut trobar la pujada URL",
             "Upload_Method": "Seleccioneu un mètode de pujada",

@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Crea</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Recursos personalitzats</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Ha fallat en obtenir recursos personalitzats</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Seleccioneu un fitxer d' imatge a pujar</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Puja recurs personalitzat</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Ha fallat en esborrar el recurs personalitzat</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Ha fallat en pujar un recurs personalitzat</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Zona perillosa</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>No s' ha pogut pujar el fitxer</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Ja existeix un fitxer amb el mateix nom</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filtre</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Nova revisió d' elements pendents</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>No s' ha pujat cap recurs personalitzat</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Sense dades</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Reanomena</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Recursos</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Revisió</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Desa QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Ha fallat en desar un recurs personalitzat</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Ha fallat en desar la imatge a la galeria</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Resolució de miniatures</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Ha fallat en obtenir l' arranjament</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Omissió de la galeria</value>

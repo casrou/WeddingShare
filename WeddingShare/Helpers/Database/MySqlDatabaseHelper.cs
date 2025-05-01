@@ -1,6 +1,5 @@
 ﻿using System.Data;
 using System.Data.Common;
-using Microsoft.Data.Sqlite;
 using MySql.Data.MySqlClient;
 using WeddingShare.Constants;
 using WeddingShare.Enums;
@@ -1113,6 +1112,150 @@ namespace WeddingShare.Helpers.Database
         }
         #endregion
 
+        #region CustomResources
+        public async Task<CustomResourceModel?> GetCustomResource(int id)
+        {
+            CustomResourceModel? result;
+
+            using (var conn = await GetConnection())
+            {
+                var cmd = CreateCommand($"SELECT * FROM `custom_resources` WHERE `id`=@Id;", conn);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("Id", id);
+
+                await conn.OpenAsync();
+                using (var reader = await cmd.ExecuteReaderAsync())
+                {
+                    result = (await ReadCustomResources(reader))?.FirstOrDefault();
+                }
+                await conn.CloseAsync();
+            }
+
+            return result;
+        }
+
+        public async Task<List<CustomResourceModel>> GetAllCustomResources()
+        {
+            List<CustomResourceModel> result;
+
+            using (var conn = await GetConnection())
+            {
+                var cmd = CreateCommand($"SELECT * FROM `custom_resources`;", conn);
+                cmd.CommandType = CommandType.Text;
+
+                await conn.OpenAsync();
+                using (var reader = await cmd.ExecuteReaderAsync())
+                {
+                    result = (await ReadCustomResources(reader));
+                }
+                await conn.CloseAsync();
+            }
+
+            return result;
+        }
+
+        public async Task<CustomResourceModel?> AddCustomResource(CustomResourceModel model)
+        {
+            CustomResourceModel? result = null;
+
+            using (var conn = await GetConnection())
+            {
+                var cmd = CreateCommand($"INSERT INTO `custom_resources` (`file_name`, `uploaded_by`) VALUES (@FileName, @UploadedBy); SELECT * FROM `custom_resources` WHERE `id`=LAST_INSERT_ID();", conn);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("FileName", model.FileName);
+                cmd.Parameters.AddWithValue("UploadedBy", !string.IsNullOrEmpty(model.UploadedBy) ? model.UploadedBy : DBNull.Value);
+
+                await conn.OpenAsync();
+                var tran = await CreateTransaction(conn);
+
+                try
+                {
+                    cmd.Transaction = tran;
+                    using (var reader = await cmd.ExecuteReaderAsync())
+                    {
+                        result = (await ReadCustomResources(reader))?.FirstOrDefault();
+                    }
+                    await tran.CommitAsync();
+                }
+                catch
+                {
+                    await tran.RollbackAsync();
+                }
+
+                await conn.CloseAsync();
+            }
+
+            return result;
+        }
+
+        public async Task<CustomResourceModel?> EditCustomResource(CustomResourceModel model)
+        {
+            CustomResourceModel? result = null;
+
+            using (var conn = await GetConnection())
+            {
+                var cmd = CreateCommand($"UPDATE `custom_resource` SET `file_name`=@FileName, `uploaded_by`=@UploadedBy WHERE `id`=@Id; SELECT * FROM `custom_resources` WHERE `id`=@Id;", conn);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("Id", model.Id);
+                cmd.Parameters.AddWithValue("FileName", model.FileName);
+                cmd.Parameters.AddWithValue("UploadedBy", !string.IsNullOrEmpty(model.UploadedBy) ? model.UploadedBy : DBNull.Value);
+
+                await conn.OpenAsync();
+                var tran = await CreateTransaction(conn);
+
+                try
+                {
+                    cmd.Transaction = tran;
+                    using (var reader = await cmd.ExecuteReaderAsync())
+                    {
+                        result = (await ReadCustomResources(reader))?.FirstOrDefault();
+                    }
+                    await tran.CommitAsync();
+                }
+                catch
+                {
+                    await tran.RollbackAsync();
+                }
+
+                await conn.CloseAsync();
+            }
+
+            return result;
+        }
+
+        public async Task<bool> DeleteCustomResource(CustomResourceModel model)
+        {
+            bool result = false;
+
+            using (var conn = await GetConnection())
+            {
+                var cmd = CreateCommand($"UPDATE `settings` SET `value`='' WHERE `value`=@FileName; DELETE FROM `gallery_settings` WHERE `id`=@BannerImageKey AND `value`=@FileName; DELETE FROM `custom_resources` WHERE `id`=@Id;", conn);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("Id", model.Id);
+                cmd.Parameters.AddWithValue("BannerImageKey", Settings.Gallery.BannerImage);
+                cmd.Parameters.AddWithValue("FileName", $"/custom_resources/{model.FileName}");
+
+                await conn.OpenAsync();
+                var tran = await CreateTransaction(conn);
+
+                try
+                {
+                    cmd.Transaction = tran;
+                    result = (await cmd.ExecuteNonQueryAsync()) > 0;
+                    await tran.CommitAsync();
+                }
+                catch
+                {
+                    await tran.RollbackAsync();
+                }
+
+                await conn.CloseAsync();
+            }
+
+            return result;
+        }
+        #endregion
+
         #region Settings
         public async Task<IEnumerable<SettingModel>?> GetAllSettings(string? gallery = "")
         {
@@ -1554,6 +1697,37 @@ namespace WeddingShare.Helpers.Database
                     catch (Exception ex)
                     {
                         _logger.LogWarning(ex, $"Failed to parse user model from database - {ex?.Message}");
+                    }
+                }
+            }
+
+            return items;
+        }
+
+        private async Task<List<CustomResourceModel>> ReadCustomResources(DbDataReader? reader)
+        {
+            var items = new List<CustomResourceModel>();
+
+            if (reader != null && reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    try
+                    {
+                        var id = !await reader.IsDBNullAsync("id") ? reader.GetInt32("id") : 0;
+                        if (id > 0)
+                        {
+                            items.Add(new CustomResourceModel()
+                            {
+                                Id = id,
+                                FileName = !await reader.IsDBNullAsync("file_name") ? reader.GetString("file_name") : string.Empty,
+                                UploadedBy = !await reader.IsDBNullAsync("uploaded_by") ? reader.GetString("uploaded_by") : null
+                            });
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogWarning(ex, $"Failed to parse custom resource model from database - {ex?.Message}");
                     }
                 }
             }

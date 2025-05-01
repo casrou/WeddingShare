@@ -30,7 +30,7 @@ namespace WeddingShare.BackgroundWorkers
             {
                 var paths = new List<string>()
                 {
-                    Path.Combine(hostingEnvironment.WebRootPath, "temp")
+                    Path.Combine(hostingEnvironment.WebRootPath, Directories.TempFiles)
                 };
 
                 if (paths != null)

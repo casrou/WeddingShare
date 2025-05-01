@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Utwórz</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Zasoby własne</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Nie udało się uzyskać zasobów niestandardowych</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Proszę wybrać plik do przesłania</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Wyślij niestandardowe zasoby</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Nie udało się usunąć własnego zasobu</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Nie udało się przesłać niestandardowych zasobów</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Strefa zagrożenia</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Nie udało się przesłać pliku</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Plik o tej samej nazwie już istnieje</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filtr</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Nowe pozycje oczekujące na przegląd</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Brak niestandardowych zasobów</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Brak danych</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Zmień nazwę</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Zasoby</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Przegląd</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Zapisz QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Nie udało się zapisać własnego zasobu</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Nie udało się zapisać obrazu do galerii</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Rozdzielczość miniatur</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Nie udało się uzyskać ustawień</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Domyślne ustawienia galerii</value>

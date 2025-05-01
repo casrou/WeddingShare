@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Aucun changement n'a été apporté pour enregistrer",
             "Update_Settings_Success": "Configurations mises à jour avec succès",
             "Upload": "Envoi",
+            "Upload_Failed": "Il y avait un problème de téléchargement de certains fichiers",
             "Upload_Invalid_Gallery_Detected": "L'ID de galerie n'est pas valide",
             "Upload_Invalid_Upload_Url": "Impossible de trouver l'URL de téléchargement",
             "Upload_Method": "Veuillez sélectionner une méthode de téléchargement",

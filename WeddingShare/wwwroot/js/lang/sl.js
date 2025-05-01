@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Ni bilo sprememb za shranjevanje",
             "Update_Settings_Success": "Nastavitve so bile uspešno posodobljene",
             "Upload": "Pošlji",
+            "Upload_Failed": "Prišlo je do težave z nalaganjem nekaterih datotek",
             "Upload_Invalid_Gallery_Detected": "Neveljavna galerija Id zaznano",
             "Upload_Invalid_Upload_Url": "Ni moč najti vnosa Url",
             "Upload_Method": "Prosim izberite način pošiljanja",

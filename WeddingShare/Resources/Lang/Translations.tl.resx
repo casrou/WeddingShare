@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Gumawa</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Kaugaliang Yaman</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Sawi sa pagkuha ng mga mapagkukunan ng kaugalian</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Pakisuyong pumili ng isang talaksan ng larawan sa itaas</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Pinatataas na Resource ng Kaugalian</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Sawi sa pagtanggal ng magagamit na kaugalian</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Sawi sa pag-download ng custom source</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Panganib</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Sawi ang pag-download ng talaksan</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Umiiral na ang isang file na may parehong pangalan</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Pansala</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Bagong Repleksiyon ng mga Bagay - Bagay</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Walang sinusunod na kaugalian na nag - a - download ng mga bagay - bagay</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Walang Data</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Muling Pangalan</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Yaman</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Repaso</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Iligtas ang QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Sawi sa pagtitipid ng mapagkukunan ng kaugalian</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Sawi sa pagliligtas ng larawan sa galerya</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Resolusyon sa Thumbnail</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Sawi ang pagkuha ng mga setting</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Mga Pagbagsak sa Gallery</value>

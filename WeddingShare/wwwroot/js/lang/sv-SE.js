@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Inga ändringar gjordes för att spara",
             "Update_Settings_Success": "Inställningar uppdaterade framgångsrikt",
             "Upload": "Upload",
+            "Upload_Failed": "Det fanns ett problem med att ladda upp vissa filer",
             "Upload_Invalid_Gallery_Detected": "Invalid galleri Id upptäckt",
             "Upload_Invalid_Upload_Url": "Kunde inte hitta uppladdning Url",
             "Upload_Method": "Vänligen välj en uppladdningsmetod",

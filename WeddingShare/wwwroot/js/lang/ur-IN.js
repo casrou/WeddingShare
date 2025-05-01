@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "نجات پانے کے لیے کوئی تبدیلیاں نہیں کی گئیں۔",
             "Update_Settings_Success": "ترتیبات کامیاب ہوئی",
             "Upload": "اپ لوڈ کریں",
+            "Upload_Failed": "کچھ فائلیں اپ لوڈ کرنے کا مسئلہ تھا",
             "Upload_Invalid_Gallery_Detected": "گلئیڈ گیلری میں برآمد",
             "Upload_Invalid_Upload_Url": "عمل ادا نہیں کیا جاسکتا اورل",
             "Upload_Method": "براہ كرم اپ لوڈ کريں",

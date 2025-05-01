@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "没有保存更改",
             "Update_Settings_Success": "成功更新设置",
             "Upload": "上传",
+            "Upload_Failed": "上传一些文件的问题",
             "Upload_Invalid_Gallery_Detected": "无效的相册 检测到",
             "Upload_Invalid_Upload_Url": "找不到上传 乌尔尔",
             "Upload_Method": "请选择上传方法",

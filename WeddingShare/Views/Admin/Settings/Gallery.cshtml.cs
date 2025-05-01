@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using WeddingShare.Models.Database;
 
 namespace WeddingShare.Views.Admin.Settings
 {
@@ -7,6 +8,10 @@ namespace WeddingShare.Views.Admin.Settings
         public GalleryModel()
         {
         }
+
+        public IDictionary<string, string>? Settings { get; set; }
+        
+        public IEnumerable<CustomResourceModel>? CustomResources { get; set; }
 
         public void OnGet()
         {

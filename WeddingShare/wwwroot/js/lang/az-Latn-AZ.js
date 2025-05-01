@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Qeydiyyatdan keçmək üçün heç bir dəyişiklik keçirilib",
             "Update_Settings_Success": "Yadda saxla",
             "Upload": "Tarix",
+            "Upload_Failed": "Ən faylları yüklədi",
             "Upload_Invalid_Gallery_Detected": "Invalid gallery Qeyd",
             "Upload_Invalid_Upload_Url": "Yüklemeyi tapmaq Tarix",
             "Upload_Method": "Yükleme metodunu seçin",

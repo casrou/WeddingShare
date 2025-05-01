@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Neboli vykonané žiadne zmeny na uloženie",
             "Update_Settings_Success": "Nastavenia úspešne aktualizované",
             "Upload": "Odoslať",
+            "Upload_Failed": "Tam bol problém nahrávanie niektoré súbory",
             "Upload_Invalid_Gallery_Detected": "Neplatná galéria Id detekované",
             "Upload_Invalid_Upload_Url": "Nepodarilo sa nájsť odosielanie Url",
             "Upload_Method": "Prosím vyberte metódu odosielania",

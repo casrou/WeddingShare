@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Kurtarmak için hiçbir değişiklik yapılmadı",
             "Update_Settings_Success": "Ayarları başarıyla güncellendi",
             "Upload": "Download",
+            "Upload_Failed": "Bazı dosyaları yükleme konusu vardı",
             "Upload_Invalid_Gallery_Detected": "Invalid galeri tespit edildim",
             "Upload_Invalid_Upload_Url": "Yüklemeyi bulamaz Url",
             "Upload_Method": "Lütfen yükleme yöntemi seçin",

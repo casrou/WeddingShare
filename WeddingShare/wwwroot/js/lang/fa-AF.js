@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "هیچ تغییری برای نجات ایجاد نشد",
             "Update_Settings_Success": "تنظیمات به روز شده با موفقیت",
             "Upload": "آپلود",
+            "Upload_Failed": "یک موضوع برای آپلود برخی از فایل ها وجود داشت",
             "Upload_Invalid_Gallery_Detected": "گالری Invalid تشخیص داده شده",
             "Upload_Invalid_Upload_Url": "نمی تواند آپلود را پیدا کند Url",
             "Upload_Method": "یک متد آپلود را انتخاب کنید",

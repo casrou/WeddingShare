@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Krijo</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Gjëndja</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Marrja e rezervave dështoi</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Zgjidh një file</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Burimi i personalizuar i ngarkimit</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Gabim gjatë fshirjes së burimit të personalizuar</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Ngarkimi i burimit të personalizuar dështoi</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Zona e rrezikut</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Ngarkoje file</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>A me emri ekziston</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filtra</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Elementë të rinj</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Nuk është ngarkuar asnjë burim i personalizuar</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Pa të dhëna</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Riemërto</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Gjëndja</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Pamja e parë</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Ruaj</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Ruajtja e rezervës dështoi</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Kodifikimi i të dhënave dështoi</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Kualiteti i thonjve</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Gabim gjatë marrjes së rregullimeve</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Ja paracaktuar</value>

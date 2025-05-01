@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>بنائیں</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>دوبارہ استعمال</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>دستوری وسائل حاصل کرنے میں ناکامی</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>براہ كرنے كے لیے فوٹو فائل منتخب کريں</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>دوبارہ شروع کریں</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>عادتی وسائل کو حذف کرنے میں ناکامی</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>عادت فراہم کرنے میں ناکامی</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>معجزہ</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>فائل اٹھانے میں ناکامی</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>فائل بنام پہلے ہی موجود ہے</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>فائلز</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>نئے مضامین</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>کوئی دستوری وسائل اپلوڈ نہیں کیا گیا</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>کوئی ڈیٹا نہیں</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>نام بدلیں</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>وسائل</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>اعادہ</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>محفوظ کریں</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>عادتی وسائل محفوظ کرنے میں ناکامی</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>گیلری سے تصویر بچانے میں ناکامی</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>تھومبل دوبارہ حل</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>ترتیبات حاصل کرنے میں ناکامی</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>گیلریاں</value>

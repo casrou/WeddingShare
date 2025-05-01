@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "No changes were made to save",
             "Update_Settings_Success": "Settings updated successfully",
             "Upload": "Upload",
+            "Upload_Failed": "There was an issue uploading some files",
             "Upload_Invalid_Gallery_Detected": "Invalid gallery Id detected",
             "Upload_Invalid_Upload_Url": "Could not find upload Url",
             "Upload_Method": "Please select an upload method",

@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Ingen endringer ble gjort for å lagre",
             "Update_Settings_Success": "Innstillinger oppdatert",
             "Upload": "Last opp",
+            "Upload_Failed": "Det var et problem å laste opp noen filer",
             "Upload_Invalid_Gallery_Detected": "Ugyldig galleri Id detektert",
             "Upload_Invalid_Upload_Url": "Kunne ikke finne opplasting Url",
             "Upload_Method": "Vennligst velg en opplastingsmetode",

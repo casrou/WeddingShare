@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Ez da aldaketarik egin gordetzeko",
             "Update_Settings_Success": "Ezarpenak ongi eguneratu dira",
             "Upload": "Igo",
+            "Upload_Failed": "Arazo bat zegoen zenbait fitxategi igotzeko",
             "Upload_Invalid_Gallery_Detected": "Galeria baliogabea Id detektatuta",
             "Upload_Invalid_Upload_Url": "Ezin izan da igoera aurkitu Url",
             "Upload_Method": "Hautatu igotzeko metodoa",

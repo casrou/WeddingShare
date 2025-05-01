@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>ایجاد آفرینش</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>منابع سفارشی</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>شکست برای به دست آوردن منابع سفارشی</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>لطفا یک فایل تصویر را برای آپلود انتخاب کنید</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>آپلود منابع سفارشی</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>شکست برای حذف منابع سفارشی</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>شکست در آپلود منابع سفارشی</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>منطقه خطر</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>شکست در آپلود فایل</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>یک فایل با همان نام در حال حاضر وجود دارد</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>فیلتر</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>ویژگی های جدید Pending Review</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>منابع سفارشی آپلود نشده</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>بدون داده</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Rename</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>منابع</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>نقد</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Save QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>شکست برای ذخیره منابع سفارشی</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>شکست برای ذخیره تصویر به گالری</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>قطعنامه Thumbnail</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>شکست در تنظیمات</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>خطای گالری</value>

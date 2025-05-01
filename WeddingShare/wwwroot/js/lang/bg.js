@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Не са направени промени, за да се спаси",
             "Update_Settings_Success": "Настройките се актуализират успешно",
             "Upload": "Качване",
+            "Upload_Failed": "Имаше проблем с качването на някои файлове",
             "Upload_Invalid_Gallery_Detected": "Невалидна галерия Засечен",
             "Upload_Invalid_Upload_Url": "Грешка при качване Url",
             "Upload_Method": "Моля, изберете метод за качване",

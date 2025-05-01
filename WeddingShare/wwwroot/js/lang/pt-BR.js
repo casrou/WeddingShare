@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Não foram feitas alterações para salvar",
             "Update_Settings_Success": "Configurações atualizadas com sucesso",
             "Upload": "Enviar",
+            "Upload_Failed": "Houve um problema carregando alguns arquivos",
             "Upload_Invalid_Gallery_Detected": "Nome da galeria inválida",
             "Upload_Invalid_Upload_Url": "Não encontrei o endereço de envio",
             "Upload_Method": "Por favor, selecione um método de upload",

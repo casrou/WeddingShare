@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Nie wprowadzono żadnych zmian, aby zapisać",
             "Update_Settings_Success": "Ustawienia zaktualizowane pomyślnie",
             "Upload": "Wyślij",
+            "Upload_Failed": "Pojawił się problem z przesyłaniem plików",
             "Upload_Invalid_Gallery_Detected": "Nieprawidłowa galeria Wykryto",
             "Upload_Invalid_Upload_Url": "Nie można znaleźć wysyłania Url",
             "Upload_Method": "Proszę wybrać metodę wysyłania",

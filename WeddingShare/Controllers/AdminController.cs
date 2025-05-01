@@ -1,5 +1,5 @@
-using System.Collections.Generic;
 using System.IO.Compression;
+using System.Net;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -15,6 +15,7 @@ using WeddingShare.Helpers.Notifications;
 using WeddingShare.Models;
 using WeddingShare.Models.Database;
 using WeddingShare.Views.Admin;
+using WeddingShare.Views.Admin.Tabs;
 
 namespace WeddingShare.Controllers
 {
@@ -52,12 +53,12 @@ namespace WeddingShare.Controllers
             _logger = logger;
             _localizer = localizer;
 
-            TempDirectory = Path.Combine(_hostingEnvironment.WebRootPath, "temp");
-            UploadsDirectory = Path.Combine(_hostingEnvironment.WebRootPath, "uploads");
-            ThumbnailsDirectory = Path.Combine(_hostingEnvironment.WebRootPath, "thumbnails");
-            LogosDirectory = Path.Combine(_hostingEnvironment.WebRootPath, "logos");
-            BannersDirectory = Path.Combine(_hostingEnvironment.WebRootPath, "banners");
-            CustomResourcesDirectory = Path.Combine(_hostingEnvironment.WebRootPath, "custom_resources");
+            TempDirectory = Path.Combine(_hostingEnvironment.WebRootPath, Directories.TempFiles);
+            UploadsDirectory = Path.Combine(_hostingEnvironment.WebRootPath, Directories.Uploads);
+            ThumbnailsDirectory = Path.Combine(_hostingEnvironment.WebRootPath, Directories.Thumbnails);
+            LogosDirectory = Path.Combine(_hostingEnvironment.WebRootPath, Directories.Logos);
+            BannersDirectory = Path.Combine(_hostingEnvironment.WebRootPath, Directories.Banners);
+            CustomResourcesDirectory = Path.Combine(_hostingEnvironment.WebRootPath, Directories.CustomResources);
         }
 
         [AllowAnonymous]
@@ -220,7 +221,8 @@ namespace WeddingShare.Controllers
                             model.PendingRequests = await _database.GetPendingGalleryItems(gallery.Id);
                         }
                     }
-                            
+
+                    model.CustomResources = await _database.GetAllCustomResources();
                     model.Users = await _database.GetAllUsers();
                     model.Settings = (await _database.GetAllSettings())?.ToDictionary(x => x.Id.ToUpper(), x => x.Value ?? string.Empty);
                 }
@@ -275,7 +277,7 @@ namespace WeddingShare.Controllers
                 _logger.LogError(ex, $"{_localizer["Gallery_List_Failed"].Value} - {ex?.Message}");
             }
 
-            return PartialView(result ?? new List<GalleryModel>());
+            return PartialView("~/Views/Admin/Partials/GalleriesList.cshtml", result ?? new List<GalleryModel>());
         }
 
         [HttpGet]
@@ -312,7 +314,7 @@ namespace WeddingShare.Controllers
                 _logger.LogError(ex, $"{_localizer["Pending_Uploads_Failed"].Value} - {ex?.Message}");
             }
 
-            return PartialView(result ?? new List<GalleryItemModel>());
+            return PartialView("~/Views/Admin/Partials/PendingReviews.cshtml", result ?? new List<GalleryItemModel>());
         }
 
         [HttpGet]
@@ -338,7 +340,52 @@ namespace WeddingShare.Controllers
                 _logger.LogError(ex, $"{_localizer["Users_List_Failed"].Value} - {ex?.Message}");
             }
 
-            return PartialView(result ?? new List<UserModel>());
+            return PartialView("~/Views/Admin/Partials/UsersList.cshtml", result ?? new List<UserModel>());
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> CustomResources()
+        {
+            if (User?.Identity == null || !User.Identity.IsAuthenticated)
+            {
+                return Redirect("/");
+            }
+
+            List<CustomResourceModel>? result = null;
+
+            try
+            {
+                result = await _database.GetAllCustomResources();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"{_localizer["Custom_Resources_Failed"].Value} - {ex?.Message}");
+            }
+
+            return PartialView("~/Views/Admin/Partials/CustomResources.cshtml", result ?? new List<CustomResourceModel>());
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> SettingsPartial()
+        {
+            if (User?.Identity == null || !User.Identity.IsAuthenticated)
+            {
+                return Redirect("/");
+            }
+
+            var model = new Views.Admin.Partials.SettingsListModel();
+
+            try
+            {
+                model.Settings = (await _database.GetAllSettings())?.ToDictionary(x => x.Id.ToUpper(), x => x.Value ?? string.Empty);
+                model.CustomResources = await _database.GetAllCustomResources();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"{_localizer["Settings_Failed"].Value} - {ex?.Message}");
+            }
+
+            return PartialView("~/Views/Admin/Partials/SettingsList.cshtml", model);
         }
 
         [HttpPost]
@@ -1073,6 +1120,108 @@ namespace WeddingShare.Controllers
                 catch (Exception ex)
                 {
                     _logger.LogError(ex, $"{_localizer["MultiFactor_Token_Set_Failed"].Value} - {ex?.Message}");
+                }
+            }
+
+            return Json(new { success = false });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UploadCustomResource()
+        {
+            Response.StatusCode = (int)HttpStatusCode.BadRequest;
+
+            if (User?.Identity != null && User.Identity.IsAuthenticated)
+            {
+                try
+                {
+                    var files = Request?.Form?.Files;
+                    if (files != null && files.Count > 0)
+                    {
+                        var uploaded = 0;
+                        var errors = new List<string>();
+                        foreach (IFormFile file in files)
+                        {
+                            try
+                            {
+                                var filePath = Path.Combine(CustomResourcesDirectory, file.FileName);
+                                if (string.IsNullOrWhiteSpace(filePath))
+                                {
+                                    continue;
+                                }
+                                else if (_fileHelper.FileExists(filePath))
+                                {
+                                    errors.Add($"{_localizer["File_Upload_Failed"].Value}. {_localizer["Filename_Already_Exists"].Value}");
+                                }
+                                else
+                                {
+                                    _fileHelper.CreateDirectoryIfNotExists(CustomResourcesDirectory);
+                                    await _fileHelper.SaveFile(file, filePath, FileMode.Create);
+
+                                    var item = await _database.AddCustomResource(new CustomResourceModel()
+                                    {
+                                        FileName = file.FileName,
+                                        UploadedBy = User?.Identity.Name
+                                    });
+                                                                        
+                                    if (item?.Id > 0)
+                                    {
+                                        uploaded++;
+                                    }
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                _logger.LogWarning(ex, $"{_localizer["Save_To_Custom_Resources_Failed"].Value} - {ex?.Message}");
+                            }
+                        }
+
+                        Response.StatusCode = (int)HttpStatusCode.OK;
+
+                        return Json(new { success = uploaded > 0, errors });
+                    }
+                    else
+                    {
+                        return Json(new { success = false, errors = new List<string>() { _localizer["No_Files_For_Upload"].Value } });
+                    }
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, $"{_localizer["CustomResource_Upload_Failed"].Value} - {ex?.Message}");
+                }
+            }
+
+            return Json(new { success = false });
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> RemoveCustomResource(int id)
+        {
+            Response.StatusCode = (int)HttpStatusCode.BadRequest;
+
+            if (User?.Identity != null && User.Identity.IsAuthenticated)
+            {
+                try
+                {
+                    var resource = await _database.GetCustomResource(id);
+                    if (resource != null)
+                    {
+                        if (await _database.DeleteCustomResource(resource))
+                        {
+                            if (!string.IsNullOrWhiteSpace(resource.FileName))
+                            { 
+                                _fileHelper.DeleteFileIfExists(Path.Combine(CustomResourcesDirectory, resource.FileName));
+                            }
+
+                            Response.StatusCode = (int)HttpStatusCode.OK;
+
+                            return Json(new { success = true });
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, $"{_localizer["CustomResource_Delete_Failed"].Value} - {ex?.Message}");
                 }
             }
 
