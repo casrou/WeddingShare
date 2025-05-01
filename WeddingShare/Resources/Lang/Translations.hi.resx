@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>बनाना</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>कस्टम संसाधन</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>कस्टम संसाधन प्राप्त करने में विफल</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>कृपया अपलोड करने के लिए एक छवि फ़ाइल का चयन करें</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>कस्टम संसाधन अपलोड</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>कस्टम संसाधन हटाने में विफल</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>कस्टम संसाधन अपलोड करने में विफल</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Danger जोन</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>फाइल अपलोड करने में विफल</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>पहले से ही एक ही नाम के साथ एक फ़ाइल मौजूद है</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>फिल्टर</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>नए आइटम लंबित समीक्षा</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>कोई कस्टम संसाधन अपलोड नहीं किया गया</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>कोई डेटा नहीं</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>नाम बदलें</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>संसाधन</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>समीक्षा</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>QR सहेजें</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>कस्टम संसाधन को बचाने में विफल</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>गैलरी को छवि बचाने में विफल</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>थंबनेल संकल्प</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>सेटिंग्स प्राप्त करने में विफल</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>गैलरी डिफ़ॉल्ट</value>

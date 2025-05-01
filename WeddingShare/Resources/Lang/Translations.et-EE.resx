@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Loo</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Kohandatud ressursid</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Kohandatud ressursside hankimine nurjus</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Palun vali üleslaaditav pildifail</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Laadi kohandatud ressurss üles</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Kohandatud ressursi kustutamine nurjus</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Kohandatud ressursi üleslaadimine nurjus</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Ohutsooni</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Faili üleslaadimine nurjus</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Sama nimega fail on juba olemas</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filter</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Läbivaatamist ootavad uued elemendid</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Kohandatud ressursse pole üles laaditud</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Andmeid pole</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Ümbernimeta</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Ressursid</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Läbivaatamine</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Salvesta QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Kohandatud ressursi salvestamine nurjus</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Pildi salvestamine galeriisse nurjus</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Pisipildi eraldusvõime</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Seadistuste hankimine nurjus</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Galerii Vaikimisi</value>

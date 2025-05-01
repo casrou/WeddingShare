@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "לא נעשו שינויים להצלת",
             "Update_Settings_Success": "הגדרות מעודכנים בהצלחה",
             "Upload": "Upload",
+            "Upload_Failed": "הייתה בעיה להעלות קבצים",
             "Upload_Invalid_Gallery_Detected": "גלריה מזוהה",
             "Upload_Invalid_Upload_Url": "לא יכול למצוא העלאה Url",
             "Upload_Method": "אנא בחרו שיטת העלאה",

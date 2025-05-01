@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "बचाने के लिए कोई बदलाव नहीं किया गया था",
             "Update_Settings_Success": "सेटिंग सफलतापूर्वक अद्यतन",
             "Upload": "अपलोड",
+            "Upload_Failed": "कुछ फ़ाइलों को अपलोड करने का एक मुद्दा था",
             "Upload_Invalid_Gallery_Detected": "Invalid गैलरी Id पता लगा",
             "Upload_Invalid_Upload_Url": "अपलोड नहीं मिल सका Url",
             "Upload_Method": "कृपया एक अपलोड विधि का चयन करें",

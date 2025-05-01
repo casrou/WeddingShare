@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Vytvoriť</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Vlastné zdroje</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Nepodarilo sa získať vlastné zdroje</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Prosím vyberte súbor s obrázkom, ktorý chcete nahrať</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Odoslať vlastný zdroj</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Nepodarilo sa odstrániť vlastný zdroj</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Nepodarilo sa nahrať vlastný zdroj</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Nebezpečná zóna</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Nepodarilo sa nahrať súbor</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Súbor s rovnakým názvom už existuje</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filter</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Nové položky, ktoré čakajú na preskúmanie</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Žiadne nahrané vlastné zdroje</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Žiadne údaje</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Premenovať</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Zdroje</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Preskúmanie</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Uložiť QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Nepodarilo sa uložiť vlastný zdroj</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Nepodarilo sa uložiť obrázok do galérie</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Rozlíšenie náhľadu</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Nepodarilo sa získať nastavenia</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Galéria je predvolená</value>

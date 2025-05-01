@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Salvestamiseks muudatusi ei tehtud",
             "Update_Settings_Success": "Seadistused uuendati edukalt",
             "Upload": "Laadi üles",
+            "Upload_Failed": "Tekkis probleem mõnede failide üleslaadimisega",
             "Upload_Invalid_Gallery_Detected": "Vigane galerii Identifitseeritud",
             "Upload_Invalid_Upload_Url": "Üleslaadimist ei leitud Url",
             "Upload_Method": "Palun vali üleslaadimismeetod",

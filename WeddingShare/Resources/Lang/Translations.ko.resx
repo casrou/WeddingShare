@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>이름 *</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>회사 소개</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>사용자 정의 리소스를 얻기 위해 실패</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>이미지 파일을 업로드</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>사용자 정의 Resource</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>사용자 정의 리소스 삭제</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>사용자 정의 리소스 업로드 실패</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>위험 구역</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>파일 업로드</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>같은 이름을 가진 파일이 이미 존재합니다</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>제품정보</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>새로운 항목 공개 검토</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>사용자 지정 리소스 없음</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>데이터 없음</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>이름 *</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>지원하다</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>(주)</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>QR 코드</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>사용자 정의 리소스를 저장하는 실패</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>이미지 저장 실패 갤러리</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Thumbnail 해결책</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>설정에 실패</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>갤러리 기본값</value>

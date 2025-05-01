@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Lai saglabātu, netika veiktas nekādas izmaiņas",
             "Update_Settings_Success": "Iestatījumi veiksmīgi atjaunināti",
             "Upload": "Augšupielāde",
+            "Upload_Failed": "Bija problēma ar dažu failu augšupielādi",
             "Upload_Invalid_Gallery_Detected": "Nederīga galerija Id noteikts",
             "Upload_Invalid_Upload_Url": "Neizdevās atrast augšupielādi Url",
             "Upload_Method": "Lūdzu izvēlieties augšupielādes metodi",

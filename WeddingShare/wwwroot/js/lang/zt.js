@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "沒有儲存的變更",
             "Update_Settings_Success": "設定已成功更新",
             "Upload": "上傳",
+            "Upload_Failed": "有上傳一些檔案的問題",
             "Upload_Invalid_Gallery_Detected": "不合法的相簿 已檢出",
             "Upload_Invalid_Upload_Url": "找不到上傳 網址",
             "Upload_Method": "請選擇上傳方法",

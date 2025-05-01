@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Non houbo cambios para salvar",
             "Update_Settings_Success": "Configuración actualizada con éxito",
             "Upload": "Upload",
+            "Upload_Failed": "Houbo un problema para subir algúns ficheiros",
             "Upload_Invalid_Gallery_Detected": "Galería Inválida Id detectou",
             "Upload_Invalid_Upload_Url": "No se puede ver subida Url",
             "Upload_Method": "Seleccione un método de carga",

@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
@@ -14,6 +14,7 @@
 /WeddingShare/wwwroot/uploads/*
 !/WeddingShare/wwwroot/uploads/default
 /WeddingShare/wwwroot/uploads/default/*
+/WeddingShare/wwwroot/custom_resources/*
 /release notes
 /WeddingShare/weddingshare.db
 /WeddingShare/wedding-share.db

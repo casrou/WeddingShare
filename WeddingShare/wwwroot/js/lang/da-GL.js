@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Der blev ikke foretaget ændringer for at gemme",
             "Update_Settings_Success": "Indstillinger opdateret med succes",
             "Upload": "Upload",
+            "Upload_Failed": "Der var et problem uploade nogle filer",
             "Upload_Invalid_Gallery_Detected": "Ugyldigt galleri Id detekteret",
             "Upload_Invalid_Upload_Url": "Kunne ikke finde upload Url",
             "Upload_Method": "Vælg en uploadmetode",

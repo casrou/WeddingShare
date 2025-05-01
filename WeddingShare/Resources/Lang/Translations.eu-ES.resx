@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Sortu</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Baliabide pertsonalizatuak</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Huts egin du baliabide pertsonalizatuak eskuratzean</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Hautatu irudi-fitxategi bat igotzeko</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Igo baliabide pertsonalizatua</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Huts egin du baliabide pertsonalizatua ezabatzean</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Huts egin du baliabide pertsonalizatua igotzean</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Arrisku-eremua</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Huts egin du fitxategia igotzean</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Izen bereko fitxategia badago lehendik ere</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Iragazkia</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Elementu berriak gainbegiratzeko</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Ez da baliabide pertsonalizaturik igo</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Daturik ez</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Berrizendatu</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Baliabideak</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Berrikusi</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Gorde QRa</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Huts egin du baliabide pertsonalizatua gordetzean</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Huts egin du irudia galerian gordetzean</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Koadro txikien bereizmena</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Huts egin du ezarpenak lortzean</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Galeria lehenetsia</value>

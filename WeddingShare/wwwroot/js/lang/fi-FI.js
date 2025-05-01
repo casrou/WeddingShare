@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Tallennukseen ei tehty muutoksia",
             "Update_Settings_Success": "Asetukset päivitettiin onnistuneesti",
             "Upload": "Lähetä",
+            "Upload_Failed": "Oli ongelma ladata joitakin tiedostoja",
             "Upload_Invalid_Gallery_Detected": "Virheellinen galleria Havaittu",
             "Upload_Invalid_Upload_Url": "Lähetystä ei löytynyt Url",
             "Upload_Method": "Valitse lataustapa",

@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Δεν έγιναν αλλαγές για την αποθήκευση",
             "Update_Settings_Success": "Οι ρυθμίσεις ενημερώθηκαν με επιτυχία",
             "Upload": "Αποστολή",
+            "Upload_Failed": "Υπήρχε ένα θέμα που ανέβαζε κάποια αρχεία",
             "Upload_Invalid_Gallery_Detected": "Μη έγκυρη συλλογή Εντοπίστηκε",
             "Upload_Invalid_Upload_Url": "Αδυναμία εύρεσης αποστολής Ουρλ",
             "Upload_Method": "Παρακαλώ επιλέξτε μια μέθοδο αποστολής",

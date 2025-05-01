@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Nuk janë kryer ndryshime për të ruajtur",
             "Update_Settings_Success": "Rregullimet e rifreskuara me sukses",
             "Upload": "Ngarko",
+            "Upload_Failed": "Kishte një problem që ngarkonte disa dosje",
             "Upload_Invalid_Gallery_Detected": "Koleksion i pavlefshëm U zbulua",
             "Upload_Invalid_Upload_Url": "E pamundur gjetja e ngarkimit Url",
             "Upload_Method": "Ju lutem zgjidhni një metodë ngarkimi",

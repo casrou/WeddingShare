@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Tidak ada perubahan yang dibuat untuk disimpan",
             "Update_Settings_Success": "Pengaturan segera selesai dengan jayanya",
             "Upload": "Unggah",
+            "Upload_Failed": "Ada isu upload beberapa file",
             "Upload_Invalid_Gallery_Detected": "Galeri tidak sah Id terdeteksi",
             "Upload_Invalid_Upload_Url": "Tidak dapat menemukan upload Url",
             "Upload_Method": "Tolong pilih metode muat naik",

@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WeddingShare.Views.Admin
+namespace WeddingShare.Views.Admin.Partials
 {
-    public class UsersListModel : PageModel
+    public class GalleriesList : PageModel
     {
-        public UsersListModel() 
+        public GalleriesList()
         {
         }
 

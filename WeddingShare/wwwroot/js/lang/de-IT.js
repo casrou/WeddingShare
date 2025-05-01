@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Es wurden keine Änderungen vorgenommen, um zu sparen",
             "Update_Settings_Success": "Einstellungen erfolgreich aktualisiert",
             "Upload": "Hochladen",
+            "Upload_Failed": "Es gab ein Problem, einige Dateien hochzuladen",
             "Upload_Invalid_Gallery_Detected": "Invalide Galerie Identifiziert",
             "Upload_Invalid_Upload_Url": "Konnte kein Upload finden Url",
             "Upload_Method": "Bitte wählen Sie eine Upload-Methode",

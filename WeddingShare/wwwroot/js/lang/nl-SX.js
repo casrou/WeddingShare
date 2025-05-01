@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Er zijn geen wijzigingen aangebracht om op te slaan",
             "Update_Settings_Success": "Instellingen met succes bijgewerkt",
             "Upload": "Uploaden",
+            "Upload_Failed": "Er was een probleem met het uploaden van enkele bestanden",
             "Upload_Invalid_Gallery_Detected": "Ongeldige galerij Id gedetecteerd",
             "Upload_Invalid_Upload_Url": "Kon upload niet vinden Url",
             "Upload_Method": "Selecteer een uploadmethode",

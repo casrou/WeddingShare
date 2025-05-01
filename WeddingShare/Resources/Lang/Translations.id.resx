@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Buat</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Sumber Daya Ubahan</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Gagal mendapatkan sumber daya gubahan</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Silakan pilih berkas salinan asli untuk di-upload</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Unggah Sumber Daya Kustom</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Gagal menghapus sumber daya gubahan</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Gagal mengunggah sumber daya gubahan</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Zona Bahaya</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Gagal mengunggah berkas</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Berkas dengan nama yang sama sudah ada</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filter</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Ulasan Menular Baru</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Tak ada sumber daya gubahan yang diunggah</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Tanpa Data</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Ganti Nama</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Sumber Daya</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Ulasan</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Simpan QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Gagal menyimpan sumber daya gubahan</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Gagal menyimpan gambar pada galeri</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Resolusi Kuku</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Gagal mendapatkan pengaturan</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Default Gallery</value>

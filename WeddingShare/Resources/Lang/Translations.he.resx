@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>יצירת</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>משאבי מכס</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>נכשל לקבל משאבים מותאמים אישית</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>אנא בחר קובץ תמונה כדי להעלות</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>המונחים Custom</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>נכשל למחוק משאבים מותאמים אישית</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>נכשל להעלות משאבים מותאמים אישית</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>אזורי סכנה</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>נכשל להעלות קבצים</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>קובץ עם אותו שם כבר קיים</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filter</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>פריטים חדשים להורדה</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>אין מקורות מותאמים אישית</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>אין נתונים</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>שם מקור</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>משאבים</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Review</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>הצילו QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>נכשל לחסוך משאבים מותאמים אישית</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>לא מצליח להציל תמונה לגלריה</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>החלטה</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>לא מצליחים להגיע להגדרות</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>גלריה Defaults</value>

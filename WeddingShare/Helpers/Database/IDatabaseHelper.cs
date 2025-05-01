@@ -51,5 +51,10 @@ namespace WeddingShare.Helpers.Database
         Task<SettingModel?> SetSetting(SettingModel model, string? gallery = "");
         Task<bool> DeleteSetting(SettingModel model, string? gallery = "");
         Task<bool> DeleteAllSettings(string? gallery = "");
+        Task<CustomResourceModel?> GetCustomResource(int id);
+        Task<List<CustomResourceModel>> GetAllCustomResources();
+        Task<CustomResourceModel?> AddCustomResource(CustomResourceModel model);
+        Task<CustomResourceModel?> EditCustomResource(CustomResourceModel model);
+        Task<bool> DeleteCustomResource(CustomResourceModel model);
     }
 }

@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "변경 사항이 없습니다",
             "Update_Settings_Success": "설정은 성공적으로 업데이트",
             "Upload": "기타 제품",
+            "Upload_Failed": "일부 파일 업로드 문제가 있었다",
             "Upload_Invalid_Gallery_Detected": "잘못된 갤러리 Id 검출",
             "Upload_Invalid_Upload_Url": "업로드 할 수 없습니다. 뚱 베어",
             "Upload_Method": "자주 묻는 질문",

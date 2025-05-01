@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Taupymui nepadaryta jokių pakeitimų",
             "Update_Settings_Success": "@ info: status",
             "Upload": "Siųsti",
+            "Upload_Failed": "Ten buvo problema įkelti kai kuriuos failus",
             "Upload_Invalid_Gallery_Detected": "Klaidinga galerija Id nustatytas",
             "Upload_Invalid_Upload_Url": "Nepavyko rasti įkėlimo Url",
             "Upload_Method": "Pasirinkite įkėlimo metodą",

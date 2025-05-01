@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Немає змін",
             "Update_Settings_Success": "Налаштування оновлених успішно",
             "Upload": "Завантажити",
+            "Upload_Failed": "Видавництво деяких файлів",
             "Upload_Invalid_Gallery_Detected": "Галерея Id виявлений",
             "Upload_Invalid_Upload_Url": "Не знайшовши завантаження Уль",
             "Upload_Method": "Виберіть метод завантаження",

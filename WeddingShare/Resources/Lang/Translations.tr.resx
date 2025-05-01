@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Create</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Özel Kaynaklar</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Özel kaynakları elde etmek için başarısız oldu</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Lütfen yüklemek için bir görüntü dosyasını seçin</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Özel Kaynak</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Özel kaynağı silmek için başarısız oldu</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Özel kaynak yüklemeye başarısız oldu</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Tehlike Bölgesi</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Dosya yüklemeye başarısız oldu</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Aynı adı olan bir dosya zaten var</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filtre</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Yeni Maddeler</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Hiçbir özel kaynak yüklenmedi</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Veri yok</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Rename</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Kaynaklar Kaynakları Kaynaklar</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>İnceleme</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Kurtarın QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Özel kaynağı kurtarmak için başarısız oldu</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Galeriye resim kurtarmak için başarısız oldu</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Katnail Çözümü</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Ayarları almak için başarısız oldu</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Galeri Temsilleri</value>

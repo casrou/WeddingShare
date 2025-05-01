@@ -50,10 +50,10 @@ namespace WeddingShare.Controllers
             _logger = logger;
             _localizer = localizer;
 
-            ImagesDirectory = Path.Combine(_hostingEnvironment.WebRootPath, "images");
-            TempDirectory = Path.Combine(_hostingEnvironment.WebRootPath, "temp");
-            UploadsDirectory = Path.Combine(_hostingEnvironment.WebRootPath, "uploads");
-            ThumbnailsDirectory = Path.Combine(_hostingEnvironment.WebRootPath, "thumbnails");
+            ImagesDirectory = Path.Combine(_hostingEnvironment.WebRootPath, Directories.Images);
+            TempDirectory = Path.Combine(_hostingEnvironment.WebRootPath, Directories.TempFiles);
+            UploadsDirectory = Path.Combine(_hostingEnvironment.WebRootPath, Directories.Uploads);
+            ThumbnailsDirectory = Path.Combine(_hostingEnvironment.WebRootPath, Directories.Thumbnails);
         }
 
         [HttpPost]

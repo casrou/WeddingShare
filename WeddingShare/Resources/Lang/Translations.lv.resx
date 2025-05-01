@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Izveidot</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Pielāgoti resursi</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Neizdevās iegūt pielāgotus resursus</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Lūdzu izvēlieties augšupielādējamo attēla failu</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Augšupielādēt pielāgotu resursu</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Neizdevās izdzēst pielāgotu resursu</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Neizdevās augšupielādēt pielāgotu resursu</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Bīstamā zona</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Neizdevās augšupielādēt failu</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Fails ar tādu pašu nosaukumu jau eksistē</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filtrs</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Pārskatīšana</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Nav augšupielādētu pielāgotu resursu</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Nav datu</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Pārdēvēt</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Resursi</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Pārskatīšana</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Saglabāt QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Neizdevās saglabāt pielāgotu resursu</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Neizdevās saglabāt attēlu galerijā</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Sīktēla izšķirtspēja</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Neizdevās iegūt iestatījumus</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Galerijas noklusējumi</value>

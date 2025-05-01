@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>الإبداع</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>الموارد العرفية</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>فشل في الحصول على الموارد العادية</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>الرجاء اختيار ملف الصور للتحميل</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>تحديث الموارد العرفية</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>الفشل في حذف موارد العرف</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>عدم تحميل الموارد الجمركية</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>منطقة الخطر</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>فشل في رفع الملف</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>ملف له نفس الاسم موجود بالفعل</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>فيلم</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>البنود الجديدة قيد الاستعراض</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>No custom resources uploaded</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>لا توجد بيانات</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>الاسم</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>الموارد</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>الاستعراض</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>أنقذوا (كيو آر)</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>فشل في توفير موارد العرف</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>فشل في توفير الصور للمعرض</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>حل الإبهام</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>فشل في الحصول على الظروف</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>التخلف عن الدفع</value>

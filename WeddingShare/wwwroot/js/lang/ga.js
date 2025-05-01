@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Rinneadh aon athruithe a shábháil",
             "Update_Settings_Success": "Socruithe suas chun dáta go rathúil",
             "Upload": "Uaslódáil",
+            "Upload_Failed": "Bhí ceist uaslódáil roinnt comhaid",
             "Upload_Invalid_Gallery_Detected": "Gailearaí luachmhara Bhraith mé",
             "Upload_Invalid_Upload_Url": "Níorbh fhéidir teacht ar uaslódáil irl - Library Service",
             "Upload_Method": "Roghnaigh modh uaslódáil",

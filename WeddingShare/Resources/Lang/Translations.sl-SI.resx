@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Ustvari</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Lastni viri</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Ni moč pridobiti lastnih virov</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Prosim izberite slikovno datoteko za pošiljanje</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Pošlji po meri vir</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Ni uspelo zbrisati lastnega vira</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Ni moč naložiti lastnega vira</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Nevarno območje</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Ni moč naložiti datoteke</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>Datoteka z istim imenom že obstaja</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filter</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Nove postavke v pričakovanju pregleda</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Naloženih ni nobenih virov po meri</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Brez podatkov</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Preimenuj</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Viri</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Pregled</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Shrani QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Ni uspelo shraniti lastnega vira</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Ni moč shraniti slike v galerijo</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Ločljivost sličice</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Ni moč dobiti nastavitev</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Privzeta galerija</value>

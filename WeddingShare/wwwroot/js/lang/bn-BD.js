@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "সংরক্ষণ করার জন্য কোনো পরিবর্তন করা হয়নি",
             "Update_Settings_Success": "সাফল্যের সাথে আপডেট করা হয়েছে",
             "Upload": "আপলোড",
+            "Upload_Failed": "কিছু ফাইল আপলোড করতে সমস্যা হয়েছে",
             "Upload_Invalid_Gallery_Detected": "সংকলন বৈধ নয় সনাক্ত করা হয়েছে",
             "Upload_Invalid_Upload_Url": "আপলোড পাওয়া যায়নি ইউলার",
             "Upload_Method": "অনুগ্রহ করে একটি আপলোড পদ্ধতি নির্বাচন করুন",

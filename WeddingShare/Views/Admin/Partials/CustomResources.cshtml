@@ -1,0 +1,30 @@
+﻿@model List<CustomResourceModel>
+@using WeddingShare.Constants
+@using WeddingShare.Enums
+@using WeddingShare.Models.Database
+@using WeddingShare.Views.Admin
+
+@if (Model != null && Model.Any())
+{
+    foreach (var resource in Model)
+    {
+        <div class="custom-resource col-12 col-lg-4 mb-4 mb-lg-0 mb-1 mb-lg-4">
+            <div class="card">
+                <a href="/custom_resources/@resource.FileName" class="media-viewer-item" data-media-viewer-type="image" data-media-viewer-collection="@resource.Id" data-media-viewer-author="@resource?.FileName" data-media-viewer-download="false">
+                    <img src="/custom_resources/@resource?.FileName" class="review-tile" loading="lazy" />
+                </a>
+                <div class="card-body m-0 p-0">
+                    <div class="btn-group w-100" role="group" data-id="@resource?.Id">
+                        <button type="button" class="btn btn-danger custom-resource-delete" data-id="@resource.Id" data-name="@resource.FileName">@_localizer["Delete"].Value</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <div class="col-12 text-center border rounded py-3 py-lg-4">
+        <h3 class="display-6">@_localizer["No_Custom_Resources"].Value</h3>
+    </div>
+}

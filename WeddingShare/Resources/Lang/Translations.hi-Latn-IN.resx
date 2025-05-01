@@ -82,6 +82,18 @@
   <data name="403_Error_Title" xml:space="preserve">
     <value>एक्सेस डेनिडी</value>
   </data>
+  <data name="405_Error_Message" xml:space="preserve">
+    <value>आप अधिकतम गैलरी निर्माण सीमा तक पहुंच गए हैं</value>
+  </data>
+  <data name="405_Error_Title" xml:space="preserve">
+    <value>सीमित पहुंच</value>
+  </data>
+  <data name="406_Error_Message" xml:space="preserve">
+    <value>निर्दिष्ट गैलरी मौजूद नहीं है</value>
+  </data>
+  <data name="406_Error_Title" xml:space="preserve">
+    <value>अवैध गैलरी</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>कार्य</value>
   </data>
@@ -112,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>बनाना</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>कस्टम संसाधन</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>कस्टम संसाधन प्राप्त करने में विफल</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>कृपया अपलोड करने के लिए एक छवि फ़ाइल का चयन करें</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>कस्टम संसाधन अपलोड</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>कस्टम संसाधन हटाने में विफल</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>कस्टम संसाधन अपलोड करने में विफल</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Danger जोन</value>
   </data>
@@ -123,6 +153,9 @@
   </data>
   <data name="Delete_Confirmation" xml:space="preserve">
     <value>क्या आप इस गैलरी को हटाना चाहते हैं?</value>
+  </data>
+  <data name="Destructive_Action_Performed" xml:space="preserve">
+    <value>विनाशकारी कार्रवाई का प्रदर्शन</value>
   </data>
   <data name="Download_Gallery_Not_Allowed" xml:space="preserve">
     <value>आप इस गैलरी को डाउनलोड करने के लिए अधिकृत नहीं हैं</value>
@@ -187,6 +220,9 @@
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>फाइल अपलोड करने में विफल</value>
   </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>पहले से ही एक ही नाम के साथ एक फ़ाइल मौजूद है</value>
+  </data>
   <data name="Filter" xml:space="preserve">
     <value>फिल्टर</value>
   </data>
@@ -216,6 +252,9 @@
   </data>
   <data name="Gallery_Key_Placeholder" xml:space="preserve">
     <value>शादी का दिन</value>
+  </data>
+  <data name="Gallery_Limit_Reached" xml:space="preserve">
+    <value>गैलरी की अधिकतम अनुमति संख्या तक पहुंच गई है</value>
   </data>
   <data name="Gallery_List_Failed" xml:space="preserve">
     <value>गैलरी सूची प्राप्त करने में विफल</value>
@@ -313,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>नए आइटम लंबित समीक्षा</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>कोई कस्टम संसाधन अपलोड नहीं किया गया</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>कोई डेटा नहीं</value>
   </data>
@@ -340,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>नाम बदलें</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>संसाधन</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>समीक्षा</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>QR सहेजें</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>कस्टम संसाधन को बचाने में विफल</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>गैलरी को छवि बचाने में विफल</value>
@@ -481,6 +529,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>नया टैब लिंक</value>
   </data>
+  <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
+    <value>उपयोगकर्ताओं को कितने गैलरी बनाने की अनुमति है</value>
+  </data>
+  <data name="Settings_Basic_MaxGalleryCount_Label" xml:space="preserve">
+    <value>मैक्स गैलरी गणना</value>
+  </data>
   <data name="Settings_Basic_SingleGalleryMode_Help" xml:space="preserve">
     <value>क्या एक या अधिक गैलरी होना चाहिए</value>
   </data>
@@ -492,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>थंबनेल संकल्प</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>सेटिंग्स प्राप्त करने में विफल</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>गैलरी डिफ़ॉल्ट</value>
@@ -507,6 +564,12 @@
   </data>
   <data name="Settings_Gallery_BannerImage_Label" xml:space="preserve">
     <value>बैनर छवि</value>
+  </data>
+  <data name="Settings_Gallery_CameraUploads_Help" xml:space="preserve">
+    <value>क्या मेहमानों को फ़ाइल पिकर या कैमरे के बीच विकल्प होना चाहिए</value>
+  </data>
+  <data name="Settings_Gallery_CameraUploads_Label" xml:space="preserve">
+    <value>कैमरा अपलोड</value>
   </data>
   <data name="Settings_Gallery_Columns_Help" xml:space="preserve">
     <value>प्रदर्शित करने के लिए स्तंभों की संख्या</value>

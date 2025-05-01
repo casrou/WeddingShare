@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>建立</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>自訂資源</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>取得自訂資源失敗</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>請選擇要上傳的影像檔</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>上傳自訂資源</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>刪除自訂資源失敗</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>上傳自訂資源失敗</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>危險區域</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>上傳檔案失敗</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>有同名檔案已存在</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>分頁</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>等待审查的新項目</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>未上傳自訂資源</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>沒有資料</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>重命名</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>資源</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>审查</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>儲存 QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>儲存自訂資源失敗</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>儲存影像到相簿失敗</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>縮圖解析度</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>取得設定值失敗</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>相簿預設值</value>

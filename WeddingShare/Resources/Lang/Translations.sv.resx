@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Skapa</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Anpassade resurser</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Misslyckades med att få anpassade resurser</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Välj en bildfil för att ladda upp</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Ladda upp anpassad resurs</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Underlåten att ta bort anpassad resurs</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Misslyckades med att ladda upp anpassad resurs</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Danger Zone</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Misslyckades med att ladda upp fil</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>En fil med samma namn finns redan</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filter</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Nya objekt väntande granskning</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Inga anpassade resurser laddade upp</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Inga data</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Rename</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Resurser</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Granska</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Spara QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Misslyckades med att spara anpassad resurs</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Misslyckades med att spara bild till galleriet</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Thumbnail resolution</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Misslyckades med att få inställningar</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Galleri Standarder</value>

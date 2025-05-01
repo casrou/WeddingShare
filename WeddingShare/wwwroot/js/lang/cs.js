@@ -110,6 +110,7 @@
             "Update_Settings_No_Change": "Pro záchranu nebyly provedeny žádné změny",
             "Update_Settings_Success": "Nastavení úspěšně aktualizována",
             "Upload": "Načíst",
+            "Upload_Failed": "Byl tu problém s nahráním některých souborů",
             "Upload_Invalid_Gallery_Detected": "Neplatná galerie Zjištěno ID",
             "Upload_Invalid_Upload_Url": "Nelze najít upload Url",
             "Upload_Method": "Prosím vyberte metodu nahrávání",

@@ -124,6 +124,24 @@
   <data name="Create" xml:space="preserve">
     <value>Opret</value>
   </data>
+  <data name="Custom_Resources" xml:space="preserve">
+    <value>Brugerdefinerede ressourcer</value>
+  </data>
+  <data name="Custom_Resources_Failed" xml:space="preserve">
+    <value>Kunne ikke få brugerdefinerede ressourcer</value>
+  </data>
+  <data name="Custom_Resources_Upload_Help" xml:space="preserve">
+    <value>Vælg en billedfil at uploade</value>
+  </data>
+  <data name="Custom_Resources_Upload_Label" xml:space="preserve">
+    <value>Upload brugerdefineret ressource</value>
+  </data>
+  <data name="CustomResource_Delete_Failed" xml:space="preserve">
+    <value>Kunne ikke slette brugerdefinerede ressource</value>
+  </data>
+  <data name="CustomResource_Upload_Failed" xml:space="preserve">
+    <value>Kunne ikke uploade brugerdefinerede ressource</value>
+  </data>
   <data name="Danger_Zone" xml:space="preserve">
     <value>Fare-zone</value>
   </data>
@@ -201,6 +219,9 @@
   </data>
   <data name="File_Upload_Failed" xml:space="preserve">
     <value>Kunne ikke uploade fil</value>
+  </data>
+  <data name="Filename_Already_Exists" xml:space="preserve">
+    <value>En fil med det samme navn findes allerede</value>
   </data>
   <data name="Filter" xml:space="preserve">
     <value>Filter</value>
@@ -331,6 +352,9 @@
   <data name="New_Items_Pending_Review" xml:space="preserve">
     <value>Nye elementer afventer revision</value>
   </data>
+  <data name="No_Custom_Resources" xml:space="preserve">
+    <value>Ingen brugerdefinerede ressourcer uploadet</value>
+  </data>
   <data name="No_Data" xml:space="preserve">
     <value>Ingen data</value>
   </data>
@@ -358,11 +382,17 @@
   <data name="Rename" xml:space="preserve">
     <value>Omdøb</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Ressourcer</value>
+  </data>
   <data name="Review" xml:space="preserve">
     <value>Revision</value>
   </data>
   <data name="Save_QR" xml:space="preserve">
     <value>Gem QR</value>
+  </data>
+  <data name="Save_To_Custom_Resources_Failed" xml:space="preserve">
+    <value>Kunne ikke gemme brugerdefinerede ressource</value>
   </data>
   <data name="Save_To_Gallery_Failed" xml:space="preserve">
     <value>Kunne ikke gemme billede til galleri</value>
@@ -516,6 +546,9 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Miniatureopløsning</value>
+  </data>
+  <data name="Settings_Failed" xml:space="preserve">
+    <value>Kunne ikke få indstillinger</value>
   </data>
   <data name="Settings_Gallery" xml:space="preserve">
     <value>Gallery Standard</value>
