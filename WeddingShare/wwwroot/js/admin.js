@@ -151,7 +151,9 @@ function selectActiveTab(tab) {
 (function () {
     document.addEventListener('DOMContentLoaded', function () {
 
-        selectActiveTab(window.location.hash);
+        if (window.location.pathname.toLowerCase() == '/admin') {
+            selectActiveTab(window.location.hash);
+        }
 
         $(document).off('click', 'a.pnl-selector').on('click', 'a.pnl-selector', function (e) {
             preventDefaults(e);
@@ -172,6 +174,7 @@ function selectActiveTab(tab) {
                     return { key: element.data('setting-name'), value: element.val() };
                 });
 
+                displayLoader(localization.translate('Loading'));
                 $.ajax({
                     url: '/Admin/UpdateSettings',
                     method: 'PUT',
@@ -192,6 +195,65 @@ function selectActiveTab(tab) {
             } else {
                 displayMessage(localization.translate('Update_Settings'), localization.translate('Update_Settings_No_Change'));
             }
+        });
+
+        $(document).off('click', 'button.btnGallerySettings').on('click', 'button.btnGallerySettings', function (e) {
+            preventDefaults(e);
+
+            let galleryId = $(this).data('gallery-id');
+
+            $.ajax({
+                type: 'GET',
+                url: `/Admin/Settings/${galleryId}`,
+                success: function (data) {
+                    if (data !== undefined) {
+                        displayPopup({
+                            Title: localization.translate('Gallery_Settings'),
+                            CustomHtml: data,
+                            Buttons: [{
+                                Text: localization.translate('Save'),
+                                Class: 'btn-primary',
+                                Callback: function () {
+                                    let updatedFields = $('.setting-field[data-updated="true"]');
+                                    if (updatedFields.length > 0) {
+                                        var settingsList = $.map(updatedFields, function (item) {
+                                            let element = $(item);
+                                            return { key: element.data('setting-name'), value: element.val() };
+                                        });
+
+                                        displayLoader(localization.translate('Loading'));
+                                        $.ajax({
+                                            url: '/Admin/UpdateSettings',
+                                            method: 'PUT',
+                                            data: { model: settingsList, galleryId: galleryId }
+                                        })
+                                            .done(data => {
+                                                if (data.success === true) {
+                                                    displayMessage(localization.translate('Update_Settings'), localization.translate('Update_Settings_Success'), null, function () {
+                                                        window.location.reload();
+                                                    });
+                                                } else if (data.message) {
+                                                    displayMessage(localization.translate('Update_Settings'), localization.translate('Update_Settings_Failed'), [data.message]);
+                                                } else {
+                                                    displayMessage(localization.translate('Update_Settings'), localization.translate('Update_Settings_Failed'));
+                                                }
+                                            })
+                                            .fail((xhr, error) => {
+                                                displayMessage(localization.translate('Update_Settings'), localization.translate('Update_Settings_Failed'), [error]);
+                                            });
+                                    } else {
+                                        displayMessage(localization.translate('Update_Settings'), localization.translate('Update_Settings_No_Change'));
+                                    }
+                                }
+                            }, {
+                                Text: localization.translate('Close')
+                            }]
+                        });
+                    } else {
+                        displayMessage(localization.translate('Gallery_Settings'), localization.translate('Gallery_Settings_None'));
+                    }
+                }
+            });
         });
 
         $(document).off('click', 'button.btnReviewApprove').on('click', 'button.btnReviewApprove', function (e) {
@@ -504,7 +566,6 @@ function selectActiveTab(tab) {
 
             displayPopup({
                 Title: localization.translate('Export_Data'),
-                //Message: localization.translate('Export_Data_Message'),
                 Fields: [{
                     Id: 'database',
                     Type: 'checkbox',

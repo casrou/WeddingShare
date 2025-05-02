@@ -95,6 +95,11 @@
         <script src="~/js/site.js" asp-append-version="true"></script>
         <script src="~/js/popup.js" asp-append-version="true"></script>
         <script src="~/js/media-viewer.js" asp-append-version="true"></script>
+
+        @if (User?.Identity != null && User.Identity.IsAuthenticated)
+        {
+            <script src="~/js/admin.js" asp-append-version="true"></script>
+        }
     </head>
     <body>
         <!-- Navigation -->

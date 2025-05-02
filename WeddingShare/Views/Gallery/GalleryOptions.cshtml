@@ -35,7 +35,7 @@
 {
     <div class="row px-4 mb-4 presentation-hidden">
         <div class="col-12 px-2 px-xl-0">
-            @if (User?.Identity != null && User.Identity.IsAuthenticated)
+            @if (User?.Identity != null && User.Identity.IsAuthenticated && !(Model?.GalleryName ?? "Default").Equals("All", StringComparison.OrdinalIgnoreCase))
             {
                 <div class="btn-group w-100 mb-2">
                     <button class="btnGallerySettings btn btn-danger btn-sm" type="button" data-gallery-name="@Model?.GalleryName" data-gallery-id="@Model?.GalleryId">

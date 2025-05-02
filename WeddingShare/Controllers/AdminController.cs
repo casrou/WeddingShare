@@ -15,7 +15,6 @@ using WeddingShare.Helpers.Notifications;
 using WeddingShare.Models;
 using WeddingShare.Models.Database;
 using WeddingShare.Views.Admin;
-using WeddingShare.Views.Admin.Tabs;
 
 namespace WeddingShare.Controllers
 {
@@ -386,6 +385,34 @@ namespace WeddingShare.Controllers
             }
 
             return PartialView("~/Views/Admin/Partials/SettingsList.cshtml", model);
+        }
+
+        [HttpGet]
+        [Route("Admin/Settings/{galleryId}")]
+        public async Task<IActionResult> GallerySettingsPartial(int galleryId)
+        {
+            if (User?.Identity == null || !User.Identity.IsAuthenticated)
+            {
+                return Redirect("/");
+            }
+
+            var model = new Views.Admin.Settings.GalleryModel();
+
+            try
+            {
+                var gallery = await _database.GetGallery(galleryId);
+                if (!string.IsNullOrWhiteSpace(gallery?.Name))
+                { 
+                    model.Settings = (await _database.GetAllSettings(gallery.Name))?.Where(x => x.Id.StartsWith(Settings.Gallery.BaseKey, StringComparison.OrdinalIgnoreCase))?.ToDictionary(x => x.Id.ToUpper(), x => x.Value ?? string.Empty);
+                    model.CustomResources = await _database.GetAllCustomResources();
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"{_localizer["Settings_Failed"].Value} - {ex?.Message}");
+            }
+
+            return PartialView("~/Views/Admin/Settings/Gallery.cshtml", model);
         }
 
         [HttpPost]
@@ -836,7 +863,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateSettings(List<UpdateSettingsModel> model)
+        public async Task<IActionResult> UpdateSettings(List<UpdateSettingsModel> model, int? galleryId = null)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
             {
@@ -846,6 +873,12 @@ namespace WeddingShare.Controllers
                     {
                         var success = true;
 
+                        GalleryModel? gallery = null;
+                        if (galleryId != null)
+                        {
+                            gallery = await _database.GetGallery((int)galleryId);
+                        }
+
                         foreach (var m in model)
                         {
                             try
@@ -854,9 +887,9 @@ namespace WeddingShare.Controllers
                                 {
                                     Id = m.Key,
                                     Value = m.Value
-                                });
+                                }, gallery?.Name ?? string.Empty);
 
-                                if (setting == null || setting.Value != (m.Value ?? string.Empty))
+                                if (setting == null || (setting.Value ?? string.Empty) != (m.Value ?? string.Empty))
                                 {
                                     success = false;
                                 }
