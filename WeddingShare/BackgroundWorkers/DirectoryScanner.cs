@@ -208,16 +208,22 @@ namespace WeddingShare.BackgroundWorkers
 
         private async Task ScanCustomResources()
         {
+            var existing = await databaseHelper.GetAllCustomResources();
+
             var customResourcesDirectory = Path.Combine(hostingEnvironment.WebRootPath, Directories.CustomResources);
             foreach (var resource in fileHelper.GetFiles(customResourcesDirectory))
             {
                 try
                 {
-                    await databaseHelper.AddCustomResource(new CustomResourceModel()
-                    {
-                        FileName = Path.GetFileName(resource),
-                        UploadedBy = "DirectoryScanner"
-                    });
+                    var filename = Path.GetFileName(resource);
+                    if (!existing.Any(x => filename.Equals(x.FileName, StringComparison.OrdinalIgnoreCase)))
+                    { 
+                        await databaseHelper.AddCustomResource(new CustomResourceModel()
+                        {
+                            FileName = filename,
+                            UploadedBy = "DirectoryScanner"
+                        });
+                    }
                 }
                 catch { }
             }

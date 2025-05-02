@@ -248,11 +248,6 @@
             await imageUpload(dataRefs);
         }
 
-        $(document).off('click', 'button.btnGallerySettings').on('click', 'button.btnGallerySettings', function (e) {
-            preventDefaults(e);
-            displayMessage(localization.translate('Gallery_Settings'), localization.translate('Feature_Coming_Soon'));
-        });
-
         $(document).off('click', 'button.btnSaveQRCode').on('click', 'button.btnSaveQRCode', function (e) {
             preventDefaults(e);
 

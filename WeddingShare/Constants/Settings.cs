@@ -6,12 +6,14 @@
 
         public class Account
         {
+            public const string BaseKey = "Settings:Account:";
             public const string ShowProfileIcon = "Settings:Account:Show_Profile_Icon";
             public const string LockoutAttempts = "Settings:Account:Lockout_Attempts";
             public const string LockoutMins = "Settings:Account:Lockout_Mins";
 
             public class Admin
             {
+                public const string BaseKey = "Settings:Account:Admin:";
                 public const string Username = "Settings:Account:Admin:Username";
                 public const string Password = "Settings:Account:Admin:Password";
                 public const string LogPassword = "Settings:Account:Admin:Log_Password";
@@ -20,6 +22,7 @@
 
         public class Basic
         {
+            public const string BaseKey = "Settings:";
             public const string Title = "Settings:Title";
             public const string Logo = "Settings:Logo";
             public const string BaseUrl = "Settings:Base_Url";
@@ -36,6 +39,7 @@
 
         public class Database
         {
+            public const string BaseKey = "Settings:Database:";
             public const string Type = "Settings:Database:Type";
             public const string ConnectionString = "Settings:Database:Connection_String";
             public const string SyncFromConfig = "Settings:Database:Sync_From_Config";
@@ -43,6 +47,7 @@
 
         public class Gallery
         {
+            public const string BaseKey = "Settings:Gallery:";
             public const string BannerImage = "Settings:Gallery:Banner_Image";
             public const string Quote = "Settings:Gallery:Quote";
             public const string SecretKey = "Settings:Gallery:Secret_Key";
@@ -65,6 +70,7 @@
 
             public class QRCode
             {
+                public const string BaseKey = "Settings:Gallery:QR_Code:";
                 public const string Enabled = "Settings:Gallery:QR_Code:Enabled";
                 public const string DefaultView = "Settings:Gallery:QR_Code:Default_View";
                 public const string DefaultSort = "Settings:Gallery:QR_Code:Default_Sort";
@@ -73,12 +79,14 @@
 
         public class GallerySelector
         {
+            public const string BaseKey = "Settings:Gallery_Selector:";
             public const string Dropdown = "Settings:Gallery_Selector:Dropdown";
             public const string HideDefaultOption = "Settings:Gallery_Selector:Hide_Default_Option";
         }
 
         public class IdentityCheck
         {
+            public const string BaseKey = "Settings:Identity_Check:";
             public const string Enabled = "Settings:Identity_Check:Enabled";
             public const string ShowOnPageLoad = "Settings:Identity_Check:Show_On_Page_Load";
             public const string RequireIdentityForUpload = "Settings:Identity_Check:Require_Identity_For_Upload";
@@ -86,12 +94,14 @@
 
         public class Languages
         {
+            public const string BaseKey = "Settings:Languages:";
             public const string Enabled = "Settings:Languages:Enabled";
             public const string Default = "Settings:Languages:Default";
         }
 
         public class Slideshow
         {
+            public const string BaseKey = "Settings:Slideshow:";
             public const string Interval = "Settings:Slideshow:Interval";
             public const string Fade = "Settings:Slideshow:Fade";
             public const string Limit = "Settings:Slideshow:Limit";
@@ -100,6 +110,7 @@
 
         public class Themes
         {
+            public const string BaseKey = "Settings:Themes:";
             public const string Enabled = "Settings:Themes:Enabled";
             public const string Default = "Settings:Themes:Default";
         }

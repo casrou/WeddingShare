@@ -1243,19 +1243,41 @@ namespace WeddingShare.Helpers.Database
         {
             List<SettingModel> result = new List<SettingModel>();
 
-            var galleryId = await this.GetGalleryId(gallery);
             using (var conn = await GetConnection())
             {
-                var cmd = CreateCommand($"SELECT `id`, `value` FROM (SELECT `id`, `value`, '2' AS `priority` FROM `settings` UNION SELECT `id`, `value`, '1' AS `priority` FROM `gallery_settings` WHERE `gallery_id`=@GalleryId) GROUP BY `id` ORDER BY `priority` ASC;", conn);
-                
-                cmd.Parameters.AddWithValue("GalleryId", galleryId ?? 0);
+                await conn.OpenAsync();
+
+                // Get Default Settings
+                var cmd = CreateCommand($"SELECT `id`, `value` FROM `settings`;", conn);
                 cmd.CommandType = CommandType.Text;
 
-                await conn.OpenAsync();
                 using (var reader = await cmd.ExecuteReaderAsync())
                 {
                     result = await ReadSettings(reader);
                 }
+
+                if (result != null && !string.IsNullOrWhiteSpace(gallery))
+                { 
+                    var galleryId = await this.GetGalleryId(gallery);
+                    if (galleryId != null)
+                    { 
+                        // Get Gallery Overrides
+                        cmd = CreateCommand($"SELECT `id`, `value` FROM `gallery_settings` WHERE `gallery_id`=@GalleryId;", conn);
+                        cmd.Parameters.AddWithValue("GalleryId", (int)galleryId);
+                        cmd.CommandType = CommandType.Text;
+
+                        using (var reader = await cmd.ExecuteReaderAsync())
+                        {
+                            var overrides = (await ReadSettings(reader))?.Where(x => !string.IsNullOrWhiteSpace(x.Value));
+                            if (overrides != null && overrides.Any())
+                            {
+                                result = result.Where(x => !overrides.Any(o => o.Id.Equals(x.Id, StringComparison.OrdinalIgnoreCase))).ToList();
+                                result.AddRange(overrides);
+                            }
+                        }
+                    }
+                }
+
                 await conn.CloseAsync();
             }
 
@@ -1414,38 +1436,73 @@ namespace WeddingShare.Helpers.Database
             {
                 try
                 {
-                    var result = await GetSetting(model.Id, gallery);
-                    if (result == null)
+                    if (!string.IsNullOrWhiteSpace(gallery))
                     {
-                        return await AddSetting(new SettingModel()
+                        // Gallery Override
+                        var result = await GetGallerySpecificSetting(model.Id, gallery);
+                        if (result == null && !string.IsNullOrEmpty(model.Value))
                         {
-                            Id = model.Id.ToUpper(),
-                            Value = model.Value
-                        }, gallery);
+                            return await AddSetting(new SettingModel()
+                            {
+                                Id = model.Id.ToUpper(),
+                                Value = model.Value
+                            }, gallery);
+                        }
+                        else if (result != null && !string.IsNullOrEmpty(model.Value))
+                        {
+                            return await EditSetting(new SettingModel()
+                            {
+                                Id = model.Id.ToUpper(),
+                                Value = model.Value
+                            }, gallery);
+                        }
+                        else if (result != null && string.IsNullOrEmpty(model.Value))
+                        {
+                            await DeleteSetting(new SettingModel()
+                            {
+                                Id = model.Id.ToUpper(),
+                                Value = model.Value
+                            }, gallery);
+                        }
                     }
                     else
                     {
-                        return await EditSetting(new SettingModel()
+                        // Default Setting
+                        var result = await GetSetting(model.Id);
+                        if (result == null && !string.IsNullOrEmpty(model.Value))
                         {
-                            Id = model.Id.ToUpper(),
-                            Value = model.Value
-                        }, gallery);
+                            return await AddSetting(new SettingModel()
+                            {
+                                Id = model.Id.ToUpper(),
+                                Value = model.Value
+                            });
+                        }
+                        else if (result != null && !string.IsNullOrEmpty(model.Value))
+                        {
+                            return await EditSetting(new SettingModel()
+                            {
+                                Id = model.Id.ToUpper(),
+                                Value = model.Value
+                            });
+                        }
+                        else if (result != null && string.IsNullOrEmpty(model.Value))
+                        {
+                            await DeleteSetting(new SettingModel()
+                            {
+                                Id = model.Id.ToUpper(),
+                                Value = model.Value
+                            });
+                        }
                     }
                 }
-                catch
-                {
-                    if (await DeleteSetting(model, gallery))
-                    {
-                        return await AddSetting(new SettingModel()
-                        {
-                            Id = model.Id.ToUpper(),
-                            Value = model.Value
-                        }, gallery);
-                    }
-                }
+                catch { }
             }
 
-            return null;
+            return new SettingModel()
+            {
+                Id = model.Id.ToUpper(),
+                Value = null
+            };
         }
 
         public async Task<bool> DeleteSetting(SettingModel model, string? gallery = "")
@@ -1458,7 +1515,7 @@ namespace WeddingShare.Helpers.Database
                 SqliteCommand cmd;
                 if (!string.IsNullOrWhiteSpace(gallery))
                 {
-                    cmd = CreateCommand($"DELETE FROM `gallery_settings` WHERE `id`=@Id AND `gallery_id`=@GalleryId';", conn);
+                    cmd = CreateCommand($"DELETE FROM `gallery_settings` WHERE `id`=@Id AND `gallery_id`=@GalleryId;", conn);
                     cmd.Parameters.AddWithValue("GalleryId", galleryId);
                 }
                 else
@@ -1499,7 +1556,7 @@ namespace WeddingShare.Helpers.Database
                 SqliteCommand cmd;
                 if (!string.IsNullOrWhiteSpace(gallery))
                 { 
-                    cmd = CreateCommand($"DELETE FROM `gallery_settings` WHERE `gallery_id`=@GalleryId';", conn);
+                    cmd = CreateCommand($"DELETE FROM `gallery_settings` WHERE `gallery_id`=@GalleryId;", conn);
                     cmd.Parameters.AddWithValue("GalleryId", galleryId);
                 }
                 else
@@ -1508,7 +1565,7 @@ namespace WeddingShare.Helpers.Database
                 }
 
                 cmd.CommandType = CommandType.Text;
-
+                
                 await conn.OpenAsync();
                 var tran = await CreateTransaction(conn);
 
