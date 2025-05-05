@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Virheellinen galleria</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Toiminto</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Toimet</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Hyväksytty</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Tarkastus</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Bulk hyväksytty kaikki vireillä olevat tarkistukset</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Bulk hylkäsi kaikki vireillä olevat tarkistukset</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Luotu galleria</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Luonut uuden käyttäjän</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Poistettu oma resurssi</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Ladattu oma resurssi</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Poistettu galleria</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Poistettu käyttäjä</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Vie varmuuskopio</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Virheellinen kirjautumisyritys havaittu</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Epäonnistuneet kirjautumisyritykset lasketaan reset</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Froze-käyttäjä</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Tuotiin varmuuskopio</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>hyväksytty galleriassa</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>poistettu galleriasta</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>hylätty galleriassa</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Kuinka monta lokia näytetään</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Raja</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Tarkastusluetteloa ei saatu</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Kirjautunut ulos</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Tarkastuslokit</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Lisätty monitekijä niiden tilille</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Oikein multi-factor token</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Nollaa niiden monitekijän avain</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Nollaa käyttäjälle tarkoitettu monitekijä</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Hakutermiin perustuvat suodinlokit</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Hakusana</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Päivitetty asetus gallerialle</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Peruuta käyttäjä</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Päivitetty galleria</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Päivitetty käyttäjä</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Käyttäjä kirjautunut sisään</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Pyyhi kaikki galleriat</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Pyyhitty galleria</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Saatavilla olevat galleriat</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Tilin tilaa ei voitu tarkistaa</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Puhdista</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Käyttö</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Aikaleima</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Yhteensä</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Lähettäjä</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Käyttäjä</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Annettu salasana ja konfrim salasana eivät täsmää</value>

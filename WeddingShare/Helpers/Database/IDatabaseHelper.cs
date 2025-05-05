@@ -56,5 +56,7 @@ namespace WeddingShare.Helpers.Database
         Task<CustomResourceModel?> AddCustomResource(CustomResourceModel model);
         Task<CustomResourceModel?> EditCustomResource(CustomResourceModel model);
         Task<bool> DeleteCustomResource(CustomResourceModel model);
+        Task<IEnumerable<AuditLogModel>?> GetAuditLogs(string term = "", int limit = 100);
+        Task<AuditLogModel?> AddAuditLog(AuditLogModel model);
     }
 }

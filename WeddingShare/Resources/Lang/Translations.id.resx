@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Galeri Tidak Valid</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Aksi</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Aksi</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Disetujui</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Audit</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Bulk menyetujui semua ulasan yang tertunda</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Bulk menolak semua ulasan yang tertunda</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Galeri dibuat</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Dibuat pengguna baru</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Menghapus sumber daya gubahan</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Mengunggah sumber daya gubahan</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Galeri terhapus</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Dihapus pengguna</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Exported a backup</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Gagal terdeteksi percobaan log masuk</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Percobaan log masuk gagal menghitung reset</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Pengguna beku</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Mengimpor backup</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>disetujui dalam galeri</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>dihapus dalam galeri</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>ditolak dalam galeri</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Berapa banyak log yang ditampilkan</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Batas</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Gagal mendapatkan daftar audit</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Log keluar</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Log Audit</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Menambahkan faktor multi- ke akun mereka</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Menyediakan token multi- faktor yang benar</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Reset kunci multifaktor mereka</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Reset multi- faktor bagi pengguna</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Filter log berbasis pada sebuah istilah pencarian</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Term Pencarian</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Pemutakhiran pengaturan untuk galeri</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Pengguna tak membeku</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Galeri yang dimutakhirkan</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Diperbarui pengguna</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Pengguna log masuk</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Menyeka semua galeri</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Galeri Wiped</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Galeri Tersedia</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Gagal memeriksa keadaan akun</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Bersihkan</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Penggunaan</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Penanda waktu</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Total</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Uploader</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Pengguna</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Sandi dan konfram yang diberikan tidak cocok</value>

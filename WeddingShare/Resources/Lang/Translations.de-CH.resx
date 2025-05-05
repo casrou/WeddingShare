@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Invalide Galerie</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Aktion</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Maßnahmen</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Genehmigt</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Prüfung</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Bulk genehmigt alle anstehenden Bewertungen</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Bulk hat alle anhängigen Bewertungen abgelehnt</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Erstellte Galerie</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Erstellt neuen Benutzer</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Gelöschte benutzerdefinierte Ressource</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Hochgeladene benutzerdefinierte Ressource</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Gelöschte Galerie</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Gelöschter Benutzer</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Exportiert ein Backup</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Nicht erkannter Login-Test</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Fehlerhafte Anmeldeversuche Zählen Reset</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Froze Benutzer</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Ein Backup importiert</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>in der galerie zugelassen</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>in der galerie gelöscht</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>in der galerie abgelehnt</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Wie viele Protokolle zu zeigen</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Begrenzung</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Versäumt, Auditliste zu erhalten</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Ausgewählt</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Prüfungsprotokolle</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Multi-Faktor zu ihrem Konto hinzugefügt</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Bereitgestellt korrekter Multifaktor-Token</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Zurücksetzen ihrer Multi-Faktor-Taste</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Multifaktor für den Anwender zurücksetzen</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Filterprotokolle basierend auf einem Suchbegriff</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Suche Term</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Aktualisierte Einstellung für die Galerie</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Eingefrorener Benutzer</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Aktualisierte Galerie</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Aktualisierter Benutzer</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Benutzer angemeldet</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Wiped alle Galerien</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Bildergalerie</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Verfügbare Galerien</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Nicht zu überprüfen Konto Zustand</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Sauberkeit</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Verwendung</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Zeitstempel</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Insgesamt</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Hochladen</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Benutzer</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Das bereitgestellte Passwort und das confrim-Passwort passen nicht</value>

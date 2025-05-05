@@ -1,9 +1,11 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Data.Common;
 using Microsoft.Data.Sqlite;
 using WeddingShare.Constants;
 using WeddingShare.Enums;
 using WeddingShare.Models.Database;
+using static WeddingShare.Constants.Settings;
 
 namespace WeddingShare.Helpers.Database
 {
@@ -216,6 +218,12 @@ namespace WeddingShare.Helpers.Database
         public async Task<GalleryModel?> AddGallery(GalleryModel model)
         {
             GalleryModel? result = null;
+
+            if (ProtectedValues.GalleryNames.Any(x => x.Equals(model.Name?.Trim(), StringComparison.OrdinalIgnoreCase)))
+            {
+                // Prevent users from creating galleries with the same name as a protected gallery
+                return null;
+            }
 
             using (var conn = await GetConnection())
             {
@@ -822,10 +830,11 @@ namespace WeddingShare.Helpers.Database
 
             using (var conn = await GetConnection())
             {
-                var cmd = CreateCommand($"INSERT INTO `users` (`username`, `email`, `password`) VALUES (@Username, @Email, @Password); SELECT * FROM `users` WHERE `id`=last_insert_rowid();", conn);
+                var cmd = CreateCommand($"INSERT INTO `users` (`username`, `email`, `password`, `state`) VALUES (@Username, @Email, @Password, @State); SELECT * FROM `users` WHERE `id`=last_insert_rowid();", conn);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("Username", model.Username.ToLower());
                 cmd.Parameters.AddWithValue("Email", !string.IsNullOrEmpty(model.Email) ? model.Email : DBNull.Value);
+                cmd.Parameters.AddWithValue("State", AccountState.Active);
                 cmd.Parameters.AddWithValue("Password", model.Password);
 
                 await conn.OpenAsync();
@@ -857,11 +866,12 @@ namespace WeddingShare.Helpers.Database
 
             using (var conn = await GetConnection())
             {
-                var cmd = CreateCommand($"UPDATE `users` SET `username`=@Username, `email`=@Email, `failed_logins`=@FailedLogins, `lockout_until`=@LockoutUntil WHERE `id`=@Id; SELECT * FROM `users` WHERE `id`=@Id;", conn);
+                var cmd = CreateCommand($"UPDATE `users` SET `username`=@Username, `email`=@Email, `state`=@State, `failed_logins`=@FailedLogins, `lockout_until`=@LockoutUntil WHERE `id`=@Id; SELECT * FROM `users` WHERE `id`=@Id;", conn);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("Id", model.Id);
                 cmd.Parameters.AddWithValue("Username", model.Username.ToLower());
                 cmd.Parameters.AddWithValue("Email", !string.IsNullOrEmpty(model.Email) ? model.Email : DBNull.Value);
+                cmd.Parameters.AddWithValue("State", (int)model.State);
                 cmd.Parameters.AddWithValue("FailedLogins", model.FailedLogins);
                 cmd.Parameters.AddWithValue("LockoutUntil", model.LockoutUntil != null ? ((DateTime)model.LockoutUntil - new DateTime(1970, 1, 1)).TotalSeconds : DBNull.Value);
 
@@ -1587,6 +1597,65 @@ namespace WeddingShare.Helpers.Database
         }
         #endregion
 
+        #region Audit Logs
+        public async Task<IEnumerable<AuditLogModel>?> GetAuditLogs(string term = "", int limit = 100)
+        {
+            List<AuditLogModel> result = new List<AuditLogModel>();
+
+            using (var conn = await GetConnection())
+            {
+                var cmd = CreateCommand($"SELECT * FROM `audit_logs` WHERE `username` LIKE @Term OR `message` LIKE @Term ORDER BY `id` DESC LIMIT @Limit;", conn);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("Term", $"%{term?.Trim()}%");
+                cmd.Parameters.AddWithValue("Limit", limit);
+
+                await conn.OpenAsync();
+                using (var reader = await cmd.ExecuteReaderAsync())
+                {
+                    result = await ReadAuditLogs(reader);
+                }
+                await conn.CloseAsync();
+            }
+
+            return result;
+        }
+
+        public async Task<AuditLogModel?> AddAuditLog(AuditLogModel model)
+        {
+            AuditLogModel? result = null;
+
+            using (var conn = await GetConnection())
+            {
+                var cmd = CreateCommand($"INSERT INTO `audit_logs` (`message`, `username`, `timestamp`) VALUES (@Message, @Username, @Timestamp); SELECT * FROM `audit_logs` WHERE `id`=last_insert_rowid();", conn);
+                cmd.Parameters.AddWithValue("Message", model.Message);
+                cmd.Parameters.AddWithValue("Username", model.Username?.ToLower());
+                cmd.Parameters.AddWithValue("Timestamp", ((DateTime)DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalSeconds);
+                cmd.CommandType = CommandType.Text;
+
+                await conn.OpenAsync();
+                var tran = await CreateTransaction(conn);
+
+                try
+                {
+                    cmd.Transaction = tran;
+                    using (var reader = await cmd.ExecuteReaderAsync())
+                    {
+                        result = (await ReadAuditLogs(reader))?.FirstOrDefault();
+                    }
+                    await tran.CommitAsync();
+                }
+                catch
+                {
+                    await tran.RollbackAsync();
+                }
+
+                await conn.CloseAsync();
+            }
+
+            return result;
+        }
+        #endregion
+
         #region Backups
         public async Task<bool> Import(string path)
         {
@@ -1775,6 +1844,7 @@ namespace WeddingShare.Helpers.Database
                                 Id = id,
                                 Username = !await reader.IsDBNullAsync("failed_logins") ? reader.GetString("username").ToLower() : string.Empty,
                                 Email = !await reader.IsDBNullAsync("email") ? reader.GetString("email") : null,
+                                State = !await reader.IsDBNullAsync("state") ? (AccountState)reader.GetInt32("state") : AccountState.Active,
                                 Password = null,
                                 FailedLogins = !await reader.IsDBNullAsync("failed_logins") ? reader.GetInt32("failed_logins") : 0,
                                 LockoutUntil = !await reader.IsDBNullAsync("lockout_until") ? DateTime.UnixEpoch.AddSeconds(reader.GetInt32("lockout_until")) : null,
@@ -1846,6 +1916,38 @@ namespace WeddingShare.Helpers.Database
                     catch (Exception ex)
                     {
                         _logger.LogWarning(ex, $"Failed to parse setting model from database - {ex?.Message}");
+                    }
+                }
+            }
+
+            return items;
+        }
+
+        private async Task<List<AuditLogModel>> ReadAuditLogs(SqliteDataReader? reader)
+        {
+            var items = new List<AuditLogModel>();
+
+            if (reader != null && reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    try
+                    {
+                        var id = !await reader.IsDBNullAsync("id") ? reader.GetInt32("id") : 0;
+                        if (id > 0)
+                        {
+                            items.Add(new AuditLogModel()
+                            {
+                                Id = id,
+                                Username = !await reader.IsDBNullAsync("username") ? reader.GetString("username") : string.Empty,
+                                Message = !await reader.IsDBNullAsync("message") ? reader.GetString("message") : string.Empty,
+                                Timestamp = !await reader.IsDBNullAsync("timestamp") ? DateTime.UnixEpoch.AddSeconds(reader.GetInt32("timestamp")) : default(DateTime)
+                            });
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogWarning(ex, $"Failed to parse audit log model from database - {ex?.Message}");
                     }
                 }
             }

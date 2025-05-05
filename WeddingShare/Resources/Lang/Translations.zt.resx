@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>不合法的相簿</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>動作</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>動作</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>已核准</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>审计</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>二. 批复</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Bulk 拒絕了所有待定的審查</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>已建立相簿</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>已建立的新用戶</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>已刪除自訂資源</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>已上傳自訂資源</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>已刪除相簿</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>已刪除使用者</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>已匯出備份</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>已測出登入試驗失敗</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>登入試想失敗倒數重置</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>有花色使用者</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>已匯入備份</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>在畫廊被核准</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>在相簿中被刪除</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>在相簿中被拒絕</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>需要顯示多少紀錄</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>限制</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>取得稽核清單失敗</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>已登出</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>稽核紀錄</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>在他們的帳號中新增多因子</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>提供正確多因子代碼</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>重置多因子金鑰</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>为使用者重置多元件</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>基于搜尋名詞的過程紀錄</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>搜尋期限</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>有更新的相簿設定</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>解冻用戶</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>已更新相簿</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>已更新使用者</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>有使用者登入</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>所有畫廊被擦去</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>已擦除相簿</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>有相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相關相相相相相關相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相相</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>檢查帳號狀態失敗</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>清除</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>用法</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>有時戳</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>第 二 章</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>上傳器</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>使用者</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>提供的口令和同樣的口令不符</value>

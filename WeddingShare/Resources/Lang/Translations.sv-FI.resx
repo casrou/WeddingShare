@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Invalid Galleri</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Aktiviteter</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Godkänd</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Revision</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Bulk godkände alla väntande recensioner</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Bulk avvisade alla väntande recensioner</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Skapat galleri</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Skapad ny användare</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Ta bort anpassad resurs</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Uppladdad anpassad resurs</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Borttaget galleri</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Raderad användare</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Exporterade en backup</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Misslyckat inloggningsförsök upptäckt</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Misslyckade inloggningsförsök räkna återställning</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Froze användare</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Importerade en backup</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>godkänd i galleriet</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>tas bort i galleriet</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>förkastade i galleriet</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Hur många loggar att visa</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Begränsning</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Misslyckades med att få revisionslista</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Logged out</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Audit Logs</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Tillagd multifaktor till sitt konto</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Förutsatt korrekt multifaktor token</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Återställ deras multifaktornyckel</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Återställ multifaktor för användaren</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Filterloggar baserade på en sökterm</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Sök Term</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Uppdaterad inställning för galleri</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Unfroze användare</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Uppdaterat galleri</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Uppdaterad användare</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Användare inloggad</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Torkade alla gallerier</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Wiped galleri</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Tillgängliga gallerier</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Underlåten att kontrollera kontostatus</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Ren ren ren ren ren rengöring</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Användning</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Timestamp</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Totalt totalt</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Uploader</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Användare</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Det tillhandahållna lösenordet och kyllösenordet matchar inte</value>

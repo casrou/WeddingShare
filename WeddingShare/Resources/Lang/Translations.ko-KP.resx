@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>잘못된 갤러리</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>(주)</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>팟캐스트</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>인증 및 인증</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>회사연혁</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>대량 승인 모든 pending 리뷰</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>대량은 모든 대출 리뷰를 거부</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>본문 바로가기</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>새로운 사용자 만들기</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>사용자 정의 리소스</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>사용자 정의 리소스</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>삭제 된 갤러리</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>삭제 된 사용자</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>백업 수출</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>실패한 로그인 시도 감지</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>실패한 로그인 시도 카운트 재설정</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Froze 사용자</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>백업 가져 오기</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>본문 바로가기</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>자주 묻는 질문</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>본문 바로가기</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>얼마나 많은 로그를 표시</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>지원하다</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>감사 목록을 얻기 위해 실패</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>로그아웃</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>감사 로그</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>다중 요인을 계정으로 추가</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>올바른 멀티 요인 토큰 제공</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>멀티 팩터 키 재설정</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>사용자를 위한 Multi-factor 재설정</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>검색 용어를 기반으로 필터 로그</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>검색 기간</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>갤러리에 대한 업데이트</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Unfroze 사용자</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>업데이트 된 갤러리</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>사용자 정의</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>로그인</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Wiped 모든 갤러리</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Wiped 갤러리</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>사용 가능한 갤러리</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>계정 상태 확인</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>제품정보</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>제품 정보</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>스크린 샷</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>·</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>다운로드</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>사용자 이름</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>제공된 암호와 confrim 암호는 일치하지 않습니다</value>

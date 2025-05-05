@@ -1,4 +1,6 @@
-﻿namespace WeddingShare.Models.Database
+﻿using WeddingShare.Enums;
+
+namespace WeddingShare.Models.Database
 {
     public class UserModel
     {
@@ -10,6 +12,7 @@
         public int FailedLogins { get; set; }
         public DateTime? LockoutUntil { get; set; }
         public string? MultiFactorToken { get; set; }
+        public AccountState State { get; set; } = AccountState.Active;
 
         public bool IsLockedOut
         {

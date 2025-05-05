@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Галерея</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Дія</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Акції</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Затвердження</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Аудит</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Бульк затвердив всі попередні відгуки</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Бульк відхилений всі попередні відгуки</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Галерея</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Створено новий користувач</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Видалено користувальницький ресурс</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Загружено гостем</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Видалена галерея</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Видалення користувача</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Експортувати резервну копію</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Виявлена спроба входу</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Заборонена логістика перераховує скидання</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Froze користувача</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Імпортувати резервну копію</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>затверджено в галереї</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>видалено в галереї</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>в галереї</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Скільки журналів показати</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Ліміт</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Покинути список перевірок</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Увійти</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Журнали аудиту</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Додано багатофактор на свій рахунок</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Надано правильний багатофакторний токен</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Заміна ключа мультифактора</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Відновити багатофактор для користувача</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Фільтр журналів на основі терміну пошуку</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Термін дії</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Оновлена установка для галереї</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Розморожування користувача</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Оновлена галерея</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Оновлений користувач</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Логін користувача</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Вибрані всі галереї</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Галерея</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Доступні галереї</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Не вдалося перевірити стан рахунку</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Чистий</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Проживання</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Таймер</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Всього</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Завантажити</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Користувач</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Надані паролі і confrim паролі не відповідають</value>

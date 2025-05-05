@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Neplatná galerie</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Akce</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Akce</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Schváleno</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Audit</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Bulk schválil všechny dosud nevyřízené recenze</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Bulk odmítl všechny probíhající recenze</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Vytvořeno galerie</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Vytvořeno nové uživatele</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Smazán vlastní zdroj</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Nahraný vlastní zdroj</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Vymazaná galerie</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Smazán uživatel</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Exportovat zálohu</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Zjištěn neúspěšný pokus o přihlášení</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Selhání přihlašovacích pokusů resetovat</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Uživatel Froze</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Importovat zálohu</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>schválené v galerii</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>smazáno v galerii</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>zamítnuto v galerii</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Kolik záznamů ukázat</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Omezení</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Nepodařilo se získat seznam auditů</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Zaznamenaný</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Záznamy o auditu</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Přidáno multifaktor na jejich účet</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Poskytnuté správné vícefaktorové žeton</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Obnovit jejich multifaktor klíč</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Obnovit multi- faktor pro uživatele</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Filtrační protokoly založené na vyhledávacím termínu</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Vyhledávání</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Aktualizované nastavení pro galerii</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Uživatel bez zamrznutí</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Aktualizovaná galerie</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Aktualizovaný uživatel</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Uživatel přihlášen</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Vytřít všechny galerie</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Vymazaná galerie</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Dostupné galerie</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Chyba při kontrole stavu účtu</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Čisté</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Použití</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Časový údaj</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Celkem</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Nahrávač</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Uživatel</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Poskytnuté heslo a confrim heslo se neshodují</value>

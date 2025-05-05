@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Ugyldig galleri</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Handling</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Handlinger</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Godkjent</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Revisor</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Bulk godkjent alle avventende anmeldelser</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Bulk avvist alle avventende anmeldelser</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Opprettet galleri</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Opprettet ny bruker</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Slettet egendefinert ressurs</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Lastet opp egendefinert ressurs</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Slettet galleri</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Slettet bruker</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Eksportert en sikkerhetskopi</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Mislykket innloggingsforsøk oppdaget</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Feil påloggingsforsøk teller tilbakestilling</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Froze bruker</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Importert en sikkerhetskopi</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>godkjent i galleri</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>slettet i galleri</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>avvist i galleri</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Hvor mange logger å vise</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Begrens</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Klarte ikke å skaffe revisjonsliste</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Logget ut</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Revisjonslogger</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Lagt flerfaktor til kontoen</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Levert riktig flerfaktor token</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Tilbakestille multifaktornøkkelen</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Tilbakestill flerfaktor for brukeren</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Filtrer logger basert på et søkeord</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Søkeord</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Oppdatert innstilling for galleri</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Ufroze bruker</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Oppdatert galleri</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Oppdatert bruker</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Bruker logget på</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Tørket alle gallerier</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Wiped galleri</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Tilgjengelige Gallerier</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Klarte ikke å sjekke kontotilstand</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Ren</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Bruk</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Timestamp</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Totalt</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Last opp</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Bruker</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Det angitte passordet og konfrim-passordet stemmer ikke</value>

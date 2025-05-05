@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Μη έγκυρη συλλογή</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Δράση</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Δράσεις</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Έγκριση</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Έλεγχος</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Μαζική έγκριση όλων των εκκρεμών αναθεωρήσεων</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Η Bulk απέρριψε όλες τις εκκρεμείς κριτικές</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Δημιουργία συλλογής</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Δημιουργία νέου χρήστη</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Διαγραφή προσαρμοσμένου πόρου</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Αποστολή προσαρμοσμένου πόρου</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Διαγράφεται συλλογή</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Διαγραφή χρήστη</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Εξαγωγή αντιγράφου ασφαλείας</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Αποτυχία ανίχνευσης προσπάθειας σύνδεσης</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Αποτυχημένες προσπάθειες σύνδεσης</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Χρήστης με αφρό</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Εισαγωγή αντιγράφου ασφαλείας</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>εγκεκριμένη σε γκαλερί</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>διαγράφεται στη συλλογή</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>που απορρίφθηκαν στα θεωρεία</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Πόσα αρχεία καταγραφής να δείξει</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Όριο</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Αποτυχία λήψης της λίστας ελέγχου</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Αποσύνδεση</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Καταγραφές ελέγχου</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Προστέθηκε πολλαπλός συντελεστής στο λογαριασμό τους</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Με την προϋπόθεση της σωστής ένδειξης πολλαπλών συντελεστών</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Επαναφορά του κλειδιού πολλαπλών συντελεστών</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Επαναφορά πολλαπλού συντελεστή για το χρήστη</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Καταγραφές φίλτρων με βάση έναν όρο αναζήτησης</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Όρος αναζήτησης</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Ενημέρωση ρύθμισης για γκαλερί</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Αποπαγωμένος χρήστης</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Ενημερωμένη συλλογή</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Ενημερωμένος χρήστης</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Συνδεδεμένος χρήστης</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Σκούπισε όλες τις γκαλερί</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Σκουπισμένη συλλογή</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Διαθέσιμες Γκαλερί</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Αποτυχία ελέγχου κατάστασης λογαριασμού</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Καθαρισμός</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Χρήση</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Χρονοσφραγίδα</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Σύνολο</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Αποστολή</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Χρήστης</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Ο παρεχόμενος κωδικός πρόσβασης και κωδικός confrim δεν ταιριάζουν</value>

@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Clár na dToghthóirí</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Gníomhaíocht</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Amharc ar gach eolas</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Ceadaithe</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Iniúchóireacht</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Bulc ceadaithe go léir athbhreithnithe ar feitheamh</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Dhiúltaigh Bulk gach léirmheas ar feitheamh</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Gailearaí cruthaithe</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Cruthaithe úsáideoir nua</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Acmhainní saincheaptha a scriosadh</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Acmhainn saincheaptha uaslódáilte</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Scriosadh gailearaí</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Scriosta úsáideoir</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Onnmhairithe cúltaca</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Failed iarracht logáil isteach bhrath</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Iarrachtaí logáil isteach Failed athshocrú</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Úsáideoir reoite</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Iompórtáil cúltaca</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>ceadaithe i gailearaí</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>scriosadh i gailearaí</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>dhiúltaigh i gailearaí</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Cé mhéad logs a thaispeáint</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Teorainn</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Failed a fháil ar liosta iniúchóireachta</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Lorg amach</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Naisc ábhartha eile</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Added il-fhachtóir lena gcuntas</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Ar choinníoll dearbhán ilfhachtóir ceart</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Athshocraigh a eochair ilfhachtóir</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Athshocraigh ilfhachtóir don úsáideoir</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Scagaire logs bunaithe ar théarma cuardaigh</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Cuardaigh Téarma</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Suíomh nuashonraithe do gailearaí</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Úsáideoir Unfroze</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Eolaire Chathair na Mart</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Úsáideoir Nuashonraithe</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Úsáideoir logáilte isteach</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Wiped gach dánlanna</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Gailearaí Wiped</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>An tSraith Shinsearach</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Failed a sheiceáil stát cuntas</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Glanadh agus Glanadh</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Uisce agus Séarachas</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Déan teagmháil linn</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Iomlán</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Uaslódáil</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Úsáideora</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Ní dhéanann an focal faire ar fáil agus focal faire confrim mheaitseáil</value>

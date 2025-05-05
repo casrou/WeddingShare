@@ -1,3 +1,6 @@
+let accountStateCheckInterval = null;
+let auditSearchTimeout = null;
+
 function reviewPhoto(element, action) {
     var id = element.parent('.btn-group').data('id');
     if (!id) {
@@ -61,6 +64,20 @@ function updateSettings() {
     });
 }
 
+function updateAuditList(term = '', limit = 100) {
+    clearTimeout(auditSearchTimeout);
+    auditSearchTimeout = setTimeout(function () {
+        $.ajax({
+            type: 'POST',
+            url: `/Admin/AuditList`,
+            data: { term: term?.trim(), limit: limit },
+            success: function (data) {
+                $('#audit-list').html(data);
+            }
+        });
+    }, 500);
+}
+
 function updateGalleryList() {
     $.ajax({
         type: 'GET',
@@ -87,6 +104,7 @@ function updatePage() {
     updatePendingReviews();
     updateCustomResources();
     updateSettings();
+    updateAuditList();
 }
 
 function initPasswordValidation() {
@@ -132,6 +150,18 @@ function setPasswordValidationField(field, valid) {
     }
 }
 
+function checkAccountState() {
+    $.ajax({
+        url: '/Admin/CheckAccountState',
+        method: 'GET'
+    })
+        .done(data => {
+            if (data.active !== true) {
+                location.href = '/Admin/Logout';
+            }
+        });
+}
+
 function selectActiveTab(tab) {
     tab = tab.replace('#', '');
 
@@ -150,6 +180,11 @@ function selectActiveTab(tab) {
 
 (function () {
     document.addEventListener('DOMContentLoaded', function () {
+
+        clearInterval(accountStateCheckInterval);
+        accountStateCheckInterval = setInterval(function () {
+            checkAccountState();
+        }, 60000);
 
         if (window.location.pathname.toLowerCase() == '/admin') {
             selectActiveTab(window.location.hash);
@@ -735,6 +770,112 @@ function selectActiveTab(tab) {
             });
         });
 
+        $(document).off('click', 'i.btnFreezeUser').on('click', 'i.btnFreezeUser', function (e) {
+            preventDefaults(e);
+
+            if ($(this).attr('disabled') == 'disabled') {
+                return;
+            }
+
+            let row = $(this).closest('tr');
+            displayPopup({
+                Title: localization.translate('Freeze_User'),
+                Message: `${localization.translate('Freeze_User_Message')} '${row.data('user-name') }'`,
+                Fields: [{
+                    Id: 'user-id',
+                    Value: row.data('user-id'),
+                    Type: 'hidden'
+                }],
+                Buttons: [{
+                    Text: localization.translate('Freeze'),
+                    Class: 'btn-danger',
+                    Callback: function () {
+                        displayLoader(localization.translate('Loading'));
+
+                        let id = $('#popup-modal-field-user-id').val();
+                        if (id == undefined || id.length == 0) {
+                            displayMessage(localization.translate('Freeze_User'), localization.translate('User_Missing_Id'));
+                            return;
+                        }
+
+                        $.ajax({
+                            url: '/Admin/FreezeUser',
+                            method: 'PUT',
+                            data: { Id: id }
+                        })
+                            .done(data => {
+                                if (data.success === true) {
+                                    updatePage();
+                                    displayMessage(localization.translate('Freeze_User'), localization.translate('Freeze_Successfully'));
+                                } else if (data.message) {
+                                    displayMessage(localization.translate('Freeze_User'), localization.translate('Freeze_Failed'), [data.message]);
+                                } else {
+                                    displayMessage(localization.translate('Freeze_User'), localization.translate('Freeze_Failed'));
+                                }
+                            })
+                            .fail((xhr, error) => {
+                                displayMessage(localization.translate('Freeze_User'), localization.translate('Freeze_Failed'), [error]);
+                            });
+                    }
+                }, {
+                    Text: localization.translate('Close')
+                }]
+            });
+        });
+
+        $(document).off('click', 'i.btnUnfreezeUser').on('click', 'i.btnUnfreezeUser', function (e) {
+            preventDefaults(e);
+
+            if ($(this).attr('disabled') == 'disabled') {
+                return;
+            }
+
+            let row = $(this).closest('tr');
+            displayPopup({
+                Title: localization.translate('Unfreeze_User'),
+                Message: `${localization.translate('Unfreeze_User_Message')} '${row.data('user-name')}'`,
+                Fields: [{
+                    Id: 'user-id',
+                    Value: row.data('user-id'),
+                    Type: 'hidden'
+                }],
+                Buttons: [{
+                    Text: localization.translate('Unfreeze'),
+                    Class: 'btn-danger',
+                    Callback: function () {
+                        displayLoader(localization.translate('Loading'));
+
+                        let id = $('#popup-modal-field-user-id').val();
+                        if (id == undefined || id.length == 0) {
+                            displayMessage(localization.translate('Unfreeze_User'), localization.translate('User_Missing_Id'));
+                            return;
+                        }
+
+                        $.ajax({
+                            url: '/Admin/UnfreezeUser',
+                            method: 'PUT',
+                            data: { Id: id }
+                        })
+                            .done(data => {
+                                if (data.success === true) {
+                                    updatePage();
+                                    displayMessage(localization.translate('Unfreeze_User'), localization.translate('Unfreeze_Successfully'));
+                                } else if (data.message) {
+                                    displayMessage(localization.translate('Unfreeze_User'), localization.translate('Unfreeze_Failed'), [data.message]);
+                                } else {
+                                    displayMessage(localization.translate('Unfreeze_User'), localization.translate('Unfreeze_Failed'));
+                                }
+                            })
+                            .fail((xhr, error) => {
+                                displayMessage(localization.translate('Unfreeze_User'), localization.translate('Unfreeze_Failed'), [error]);
+                            });
+                    }
+                }, {
+                    Text: localization.translate('Close')
+                }]
+            });
+        });
+
         $(document).off('click', 'i.btnDeleteUser').on('click', 'i.btnDeleteUser', function (e) {
             preventDefaults(e);
 
@@ -1204,5 +1345,11 @@ function selectActiveTab(tab) {
             });
         });
 
+        $(document).off('keyup', 'input#audit-log-search-term, input#audit-log-limit').on('keyup', 'input#audit-log-search-term, input#audit-log-limit', function (e) {
+            let term = $('input#audit-log-search-term').val();
+            let limit = $('input#audit-log-limit').val();
+            
+            updateAuditList(term, limit);
+        });
     });
 })();

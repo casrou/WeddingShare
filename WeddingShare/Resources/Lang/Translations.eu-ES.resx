@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Galeria baliogabea</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Ekintza</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Ekintzak</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Onartua</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Audit</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Bulk-ek berrikuspen guztiak onartu ditu</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Bulk-ek ez zituen iritzi guztiak baztertu</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Sortutako galeria</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Erabiltzaile berria sortu</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Ezabatu baliabide pertsonalizatua</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Baliabide pertsonalizatua igota</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Ezabatutako galeria</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Ezabatutako erabiltzailea</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Babeskopia esportatu</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Huts egin du saioa hastean detektatzean</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Huts egin du saio-hasierako saiakuntzen kopurua berrezartzean</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Froze erabiltzailea</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Babeskopia inportatua</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>galerian onartua</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>ezabatua galerian</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>ukatua galerian</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Zenbat egunkari erakusteko</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Muga</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Huts egin du auditoretza-zerrenda eskuratzean</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Lokatuta</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Audit egunkariak</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Hainbat faktore gehitu zaizkio kontuari</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Hainbat faktoretako token zuzena</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Berrezarri faktore anitzeko gakoa</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Berrezarri faktore anitzekoa erabiltzailearentzat</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Iragazi erregistroak bilaketa-termino batean oinarrituta</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Bilaketa-aldia</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Galeriaren ezarpen eguneratua</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Erabiltzaileak huts egin</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Galeria eguneratua</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Erabiltzaile eguneratua</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Erabiltzaileak saioa hasi du</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Galeria guztiak garbitu</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Argazki galeria</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Galeria erabilgarriak</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Huts egin du kontuaren egoera egiaztatzean</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Garbitu</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Erabilera</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Timestamp</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Guztira</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Igotzailea</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Erabiltzailea</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Emandako pasahitza eta pasahitza ez datoz bat</value>
