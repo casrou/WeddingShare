@@ -13,6 +13,7 @@ namespace WeddingShare.Views.Admin
         public List<UserModel>? Users { get; set; }
         public List<GalleryModel>? Galleries { get; set; }
         public List<CustomResourceModel>? CustomResources { get; set; }
+        public IEnumerable<AuditLogModel>? AuditLogs { get; set; }
         public IDictionary<string, string>? Settings { get; set; }
 
         public void OnGet()

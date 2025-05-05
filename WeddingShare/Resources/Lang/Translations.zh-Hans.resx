@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>无效的图片库</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>行动</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>行动</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>核定数</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>审计</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>批量核准了所有待审查</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>驳回所有待审审查</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>已创建相册</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>创建了新用户</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>删除自定义资源</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>上传自定义资源</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>删除相册</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>删除的用户</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>导出备份</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>检测到登录尝试失败</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>登录尝试失败计数重设</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Froze 用户</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>导入备份</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>在展馆核准</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>删除于画廊</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>在画廊中被拒绝</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>要显示的日志数</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>限制</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>获取审计列表失败</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>已注销</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>审计日志</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>在账户中添加多要素</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>提供了正确的多要素符号</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>重置其多要素密钥</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>为用户重设多要素</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>基于搜索名词的过滤日志</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>搜索期限</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>图片库的更新设置</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>解冻用户</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>更新的相册</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>更新用户</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>登录的用户</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>把所有画廊都擦了</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>被擦拭的画廊</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>可用盖尔</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>检查账户状态失败</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>干净</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>使用量</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>时间戳</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>共计</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>上传器</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>用户</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>提供的密码和同源密码不匹配</value>

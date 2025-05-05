@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Vigane galerii</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Tegevused</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Heaks kiidetud</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Audit</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Bulk kiitis heaks kõik pooleliolevad läbivaatamised</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Bulk lükkas tagasi kõik pooleliolevad läbivaatamised</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Loodud galerii</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Uue kasutaja loomine</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Kustutatud kohandatud ressurss</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Üleslaaditud kohandatud ressurss</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Kustutatud galerii</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Kustutatud kasutaja</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Eksporditi varukoopia</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Leiti nurjunud sisselogimiskatse</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Ebaõnnestunud sisselogimiskatsed loevad lähtestamist</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Külmutatud kasutaja</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Imporditud varukoopia</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>galeriis heaks kiidetud</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>kustutatud galeriis</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>galeriis tagasi lükatud</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Mitu logi näidata</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Piir</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Auditi nimekirja hankimine nurjus</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Välja logitud</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Auditi logid</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Mitmefaktoriline lisamine nende kontole</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Andis korrektse mitmefaktorilise märgi</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Mitmefaktorilise võtme lähtestamine</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Kasutaja mitmeteguri lähtestamine</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Otsinguterminil põhinevad filtrilogid</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Otsingutermin</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Galerii uuendamine</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Sulge kasutaja</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Ajakohastatud galerii</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Uuendatud kasutaja</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Kasutaja on sisse logitud</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Puhastas kõik galeriid</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Puhastatud galerii</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Saadaolevad galeriid</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Konto oleku kontrollimine nurjus</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Puhasta</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Kasutamine</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Ajatempel</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Kokku</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Üleslaadija</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Kasutaja</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Antud parool ja parool ei sobi kokku</value>

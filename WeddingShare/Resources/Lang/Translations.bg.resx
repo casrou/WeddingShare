@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Невалидна галерия</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Действие</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Действия</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Одобрен</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Одит</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Bulk одобри всички висящи прегледи</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Bulk отхвърли всички висящи прегледи</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Създадена галерия</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Създаване на нов потребител</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Изтриване на потребителски ресурс</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Качен персонализиран ресурс</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Изтрита галерия</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Изтрит потребител</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Експортиране на резервно копие</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Неуспешен опит за влизане</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Грешка при запис</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Замразен потребител</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Внос на резервно копие</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>одобрен в галерия</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>изтрито в галерия</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>отхвърлени в галерия</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Колко дневника да покажа</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Граници</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Грешка при получаване на одитен списък</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Изходен</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Отчети за одита</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Добавен е многофактор към тяхната сметка</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Приложен коректен множителен символ</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Рестартиране на техния многофакторен ключ</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Рестартиране на многофактора за потребителя</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Филтриране на трупи въз основа на термин за търсене</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Термин за търсене</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Обновена настройка за галерия</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Размразен потребител</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Обновена галерия</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Обновен потребител</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Потребителят влезе</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Изтрити всички галерии</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Изтрита галерия</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Налични галерии</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Грешка при проверка на състоянието на сметката</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Чисто</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Използване</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Времеви печат</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Общо</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Качване</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Потребител</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Предоставената парола и конфрим парола не съвпадат</value>

@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Hindi tanggap na Gallery</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Pagkilos</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Mga Gagawin</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Sinang - ayunan</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Audit</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Sinang - ayunan ni Bulk ang lahat ng naghihintay na mga review</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Tinanggihan ni Bulk ang lahat ng naghihintay na mga review</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Nilalang na galerya</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Nilalang ang bagong gumagamit</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Tinanggal na magagamit na kaugalian</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Pinalawak na mapagkukunan ng kaugalian</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Natanggal na galerya</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Pinaalis na gumagamit</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Ipinatapon ang Isang Backup</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Sawi ang pagsisikap na login</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Bigo ang pag-inkorporasyon ng login</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Mabango ang gumagamit nito</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Inihatid ang Isang Backup</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>sinang - ayunan sa galerya</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>inalis sa galerya</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>tinanggihan sa galerya</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Kung ilang troso ang ipakikita</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Hangganan</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Sawi sa pagkuha ng listahan ng audit</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Naipit</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Mga Audit Logs</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Idagdag ang multi-factor sa kanilang account</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Ilaan ang tamang multi-factor na token</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>I-set muli ang kanilang multi-factor key</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Mulingset ang multi-factor para sa gumagamit</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Mga trosong pansisid na batay sa termino ng paghahanap</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Paghahanap</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Binagong lugar para sa galerya</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Walang froze na gumagamit</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Binagong galerya</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Binagong gumagamit</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Nakasulat ang User</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Hinango ang lahat ng galerya</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Nabigang galerya</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Makukuhang mga Gallery</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Sawi sa pagsusuri ng kalagayan ng account</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Malinis</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Paggamit</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Paglipas ng Panahon</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Kabuuan</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Mag - download</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Ang ibinigay na password at confrim password ay hindi katugma</value>

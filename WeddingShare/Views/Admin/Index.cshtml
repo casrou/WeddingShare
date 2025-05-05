@@ -23,6 +23,9 @@
                         <a class="pnl-selector nav-link" href="#" data-tab="settings">@_localizer["Settings"].Value</a>
                     </li>
                     <li class="nav-item">
+                        <a class="pnl-selector nav-link" href="#" data-tab="audit">@_localizer["Audit"].Value</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="pnl-selector nav-link" href="#" data-tab="data">@_localizer["Data"].Value</a>
                     </li>
                 </ul>
@@ -37,3 +40,4 @@
 <partial name="~/Views/Admin/Tabs/Resources.cshtml" model="new ResourcesModel() { CustomResources = Model?.CustomResources }" />
 <partial name="~/Views/Admin/Tabs/Settings.cshtml" model="new SettingsModel() { Settings = Model?.Settings, CustomResources = Model?.CustomResources }" />
 <partial name="~/Views/Admin/Tabs/Data.cshtml" model="new DataModel()" />
+<partial name="~/Views/Admin/Tabs/Audit.cshtml" model="new AuditModel() { Logs = Model?.AuditLogs }" />

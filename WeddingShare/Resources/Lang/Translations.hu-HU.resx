@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Érvénytelen galéria</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Intézkedés</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Intézkedések</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Jóváhagyva</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Ellenőrzés</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Bulk jóváhagyta az összes függőben lévő felülvizsgálat</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Bulk elutasította az összes függőben lévő felülvizsgálatot</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Létrehozott galéria</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Létrehozott új felhasználó</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Törölt egyedi erőforrás</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Egyedi erőforrás feltöltése</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Törölt galéria</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Törölt felhasználó</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Exportált tartalék</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Hibás bejelentkezési kísérlet</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>A bejelentkezési kísérletek sikertelenné válása</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Békafelhasználó</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Importált egy tartalék</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>jóváhagyott galériában</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>törölve a galériában</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>elutasítva a galériában</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Hány naplót kell megmutatni</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Határérték</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Az ellenőrzési lista nem sikerült</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Kijelentkezett</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Könyvvizsgálati naplók</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>A számlatulajdonoshoz hozzáadva</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Megfelelő multifaktoros token</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>A multifaktoros kulcs újraindítása</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Multi- faktor újraindítása felhasználóknak</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Keresés alapú szűrőnaplók</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Keresési kifejezés</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Frissített beállítás galéria</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Fagyasztatlan felhasználó</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Frissített galéria</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Frissített felhasználó</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Bejelentkezett felhasználó</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Törölt minden galéria</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Törölt galéria</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Elérhető galériák</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Nem sikerült ellenőrizni a számla állapotát</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Tiszta</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Használat</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Időbélyegző</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Összesen</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Feltöltő</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Felhasználó</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>A megadott jelszó és konfrim jelszó nem egyezik</value>

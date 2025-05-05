@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Galerie nevalidă</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Acțiune</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Acțiuni</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Aprobat</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Audit</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Vrac aprobat toate recenziile în curs</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Bulk a respins toate reexaminările în curs</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Galerie creată</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Creat utilizator nou</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Resursa personalizată eliminată</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Resursa personalizată încărcată</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Galerie ștersă</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Utilizator șters</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Exportat o copie de rezervă</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Încercarea de autentificare eșuată detectată</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Încercările de autentificare eșuate resetează numărătoarea</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Utilizator înghețat</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Importat o copie de rezervă</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>aprobat în galerie</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>șterse în galerie</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>respins în galerie</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Câte jurnale de arătat</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Limita</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>A eșuat obținerea listei de audit</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Deconectat</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Jurnale de audit</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Adaugă multifactor în contul lor</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>A se furniza jetonul multifactor corect</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Resetează cheia lor multifactor</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Resetează multifactor pentru utilizator</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Jurnale de filtrare bazate pe un termen de căutare</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Termen căutare</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Configurări actualizate pentru galerie</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Utilizator Unfroze</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Galerie actualizată</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Utilizator actualizat</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Utilizator conectat</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Şterse toate galeriile</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Galerie ștersă</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Galerii disponibile</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Starea contului de verificare a eșuat</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Curăță</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Utilizare</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Timestamp</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Total</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Încărcător</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Utilizator</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Parola furnizata si parola confrim nu se potrivesc</value>

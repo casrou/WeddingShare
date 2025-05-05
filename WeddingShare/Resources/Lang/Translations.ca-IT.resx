@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Galeria no vàlida</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Acció</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Accions</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Aprovada</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Auditoria</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Massa aprovat totes les revisions pendents</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Massa rebutjat totes les revisions pendents</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>S' ha creat la galeria</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>S' ha creat un usuari nou</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>S' ha esborrat un recurs personalitzat</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>S' ha pujat un recurs personalitzat</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>S' ha esborrat la galeria</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Eliminat d' usuari</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>S' ha exportat una còpia de seguretat</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>S' ha detectat un intent d' accés erroni</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>El comptador de intents d' accés ha fallat ha reiniciat</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Usuari Froze</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>S' ha importat una còpia de seguretat</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>aprovada a la galeria</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>s' ha esborrat a la galeria</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>s' ha rebutjat a la galeria</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Quants registres mostrar</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Límit</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Ha fallat en obtenir la llista d'auditories</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>S' ha desactivat</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Registres d' auditoria</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>S' ha afegit un factor multi al seu compte</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Testimoni multi- factor correcte</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Reinicia la seva clau multi- factor</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Reinicia el factor multi per a l' usuari</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Filtra els registres basats en un terme de cerca</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Terme de cerca</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>S' ha actualitzat l' arranjament de la galeria</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Usuari unròze</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>S' ha actualitzat la galeria</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Usuari actualitzat</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>S' ha connectat l' usuari</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Esborrat totes les galeries</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>S' ha esborrat la galeria</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Galleries disponibles</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Ha fallat en comprovar l' estat del compte</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Neteja</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Ús</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Marca horària</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Total</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Pujador</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Usuari</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>La contrasenya i contrasenya proporcionada no coincideixen</value>

@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>گالری Invalid</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>اقدامات</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>تایید</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>حسابرسی</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>MA تایید همه بررسی های در انتظار</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>دانلود زیرنویس فارسی فیلم The Waiting Review</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>ساخت گالری</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>ایجاد کاربر جدید</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>حذف منابع سفارشی</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>ارسال منابع سفارشی</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>گالری حذف شده</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>حذف کاربر</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>صادرات یک پشتیبان</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>تلاش برای ثبت نام شکست خورده</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>تلاش های ورود شکست خورده شمارش مجدد</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>کاربران Froze</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>واردات یک پشتیبان</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>تایید شده در گالری</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>حذف شده در گالری</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>رد شدن در گالری</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>چند ورودی برای نمایش</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>محدودیت</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>شکست در لیست حسابرسی</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>خروجی</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Audit Logs</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>اضافه کردن چند عاملی به حساب آنها</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>ارائه صحیح چند منظوره</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>کلید چند منظوره خود را تنظیم کنید</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Reset Multi-factor برای کاربر</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>بسته های فیلتر بر اساس یک اصطلاح جستجو</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>جستجو</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>به روز رسانی برای گالری</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>کاربران Unfroze</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>به روز رسانی گالری</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>به روز رسانی کاربر</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>کاربر وارد شده در</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>همه گالری ها را روشن کنید</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>گالری Wiped</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>گالری های موجود</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>شکست در بررسی وضعیت حساب</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>تمیز</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>استفاده از</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Timestamp</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>مجموع</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>آپلودer</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>رمز عبور و رمز عبور ارائه شده مطابقت ندارد</value>

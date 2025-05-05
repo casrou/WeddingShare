@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>Ongeldige galerij</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>Actie</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Acties</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>Goedgekeurd</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Controle</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>Bulk goedgekeurd alle lopende beoordelingen</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>Bulk afgewezen alle lopende beoordelingen</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>Galerie aangemaakt</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>Nieuwe gebruiker aangemaakt</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>Aangepaste hulpbron verwijderd</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>Geüpload aangepaste hulpbron</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>Galerie verwijderd</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>Verwijderde gebruiker</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>Een back-up exporteren</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>Aanmeldpoging mislukt gedetecteerd</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>Aanmeldpogingen zijn mislukt</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Froze-gebruiker</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>Een reservekopie geïmporteerd</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>goedgekeurd op galerij</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>verwijderd in galerij</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>afgewezen op galerij</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>Hoeveel logs te tonen</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>Maximumhoeveelheid</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>Kon auditlijst niet opvragen</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>Aangemeld</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>Auditlogs</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>Meerfactor toegevoegd aan hun rekening</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>Voorzien van juiste multifactor token</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>Hun multi-factor sleutel resetten</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>Multifactor voor gebruiker resetten</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>Filter logs op basis van een zoekterm</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>Zoekterm</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>Bijgewerkte instelling voor galerij</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>Unfroze-gebruiker</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>Bijgewerkte galerij</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>Bijgewerkte gebruiker</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>Gebruiker aangemeld</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>Alle galerijen gewist</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Gewiste galerij</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>Beschikbare galerijen</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>Kon accountstatus niet controleren</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>Schoon</value>
@@ -889,6 +1000,9 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Gebruik</value>
   </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>Tijdstempel</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>Totaal</value>
   </data>
@@ -906,6 +1020,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>Uploader</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Gebruiker</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>Het opgegeven wachtwoord en wachtwoord komen niet overeen</value>
