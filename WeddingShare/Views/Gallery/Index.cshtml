@@ -20,6 +20,16 @@
         qrAppend.Add(new KeyValuePair<string, string>("order", qrDefaultOrder));
     }
 
+    try
+    {
+        var currentCulture = Context.Request.HttpContext.Session.GetString(SessionKey.SelectedLanguage);
+        if (!string.IsNullOrWhiteSpace(currentCulture))
+        {
+            qrAppend.Add(new KeyValuePair<string, string>("culture", currentCulture));
+        }
+    }
+    catch { }
+
     var qrExclude = new List<string>();
     if (await _settings.GetOrDefault(Settings.Basic.HideKeyFromQRCode, false))
     {
