@@ -166,14 +166,13 @@ function displayIdentityCheck(required, callbackFn) {
         });
 
         $(document).off('click', '.change-language').on('click', '.change-language', function (e) {
-            preventDefaults(e);
+            preventDefaults(e); 
 
             $.ajax({
                 type: "GET",
                 url: '/Language',
                 success: function (data) {
                     if (data.supported && data.supported.length > 0) {
-                        console.log(data.supported);
                         displayPopup({
                             Title: localization.translate('Language_Change'),
                             Fields: [{
@@ -194,7 +193,11 @@ function displayIdentityCheck(required, callbackFn) {
                                         data: { culture: $('#popup-modal-field-language-id').val().trim() },
                                         success: function (data) {
                                             if (data.success) {
-                                                window.location.reload();
+                                                try {
+                                                    window.location = window.location.toString().replace(/([&]*culture\=.+?)(\&|$)/g, '');
+                                                } catch {
+                                                    window.reload();
+                                                }
                                             }
                                         }
                                     });

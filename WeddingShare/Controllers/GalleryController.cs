@@ -1,6 +1,7 @@
 using System.IO.Compression;
 using System.Net;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using WeddingShare.Attributes;
@@ -103,9 +104,23 @@ namespace WeddingShare.Controllers
         [HttpGet]
         [RequiresSecretKey]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public async Task<IActionResult> Index(string id = "default", string? key = null, ViewMode? mode = null, GalleryGroup group = GalleryGroup.None, GalleryOrder order = GalleryOrder.Descending, GalleryFilter filter = GalleryFilter.All, bool partial = false)
+        public async Task<IActionResult> Index(string id = "default", string? key = null, ViewMode? mode = null, GalleryGroup group = GalleryGroup.None, GalleryOrder order = GalleryOrder.Descending, GalleryFilter filter = GalleryFilter.All, string? culture = null, bool partial = false)
         {
             id = (!string.IsNullOrWhiteSpace(id) && !await _settings.GetOrDefault(Settings.Basic.SingleGalleryMode, false)) ? id.ToLower() : "default";
+
+            if (!string.IsNullOrWhiteSpace(culture))
+            { 
+                try
+                {
+                    HttpContext.Session.SetString(SessionKey.SelectedLanguage, culture);
+                    Response.Cookies.Append(
+                        CookieRequestCultureProvider.DefaultCookieName,
+                        CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                        new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+                    );
+                }
+                catch { }
+            }
 
             try
             {
