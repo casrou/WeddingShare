@@ -145,7 +145,7 @@
         <div class="col-12">
             <label>@_localizer["Settings_Basic_HideKeyFromQRCode_Label"].Value</label>
             <select class="setting-field form-control" data-setting-name="@Settings.Basic.HideKeyFromQRCode">
-                @foreach (var option in ViewOptions.YesNo)
+                @foreach (var option in ViewOptions.YesNoInverted)
                 {
                     if (Model.GetValue(Settings.Basic.HideKeyFromQRCode.ToUpper(), "false").Equals(option.Value, StringComparison.OrdinalIgnoreCase))
                     {
