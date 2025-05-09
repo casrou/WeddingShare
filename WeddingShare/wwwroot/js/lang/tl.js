@@ -108,6 +108,8 @@
             "Review": "Repaso",
             "Review_Failed": "Sawi sa pagrepaso ng balita",
             "Review_Id_Missing": "Hindi mahanap ang bagay na Id",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Mga Sponsor",
             "Switch": "Stwitch",
             "Unfreeze": "Hindi tapos",
             "Unfreeze_Failed": "Sawi sa di-malayang account",

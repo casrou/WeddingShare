@@ -21,6 +21,8 @@
                         {
                             <img src="/images/play-button.svg" class="media-viewer-play" loading="lazy" />
                         }
+                        <i class="fa fa-thumbs-up btnReviewApprove d-lg-none" data-id="@review?.Id" data-name="@review?.Title"></i>
+                        <i class="fa fa-thumbs-down btnReviewReject d-lg-none" data-id="@review?.Id" data-name="@review?.Title"></i>
                     </a>
                     <div class="card-header my-0 py-0">
                         <div class="row card-title text-capitalize border-top py-0 pt-2">
@@ -39,12 +41,6 @@
                                     <b>@_localizer["Gallery"].Value:</b> @review?.GalleryName
                                 </div>
                             }
-                        </div>
-                    </div>
-                    <div class="card-body m-0 p-0">
-                        <div class="btn-group w-100" role="group" data-id="@review?.Id">
-                            <button type="button" class="btn btn-success btnReviewApprove">@_localizer["Approve"].Value</button>
-                            <button type="button" class="btn btn-danger btnReviewReject">@_localizer["Reject"].Value</button>
                         </div>
                     </div>
                 </div>

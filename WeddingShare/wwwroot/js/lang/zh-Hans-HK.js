@@ -108,6 +108,8 @@
             "Review": "审查",
             "Review_Failed": "审查项目失败",
             "Review_Id_Missing": "找不到项目 Id",
+            "Sponsor": "发起人",
+            "Sponsors": "发起人",
             "Switch": "切换",
             "Unfreeze": "解冻",
             "Unfreeze_Failed": "解冻账户失败",

@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>حجم ملف (ماكس)</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>الأعضاء</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>فشل في إنشاء 2FA</value>
   </data>
@@ -754,6 +757,12 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>يُظهرُ الرمز QR</value>
   </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>إذا كان قانون جمهورية كوريا الشعبية الديمقراطية يحدد لغة العرض</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>Include Culture in QR</value>
+  </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>اقتباس للعرض على قمة المعرض</value>
   </data>
@@ -999,6 +1008,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Usage</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>ولا يوجد في الوقت الراهن رعاة. لماذا لا تصبح الأول؟!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>عدم تحميل قائمة مقدمي مشروع القرار</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Timestamp</value>

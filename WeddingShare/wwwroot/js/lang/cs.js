@@ -108,6 +108,8 @@
             "Review": "Přezkum",
             "Review_Failed": "Selhalo přezkoumání položky",
             "Review_Id_Missing": "Nelze najít položku Id",
+            "Sponsor": "Sponzor",
+            "Sponsors": "Sponzoři",
             "Switch": "Přepínač",
             "Unfreeze": "Stáhněte se",
             "Unfreeze_Failed": "Nepodařilo se odmrazit účet",

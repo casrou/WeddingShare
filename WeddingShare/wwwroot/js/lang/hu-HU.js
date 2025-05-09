@@ -108,6 +108,8 @@
             "Review": "Felülvizsgálat",
             "Review_Failed": "A felülvizsgálat nem sikerült",
             "Review_Id_Missing": "Nem található",
+            "Sponsor": "Támogató",
+            "Sponsors": "Támogatók",
             "Switch": "Váltás",
             "Unfreeze": "Ne mozdulj",
             "Unfreeze_Failed": "Nem sikerült feloldani a fiókot",

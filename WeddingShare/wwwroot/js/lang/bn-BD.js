@@ -108,6 +108,8 @@
             "Review": "পর্যালোচনা",
             "Review_Failed": "হেডার পুনরায় লোড করতে ব্যর্থ",
             "Review_Id_Missing": "তথ্য পাওয়া যায়নি",
+            "Sponsor": "উৎস",
+            "Sponsors": "নিক্তি",
             "Switch": "পরিবর্তন",
             "Unfreeze": "মুক্ত নয়",
             "Unfreeze_Failed": "অ্যাকাউন্ট সুসংগত করতে ব্যর্থ",

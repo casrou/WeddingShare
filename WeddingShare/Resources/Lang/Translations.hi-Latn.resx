@@ -94,6 +94,9 @@
   <data name="406_Error_Title" xml:space="preserve">
     <value>अवैध गैलरी</value>
   </data>
+  <data name="Action" xml:space="preserve">
+    <value>कार्रवाई</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>कार्य</value>
   </data>
@@ -106,8 +109,116 @@
   <data name="Approved" xml:space="preserve">
     <value>स्वीकृत</value>
   </data>
+  <data name="Audit" xml:space="preserve">
+    <value>लेखा</value>
+  </data>
+  <data name="Audit_BulkApproveReviews" xml:space="preserve">
+    <value>थोक ने सभी लंबित समीक्षाओं को मंजूरी दी</value>
+  </data>
+  <data name="Audit_BulkRejectReviews" xml:space="preserve">
+    <value>थोक ने सभी लंबित समीक्षाओं को खारिज कर दिया</value>
+  </data>
+  <data name="Audit_CreatedGallery" xml:space="preserve">
+    <value>गैलरी</value>
+  </data>
+  <data name="Audit_CreatedNewUser" xml:space="preserve">
+    <value>नया उपयोगकर्ता बनाया</value>
+  </data>
+  <data name="Audit_CustomResourceDeleted" xml:space="preserve">
+    <value>हटाए गए कस्टम संसाधन</value>
+  </data>
+  <data name="Audit_CustomResourceUploaded" xml:space="preserve">
+    <value>अपलोड की गई कस्टम संसाधन</value>
+  </data>
+  <data name="Audit_DeletedGallery" xml:space="preserve">
+    <value>हटाई गई गैलरी</value>
+  </data>
+  <data name="Audit_DeletedUser" xml:space="preserve">
+    <value>हटाए गए उपयोगकर्ता</value>
+  </data>
+  <data name="Audit_ExportedBackup" xml:space="preserve">
+    <value>बैकअप निर्यात</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptDetected" xml:space="preserve">
+    <value>विफल लॉगिन प्रयास का पता लगाया</value>
+  </data>
+  <data name="Audit_FailedLoginAttemptReset" xml:space="preserve">
+    <value>विफल लॉगिन प्रयास गिनती रीसेट</value>
+  </data>
+  <data name="Audit_FrozeUser" xml:space="preserve">
+    <value>Froze उपयोगकर्ता</value>
+  </data>
+  <data name="Audit_ImportedBackup" xml:space="preserve">
+    <value>एक बैकअप आयात</value>
+  </data>
+  <data name="Audit_ItemApprovedInGallery" xml:space="preserve">
+    <value>गैलरी में अनुमोदित</value>
+  </data>
+  <data name="Audit_ItemDeletedInGallery" xml:space="preserve">
+    <value>गैलरी में हटा दिया</value>
+  </data>
+  <data name="Audit_ItemRejectedInGallery" xml:space="preserve">
+    <value>गैलरी में अस्वीकार</value>
+  </data>
+  <data name="Audit_Limit_Help" xml:space="preserve">
+    <value>कितने लॉग दिखाने के लिए</value>
+  </data>
+  <data name="Audit_Limit_Label" xml:space="preserve">
+    <value>सीमा</value>
+  </data>
+  <data name="Audit_List_Failed" xml:space="preserve">
+    <value>लेखा परीक्षा सूची प्राप्त करने में विफल</value>
+  </data>
+  <data name="Audit_LoggedOut" xml:space="preserve">
+    <value>लॉग आउट</value>
+  </data>
+  <data name="Audit_Logs" xml:space="preserve">
+    <value>ऑडिट लॉग</value>
+  </data>
+  <data name="Audit_MultiFactorAdded" xml:space="preserve">
+    <value>उनके खाते में बहु-फैक्टर जोड़ा गया</value>
+  </data>
+  <data name="Audit_MultiFactorPassed" xml:space="preserve">
+    <value>सही बहु कारक टोकन</value>
+  </data>
+  <data name="Audit_MultiFactorReset" xml:space="preserve">
+    <value>अपनी बहु-फैक्टर कुंजी रीसेट करें</value>
+  </data>
+  <data name="Audit_MultiFactorResetUser" xml:space="preserve">
+    <value>उपयोगकर्ता के लिए बहु-फैक्टर रीसेट करें</value>
+  </data>
+  <data name="Audit_SearchTerm_Help" xml:space="preserve">
+    <value>एक खोज अवधि के आधार पर फ़िल्टर लॉग</value>
+  </data>
+  <data name="Audit_SearchTerm_Label" xml:space="preserve">
+    <value>खोज अवधि</value>
+  </data>
+  <data name="Audit_SettingsUpdated" xml:space="preserve">
+    <value>गैलरी के लिए अद्यतन सेटिंग</value>
+  </data>
+  <data name="Audit_UnfrozeUser" xml:space="preserve">
+    <value>अनुचित उपयोगकर्ता</value>
+  </data>
+  <data name="Audit_UpdatedGallery" xml:space="preserve">
+    <value>अद्यतन गैलरी</value>
+  </data>
+  <data name="Audit_UpdatedUser" xml:space="preserve">
+    <value>अद्यतन उपयोगकर्ता</value>
+  </data>
+  <data name="Audit_UserLoggedIn" xml:space="preserve">
+    <value>उपयोगकर्ता लॉग इन</value>
+  </data>
+  <data name="Audit_WipeAllGalleries" xml:space="preserve">
+    <value>सभी गैलरी</value>
+  </data>
+  <data name="Audit_WipedGallery" xml:space="preserve">
+    <value>Wiped गैलरी</value>
+  </data>
   <data name="Available_Galleries" xml:space="preserve">
     <value>उपलब्ध दीर्घाओं</value>
+  </data>
+  <data name="Check_Account_State_Failed" xml:space="preserve">
+    <value>खाते की स्थिति की जांच करने में विफल</value>
   </data>
   <data name="Clean" xml:space="preserve">
     <value>स्वच्छ</value>
@@ -339,6 +450,9 @@
   </data>
   <data name="Max_File_Size" xml:space="preserve">
     <value>मैक्स फाइल का आकार है</value>
+  </data>
+  <data name="Members" xml:space="preserve">
+    <value>सदस्य</value>
   </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>2FA स्थापित करने में विफल</value>
@@ -889,6 +1003,15 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>प्रयोग</value>
   </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>वर्तमान में कोई प्रायोजक नहीं हैं। तुम क्यों नहीं बनो!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>प्रायोजक सूची लोड करने में विफल</value>
+  </data>
+  <data name="Timestamp" xml:space="preserve">
+    <value>टाइमस्टैम्प</value>
+  </data>
   <data name="Total" xml:space="preserve">
     <value>कुल</value>
   </data>
@@ -906,6 +1029,9 @@
   </data>
   <data name="Uploader" xml:space="preserve">
     <value>अपलोडर</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>उपयोगकर्ता</value>
   </data>
   <data name="User_CPassword_Missmatch" xml:space="preserve">
     <value>प्रदान किए गए पासवर्ड और confrim पासवर्ड से मेल नहीं खाता</value>

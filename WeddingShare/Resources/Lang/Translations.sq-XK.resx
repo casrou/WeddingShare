@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>Madhësia e file maksimum është</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>Anëtarë</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>Gabim gjatë krijimit të 2FA</value>
   </data>
@@ -754,6 +757,12 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>Shfaq Kodi</value>
   </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>Nëse kodi QR specifikon gjuhën e ekranit</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>Përfshi kulturën në QR</value>
+  </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>Një citim për t'u shfaqur në krye të galerisë</value>
   </data>
@@ -999,6 +1008,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Përdorimi</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>Aktualisht nuk ka sponsorë. Pse nuk bëhesh i pari!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>I pamundur ngarkimi i listës së sponsorëve</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Unit-format</value>

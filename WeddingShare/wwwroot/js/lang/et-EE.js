@@ -108,6 +108,8 @@
             "Review": "Läbivaatamine",
             "Review_Failed": "Elemendi läbivaatamine nurjus",
             "Review_Id_Missing": "Elemendi ID leidmine nurjus",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsorid",
             "Switch": "Lülita",
             "Unfreeze": "Vabasta",
             "Unfreeze_Failed": "Konto avamine nurjus",

@@ -108,6 +108,8 @@
             "Review": "Ulasan",
             "Review_Failed": "Gagal mengulas butir",
             "Review_Id_Missing": "Tak bisa temukan Id butir",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsor",
             "Switch": "Tukar",
             "Unfreeze": "Jangan bergerak",
             "Unfreeze_Failed": "Gagal membuang -bekukan akun",

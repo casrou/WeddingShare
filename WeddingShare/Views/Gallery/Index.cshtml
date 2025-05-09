@@ -20,15 +20,18 @@
         qrAppend.Add(new KeyValuePair<string, string>("order", qrDefaultOrder));
     }
 
-    try
+    if (await _settings.GetOrDefault(Settings.Gallery.QRCode.IncludeCulture, true))
     {
-        var currentCulture = Context.Request.HttpContext.Session.GetString(SessionKey.SelectedLanguage);
-        if (!string.IsNullOrWhiteSpace(currentCulture))
+        try
         {
-            qrAppend.Add(new KeyValuePair<string, string>("culture", currentCulture));
+            var currentCulture = Context.Request.HttpContext.Session.GetString(SessionKey.SelectedLanguage);
+            if (!string.IsNullOrWhiteSpace(currentCulture))
+            {
+                qrAppend.Add(new KeyValuePair<string, string>("culture", currentCulture));
+            }
         }
+        catch { }
     }
-    catch { }
 
     var qrExclude = new List<string>();
     if (await _settings.GetOrDefault(Settings.Basic.HideKeyFromQRCode, false))

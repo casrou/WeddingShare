@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>Maks filstørrelse er</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>Medlemmer</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>Kunne ikke sette opp 2FA</value>
   </data>
@@ -754,6 +757,12 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>Vis QR-kode</value>
   </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>Skulle QR-koden angi visningsspråket</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>Inkluder kultur i QR</value>
+  </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>Et tilbud å vise øverst i galleriet</value>
   </data>
@@ -999,6 +1008,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Bruk</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>For tiden er det ingen sponsorer. Hvorfor blir du ikke den første!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>Klarte ikke å laste listen over sponsorer</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Timestamp</value>

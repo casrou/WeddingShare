@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>Največja velikost datoteke je</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>Člani</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>Nastavitev 2FA ni uspela</value>
   </data>
@@ -754,6 +757,12 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>Prikaži kodo QR</value>
   </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>Če koda QR določa jezik prikaza</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>Vključi kulturo v QR</value>
+  </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>Citat za prikaz na vrhu galerije</value>
   </data>
@@ -999,6 +1008,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Uporaba</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>Trenutno ni sponzorjev. Zakaj ne postaneš prvi!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>Nalaganje seznama sponzorjev ni uspelo</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Časovni žig</value>

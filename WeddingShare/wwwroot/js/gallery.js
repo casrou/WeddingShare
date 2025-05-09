@@ -332,7 +332,7 @@
                 });
         });
 
-        $(document).off('click', 'button.btnDeletePhoto').on('click', 'button.btnDeletePhoto', function (e) {
+        $(document).off('click', 'i.btnDeletePhoto').on('click', 'i.btnDeletePhoto', function (e) {
             preventDefaults(e);
 
             if ($(this).attr('disabled') == 'disabled') {

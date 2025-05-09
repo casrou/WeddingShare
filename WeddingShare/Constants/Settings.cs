@@ -74,6 +74,7 @@
                 public const string Enabled = "Settings:Gallery:QR_Code:Enabled";
                 public const string DefaultView = "Settings:Gallery:QR_Code:Default_View";
                 public const string DefaultSort = "Settings:Gallery:QR_Code:Default_Sort";
+                public const string IncludeCulture = "Settings:Gallery:QR_Code:Include_Culture";
             }
         }
 

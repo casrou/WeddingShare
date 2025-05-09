@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>La taille maximale du fichier est</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>Membres</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>Échec de la mise en place de 2FA</value>
   </data>
@@ -754,6 +757,12 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>Afficher le code QR</value>
   </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>Si le code QR spécifie la langue d'affichage</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>Inclure la culture dans le QR</value>
+  </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>Une citation à afficher en haut de la galerie</value>
   </data>
@@ -999,6 +1008,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Utilisation</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>Il n'y a actuellement aucun parrain. Pourquoi ne pas devenir le premier !</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>Impossible de charger la liste des sponsors</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Timbre</value>

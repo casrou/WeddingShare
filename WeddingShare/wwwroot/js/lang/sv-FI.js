@@ -108,6 +108,8 @@
             "Review": "Granska",
             "Review_Failed": "Underlåten att granska objektet",
             "Review_Id_Missing": "Kunde inte hitta objekt Id",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsorer",
             "Switch": "Switch",
             "Unfreeze": "Un-Freeze",
             "Unfreeze_Failed": "Misslyckats med un-Frys konto",

@@ -108,6 +108,8 @@
             "Review": "Uudelleentarkastelu",
             "Review_Failed": "Kohteen uudelleentarkastelu epäonnistui",
             "Review_Id_Missing": "Kohteen tunnistetta ei löytynyt",
+            "Sponsor": "Sponsori",
+            "Sponsors": "Sponsorit",
             "Switch": "Vaihda",
             "Unfreeze": "Liikkumatta",
             "Unfreeze_Failed": "Tilin jäädytys epäonnistui",

@@ -108,6 +108,8 @@
             "Review": "نقد",
             "Review_Failed": "شکست در بررسی آیتم",
             "Review_Id_Missing": "نمی تواند آیتم Id را پیدا کند",
+            "Sponsor": "حمایت مالی",
+            "Sponsors": "حامیان",
             "Switch": "Switch",
             "Unfreeze": "Un-Freeze",
             "Unfreeze_Failed": "عدم موفقیت در حساب بدون درز",

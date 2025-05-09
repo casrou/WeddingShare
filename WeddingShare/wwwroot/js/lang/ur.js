@@ -108,6 +108,8 @@
             "Review": "اعادہ",
             "Review_Failed": "آئٹمس کا جائزہ لینے میں ناکامی",
             "Review_Id_Missing": "طےشدہ",
+            "Sponsor": "سرپرست",
+            "Sponsors": "تیاری",
             "Switch": "سوئچ",
             "Unfreeze": "بغیر-",
             "Unfreeze_Failed": "غیر محفوظ اکاؤنٹ کی ناکامی",

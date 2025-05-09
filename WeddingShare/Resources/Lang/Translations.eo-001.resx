@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>Max dosiergrandeco estas</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>Membroj de membroj</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>Malsukcesas starigi 2FA</value>
   </data>
@@ -754,6 +757,12 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>Spektaklo QR Code</value>
   </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>Se la QR-kodo precizigas la ekranlingvon</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>Inkludas kulturon en QR</value>
+  </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>Citaĵo por montri ĉe la pinto de la galerio</value>
   </data>
@@ -999,6 +1008,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Uzante la</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>Ekzistas neniuj sponsoroj. Kial vi ne fariĝis la unua!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>Malsukcesas ŝarĝi la sponsorojn-liston</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>La tempo</value>

@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>Max bestandsgrootte is</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>Leden</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>Opzetten 2FA mislukt</value>
   </data>
@@ -754,6 +757,12 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>QR-code tonen</value>
   </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>Moet de QR-code de weergavetaal specificeren</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>Cultuur opnemen in QR</value>
+  </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>Een citaat dat bovenaan de galerij getoond moet worden</value>
   </data>
@@ -999,6 +1008,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Gebruik</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>Er zijn momenteel geen sponsors. Waarom word jij niet de eerste!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>Kon de sponsorlijst niet laden</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Tijdstempel</value>

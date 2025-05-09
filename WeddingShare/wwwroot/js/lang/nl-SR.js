@@ -108,6 +108,8 @@
             "Review": "Evaluatie",
             "Review_Failed": "Kon item niet bekijken",
             "Review_Id_Missing": "Kon item-id niet vinden",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsors",
             "Switch": "Omschakelen",
             "Unfreeze": "Vrijlaten",
             "Unfreeze_Failed": "Kon account niet verwijderen",

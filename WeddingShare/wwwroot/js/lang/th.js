@@ -108,6 +108,8 @@
             "Review": "ทบทวน",
             "Review_Failed": "ล้มเหลวในการทบทวนรายการ",
             "Review_Id_Missing": "ไม่พบหมายเลขรายการ",
+            "Sponsor": "ผู้สนับสนุน",
+            "Sponsors": "สปอนเซอร์",
             "Switch": "สลับ",
             "Unfreeze": "ไม่สงบ",
             "Unfreeze_Failed": "ล้มเหลวในการปิดบัญชีผู้ใช้",

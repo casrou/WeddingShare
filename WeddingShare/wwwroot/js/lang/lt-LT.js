@@ -108,6 +108,8 @@
             "Review": "Peržiūra",
             "Review_Failed": "Nepavyko peržiūrėti elemento",
             "Review_Id_Missing": "Nepavyko rasti Id elemento",
+            "Sponsor": "Rėmėjas",
+            "Sponsors": "Rėmėjai",
             "Switch": "Pereiti",
             "Unfreeze": "Šaltis",
             "Unfreeze_Failed": "Nepavyko užšaldyti paskyros",

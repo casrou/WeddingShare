@@ -371,5 +371,29 @@ function displayIdentityCheck(required, callbackFn) {
             hidePopup($(this).closest('.modal').attr('id'));
         });
 
+        $(document).off('click', 'i#btn-show-sponsors').on('click', 'i#btn-show-sponsors', function (e) {
+            preventDefaults(e);
+
+            $.ajax({
+                type: "GET",
+                url: '/Sponsors',
+                success: function (data) {
+                    displayPopup({
+                        Title: localization.translate('Sponsors'),
+                        CustomHtml: data,
+                        Buttons: [{
+                            Text: localization.translate('Sponsor'),
+                            Class: 'btn-success',
+                            Callback: function () {
+                                window.open('https://github.com/sponsors/Cirx08');
+                            }
+                        }, {
+                            Text: localization.translate('Close')
+                        }]
+                    });
+                }
+            });
+        });
+
     });
 })();

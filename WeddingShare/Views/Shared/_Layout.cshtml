@@ -226,15 +226,15 @@
                         <a class="text-link text-light" href="https://github.com/Cirx08/WeddingShare" title="Copyright Cirx08" target="_blank"><i class="fa-brands fa-github"></i> WeddingShare v@(await _settings.GetOrDefault(Release.Version, "1.0.0")) &copy; Cirx08 @DateTime.UtcNow.Year</a>
                     </span>
                     <span class="float-end">
-                        @if (string.Equals("/images/logo.png", await _settings.GetOrDefault(Settings.Basic.Logo, "/images/logo.png"), StringComparison.OrdinalIgnoreCase))
-                        {
-                            <a class="text-link text-light" href="https://www.flaticon.com/free-icon/wedding-couple_703213" title="bride icons" target="_blank">Freepik - Flaticon</a>
-                        }
-                        <a class="text-link text-light" href="https://buymeacoffee.com/cirx08" title="BuyMeACoffee" target="_blank"><img class="fa-brands fa-buymeacoffee" src="/images/buymeacoffee.gif"/></a>
+                        <a class="text-link text-light" href="https://github.com/sponsors/Cirx08" title="GitHub Sponsors" target="_blank"><img class="fa-brands fa-sponsor-badge" src="/images/github.png" /></a>
+                        <a class="text-link text-light" href="https://buymeacoffee.com/cirx08" title="BuyMeACoffee" target="_blank"><img class="fa-brands fa-sponsor-badge" src="/images/buymeacoffee.gif" /></a>
                     </span>
                 </p>
             </div>
         </footer>
+
+        <!-- Sponsors Button -->
+        <i id="btn-show-sponsors" class="fa-solid fa-bolt"></i>
         
         <!-- JS -->
         @await RenderSectionAsync("Scripts", required: false)

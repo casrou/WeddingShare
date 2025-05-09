@@ -1,0 +1,34 @@
+﻿@model WeddingShare.Views.Sponsors.IndexModel
+@using WeddingShare.Constants
+
+<div class="text-center mb-5">
+    @if (Model?.SponsorsList?.Tiers != null && Model.SponsorsList.Tiers.Any(x => x?.Platforms?.Any(y => y?.Sponsors?.Any() ?? false) ?? false))
+    {
+        foreach (var tier in Model.SponsorsList.Tiers.OrderBy(x => x.Priority))
+        {
+            <section class="my-4">
+                @if (tier?.Platforms != null && tier.Platforms.Any(x => x?.Sponsors?.Any() ?? false))
+                {
+                    <h5 class="text-capitalize">@tier.Name @_localizer["Members"].Value</h5>
+                    foreach (var platform in tier.Platforms)
+                    {
+                        if (platform?.Sponsors != null && platform.Sponsors.Any())
+                        {
+                            @foreach (var sponsor in platform.Sponsors)
+                            {
+                                <a href="@(await _settings.GetOrDefault(Sponsors.Github.ProfileUrl, string.Empty))?.TrimEnd('/'))/@sponsor" class="sponsor-card">
+                                    <img src="@((await _settings.GetOrDefault(Sponsors.Github.ProfileUrl, string.Empty))?.TrimEnd('/'))/@($"{sponsor}.png")" class="sponsor-card-logo" alt="@sponsor" onerror="this.src = '/images/@(platform.Name.ToLower())_avatar.png';" />
+                                    <p class="sponsor-card-name">@sponsor</p>
+                                </a>
+                            }
+                        }
+                    }
+                }
+            </section>
+        }
+    }
+    else
+    {
+        <h6>@_localizer["Sponsors_BecomeTheFirst"]</h6>
+    }
+</div>

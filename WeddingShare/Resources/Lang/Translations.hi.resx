@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>मैक्स फाइल का आकार है</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>सदस्य</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>2FA स्थापित करने में विफल</value>
   </data>
@@ -754,6 +757,12 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>QR कोड</value>
   </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>क्या QR कोड डिस्प्ले भाषा को निर्दिष्ट करता है</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>क्यूआर में संस्कृति को शामिल करें</value>
+  </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>गैलरी के शीर्ष पर प्रदर्शित करने के लिए एक उद्धरण</value>
   </data>
@@ -999,6 +1008,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>प्रयोग</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>वर्तमान में कोई प्रायोजक नहीं हैं। तुम क्यों नहीं बनो!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>प्रायोजक सूची लोड करने में विफल</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>टाइमस्टैम्प</value>

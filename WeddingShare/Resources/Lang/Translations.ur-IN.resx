@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>میکس فائل حجم ہے۔</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>ممبر</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>2FA مقرر کرنے میں ناکامی</value>
   </data>
@@ -754,6 +757,12 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>طےشدہ</value>
   </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>کیو آر کوڈ متعین کریں</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>جے آر میں ثقافت شامل ہے۔</value>
+  </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>گیلری کے اوپر دکھائی دینے کا ایک مقالہ</value>
   </data>
@@ -999,6 +1008,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>استعمال</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>فی الحال کوئی سرپرست نہیں ہے۔ تم پہلے کیوں نہیں ہو!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>سرپرستوں کی فہرست لوڈ کرنے میں ناکامی</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Timestamp</value>

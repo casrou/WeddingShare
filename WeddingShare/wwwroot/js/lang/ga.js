@@ -108,6 +108,8 @@
             "Review": "Athbhreithniú",
             "Review_Failed": "Failed a athbhreithniú mír",
             "Review_Id_Missing": "Níorbh fhéidir teacht ar mhír Id",
+            "Sponsor": "Urraitheoirí",
+            "Sponsors": "Seirbhís do Chustaiméirí",
             "Switch": "Cineál gas: in airde",
             "Unfreeze": "Saor in Aisce",
             "Unfreeze_Failed": "Failed chun cuntas unfreeze",

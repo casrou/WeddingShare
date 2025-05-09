@@ -108,6 +108,8 @@
             "Review": "Revisar",
             "Review_Failed": "Falha ao revisar imagem",
             "Review_Id_Missing": "Não consegui encontrar item Id",
+            "Sponsor": "Patrocinador",
+            "Sponsors": "Patrocinadores",
             "Switch": "Interruptor",
             "Unfreeze": "Sem congelamento",
             "Unfreeze_Failed": "Falhado para não congelar conta",

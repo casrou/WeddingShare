@@ -108,6 +108,8 @@
             "Review": "Revisió",
             "Review_Failed": "Ha fallat en revisar l' element",
             "Review_Id_Missing": "No s' ha pogut trobar l' element Id",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Espoons",
             "Switch": "Commuta",
             "Unfreeze": "Sense lliureze",
             "Unfreeze_Failed": "No s' ha pogut afegir l' assentament:",

@@ -1,12 +1,13 @@
 # WeddingShare
 
- <br />![Banner](https://github.com/Cirx08/WeddingShare/blob/main/banner.png?raw=true)
+ <br />![Banner](banner.png)
 
 ## Support
 
 Thank you to everyone that supports this project. For anyone that hasn't yet I would be grateful if you would show some support by "buying me a coffee" through the link below. Weddings are expensive and all proceeds from this project will be going towards paying off my wedding bills.
 
 - BuyMeACoffee - https://buymeacoffee.com/cirx08
+- GitHub Sponsors - https://github.com/sponsors/Cirx08
 
 ## About
 
@@ -34,50 +35,48 @@ For a setup steps and a full list of configurable options please view the docume
 - GitHub - https://github.com/Cirx08/WeddingShare
 - DockerHub - https://hub.docker.com/r/cirx08/wedding_share
 - BuyMeACoffee - https://buymeacoffee.com/cirx08
+- GitHub Sponsors - https://github.com/sponsors/Cirx08
 
 ## Screenshots
 
 ### Desktop
 
-![Homepage](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Homepage.png?raw=true)
+![Homepage](screenshots/Homepage.png)
 
-![Gallery](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Gallery.png?raw=true)
+![Gallery](screenshots/Gallery.png)
 
-![Gallery](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Gallery-FullWidth.png?raw=true)
+![Gallery](screenshots/Gallery-FullWidth.png)
 
-![Gallery](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Gallery-Presentation.png?raw=true)
+![Gallery](screenshots/Gallery-Presentation.png)
 
-![Gallery](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Gallery-Slideshow.png?raw=true)
+![Gallery](screenshots/Gallery-Slideshow.png)
 
-![Admin Area](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Admin.png?raw=true)
+![Admin Area](screenshots/Admin.png)
 
 ### Mobile
 
-![Homepage](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Homepage-Mobile.png?raw=true)
+![Homepage](screenshots/Homepage-Mobile.png)
 
-![Gallery](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Gallery-Mobile.png?raw=true)
+![Gallery](screenshots/Gallery-Mobile.png)
 
-![Admin Area](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Admin-Mobile.png?raw=true)
+![Admin Area](screenshots/Admin-Mobile.png)
 
 ### Dark Mode
 
-![Homepage](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Homepage-Dark.png?raw=true)
+![Homepage](screenshots/Homepage-Dark.png)
 
-![Gallery](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Gallery-Dark.png?raw=true)
+![Gallery](screenshots/Gallery-Dark.png)
 
-![Gallery](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Gallery-FullWidth-Dark.png?raw=true)
+![Gallery](screenshots/Gallery-FullWidth-Dark.png)
 
-![Gallery](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Gallery-Presentation-Dark.png?raw=true)
+![Gallery](screenshots/Gallery-Presentation-Dark.png)
 
-![Gallery](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Gallery-Slideshow-Dark.png?raw=true)
+![Gallery](screenshots/Gallery-Slideshow-Dark.png)
 
-![Admin Area](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Admin-Dark.png?raw=true)
+![Admin Area](screenshots/Admin-Dark.png)
 
-![Homepage](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Homepage-Mobile-Dark.png?raw=true)
+![Homepage](screenshots/Homepage-Mobile-Dark.png)
 
-![Gallery](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Gallery-Mobile-Dark.png?raw=true)
+![Gallery](screenshots/Gallery-Mobile-Dark.png)
 
-![Admin Area](https://github.com/Cirx08/WeddingShare/blob/main/screenshots/Admin-Mobile-Dark.png?raw=true)
-
-### Attributions
-- [Bride icons created by Freepik - Flaticon](https://www.flaticon.com/free-icon/wedding-couple_703213)
+![Admin Area](screenshots/Admin-Mobile-Dark.png)

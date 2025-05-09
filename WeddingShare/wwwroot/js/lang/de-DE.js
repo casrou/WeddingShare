@@ -108,6 +108,8 @@
             "Review": "Überprüfung",
             "Review_Failed": "Fehler beim Überprüfen des Elements",
             "Review_Id_Missing": "Konnte keine ID finden",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsoren",
             "Switch": "Wechseln",
             "Unfreeze": "Keine Bewegung",
             "Unfreeze_Failed": "Nicht eingefrorenes Konto",

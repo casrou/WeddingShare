@@ -108,6 +108,8 @@
             "Review": "İnceleme",
             "Review_Failed": "Öğeyi incelemeye başarısız oldu",
             "Review_Id_Missing": "Can not find item Id",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsorlar",
             "Switch": "Anahtar anahtarı",
             "Unfreeze": "Özgür olmayan",
             "Unfreeze_Failed": "Özgür olmayan hesap için başarısız oldu",
