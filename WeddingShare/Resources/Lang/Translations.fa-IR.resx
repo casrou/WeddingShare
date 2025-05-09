@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>اندازه فایل Max</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>اعضا</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>شکست در راه اندازی 2FA</value>
   </data>
@@ -754,6 +757,12 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>کد QR</value>
   </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>کد QR باید زبان صفحه نمایش را مشخص کند</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>فرهنگ در QR</value>
+  </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>یک نقل قول برای نمایش در بالای گالری</value>
   </data>
@@ -999,6 +1008,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>استفاده از</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>در حال حاضر هیچ اسپانسری وجود ندارد. چرا اول نمی شوی!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>شکست در بارگذاری لیست حامیان</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Timestamp</value>

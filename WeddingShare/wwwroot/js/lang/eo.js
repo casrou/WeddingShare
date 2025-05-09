@@ -108,6 +108,8 @@
             "Review": "Revizio",
             "Review_Failed": "Malsukcesita por revizii objekton",
             "Review_Id_Missing": "Mi ne povas trovi eron, kiun mi",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsors",
             "Switch": "Ŝaltilo",
             "Unfreeze": "Ne-libereca",
             "Unfreeze_Failed": "Malfavora al senfrosta konto",

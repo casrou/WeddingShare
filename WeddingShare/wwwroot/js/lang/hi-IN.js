@@ -108,6 +108,8 @@
             "Review": "समीक्षा",
             "Review_Failed": "आइटम की समीक्षा करने में विफल",
             "Review_Id_Missing": "आइटम आईडी नहीं मिला",
+            "Sponsor": "प्रायोजक",
+            "Sponsors": "प्रायोजक",
             "Switch": "स्विच",
             "Unfreeze": "Un-freeze",
             "Unfreeze_Failed": "Un-freeze खाते में विफल",

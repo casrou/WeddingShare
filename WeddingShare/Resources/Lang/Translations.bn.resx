@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>ফাইলের সর্বাধিক মাপ</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>সদস্য</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>পরিচয় নির্ধারণ করতে ব্যর্থ</value>
   </data>
@@ -754,6 +757,12 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>তারিখ প্রদর্শন করো (প)</value>
   </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>ভুল কোড উল্লিখিত হলে তা উল্লেখ করা হবে</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>QROP এর মধ্যে সংস্কৃতি অন্তর্ভুক্ত করুন</value>
+  </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>সংকলনের উপরের অংশে প্রদর্শন করার উদ্দেশ্যে একটি উদ্ধৃতি</value>
   </data>
@@ -999,6 +1008,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>ব্যবহার প্রণালী</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>বর্তমানে কোনো স্পন্সর নেই। কেন তুমি প্রথম হওনি!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>স্পনের তালিকা লোড করতে ব্যর্থ</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>সময়</value>

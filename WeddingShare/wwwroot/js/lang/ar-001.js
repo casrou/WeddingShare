@@ -108,6 +108,8 @@
             "Review": "الاستعراض",
             "Review_Failed": "عدم استعراض البند",
             "Review_Id_Missing": "لا يمكن العثور على بند",
+            "Sponsor": "الرعاة",
+            "Sponsors": "الرعاة",
             "Switch": "Switch",
             "Unfreeze": "Un-Freeze",
             "Unfreeze_Failed": "فشل في الحساب غير المتجمد",

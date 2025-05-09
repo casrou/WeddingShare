@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>Max file size is</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>Members</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>Failed to set up 2FA</value>
   </data>
@@ -740,7 +743,7 @@
     <value>Prevent Duplicates</value>
   </data>
   <data name="Settings_Gallery_QRCodeDefaultSort_Help" xml:space="preserve">
-    <value>Once scanner what order should items appear</value>
+    <value>Once scanned what order should items appear</value>
   </data>
   <data name="Settings_Gallery_QRCodeDefaultSort_Label" xml:space="preserve">
     <value>Default QR Sort</value>
@@ -756,6 +759,12 @@
   </data>
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>Show QR Code</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>Should the QR code specify the display language</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>Include Culture in QR</value>
   </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>A quote to display at the top of the gallery</value>
@@ -1002,6 +1011,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Usage</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>There are currently no sponsors. Why don't you become the first!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>Failed to load the sponsors list</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Timestamp</value>

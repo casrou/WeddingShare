@@ -2,7 +2,7 @@ let accountStateCheckInterval = null;
 let auditSearchTimeout = null;
 
 function reviewPhoto(element, action) {
-    var id = element.parent('.btn-group').data('id');
+    var id = element.data('id');
     if (!id) {
         displayMessage(localization.translate('Review'), localization.translate('Review_Id_Missing'));
         return;
@@ -291,12 +291,12 @@ function selectActiveTab(tab) {
             });
         });
 
-        $(document).off('click', 'button.btnReviewApprove').on('click', 'button.btnReviewApprove', function (e) {
+        $(document).off('click', 'i.btnReviewApprove').on('click', 'i.btnReviewApprove', function (e) {
             preventDefaults(e);
             reviewPhoto($(this), 1);
         });
 
-        $(document).off('click', 'button.btnReviewReject').on('click', 'button.btnReviewReject', function (e) {
+        $(document).off('click', 'i.btnReviewReject').on('click', 'i.btnReviewReject', function (e) {
             preventDefaults(e);
             reviewPhoto($(this), 2);
         });
@@ -1285,7 +1285,7 @@ function selectActiveTab(tab) {
             }
         });
 
-        $(document).off('click', 'button.custom-resource-delete').on('click', 'button.custom-resource-delete', function (e) {
+        $(document).off('click', 'i.custom-resource-delete').on('click', 'i.custom-resource-delete', function (e) {
             preventDefaults(e);
 
             if ($(this).attr('disabled') == 'disabled') {

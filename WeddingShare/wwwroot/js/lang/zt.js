@@ -108,6 +108,8 @@
             "Review": "审查",
             "Review_Failed": "二. 檢查項目失敗",
             "Review_Id_Missing": "找不到項目 Id",
+            "Sponsor": "发起人",
+            "Sponsors": "提案国",
             "Switch": "切換",
             "Unfreeze": "解冻",
             "Unfreeze_Failed": "解冻帳號失敗",

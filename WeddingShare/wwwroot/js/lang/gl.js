@@ -108,6 +108,8 @@
             "Review": "Revisión",
             "Review_Failed": "Falta de revisión do artigo",
             "Review_Id_Missing": "Non se atopou o elemento ID",
+            "Sponsor": "Patrocinador",
+            "Sponsors": "Patrocinadores",
             "Switch": "Switch",
             "Unfreeze": "Un Freezer",
             "Unfreeze_Failed": "Non funciona a conta sen conxelar",

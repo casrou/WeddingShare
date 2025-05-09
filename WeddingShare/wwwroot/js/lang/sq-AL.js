@@ -108,6 +108,8 @@
             "Review": "Pamja e parë",
             "Review_Failed": "I pamundur shqyrtimi i elementit",
             "Review_Id_Missing": "E pamundur gjetja e elementit Id",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsor",
             "Switch": "Kalo",
             "Unfreeze": "Liro",
             "Unfreeze_Failed": "Autentifikimi dështoi",

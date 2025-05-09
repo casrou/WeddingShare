@@ -108,6 +108,8 @@
             "Review": "Recensione",
             "Review_Failed": "Non recensire il prodotto",
             "Review_Id_Missing": "Non riesco a trovare l'oggetto Id",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsor",
             "Switch": "Interruttore",
             "Unfreeze": "Non congelare",
             "Unfreeze_Failed": "Non congelato account",

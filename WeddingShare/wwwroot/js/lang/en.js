@@ -108,6 +108,8 @@
             "Review": "Review",
             "Review_Failed": "Failed to review item",
             "Review_Id_Missing": "Could not find item Id",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsors",
             "Switch": "Switch",
             "Unfreeze": "Un-Freeze",
             "Unfreeze_Failed": "Failed to un-freeze account",

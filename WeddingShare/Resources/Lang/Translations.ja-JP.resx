@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>最大ファイルサイズは</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>メンバー</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>2FAをセットアップできなかった</value>
   </data>
@@ -754,6 +757,12 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>QRコードを表示する</value>
   </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>QRコードが表示言語を指定する場合</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>QRで文化を含める</value>
+  </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>ギャラリーの一番上に表示する引用</value>
   </data>
@@ -999,6 +1008,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>使用方法</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>現在、スポンサーはありません。 初めてになろう!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>スポンサーリストをロードできなかった</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>タイムスタンプ</value>

@@ -108,6 +108,8 @@
             "Review": "Pārskatīšana",
             "Review_Failed": "Neizdevās pārskatīt ierakstu",
             "Review_Id_Missing": "Nevar atrast vienības Id",
+            "Sponsor": "Sponsors",
+            "Sponsors": "Sponsori",
             "Switch": "Slēdzis",
             "Unfreeze": "Nesaldēt",
             "Unfreeze_Failed": "Neizdevās iesaldēt kontu",

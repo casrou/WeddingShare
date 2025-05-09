@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>Maksimaalne faili suurus</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>Liikmed</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>2FA loomine nurjus</value>
   </data>
@@ -754,6 +757,12 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>QR- koodi näitamine</value>
   </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>Kas QR-kood määrab kuvamiskeele</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>Kultuuri kaasamine QR- i</value>
+  </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>Galerii ülaosas kuvatav tsitaat</value>
   </data>
@@ -999,6 +1008,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Kasutamine</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>Praegu sponsoreid ei ole. Miks sa ei võiks olla esimene!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>Sponsorite nimekirja laadimine nurjus</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Ajatempel</value>

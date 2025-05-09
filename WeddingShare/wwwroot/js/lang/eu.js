@@ -108,6 +108,8 @@
             "Review": "Berrikusi",
             "Review_Failed": "Huts egin du elementua aztertzean",
             "Review_Id_Missing": "Ezin izan da Id elementua aurkitu",
+            "Sponsor": "Babeslea",
+            "Sponsors": "Babesleak",
             "Switch": "Aldatu",
             "Unfreeze": "Izoztu gabe",
             "Unfreeze_Failed": "Huts egin du kontua desizoztean",

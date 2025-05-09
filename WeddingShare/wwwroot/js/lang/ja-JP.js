@@ -108,6 +108,8 @@
             "Review": "レビュー",
             "Review_Failed": "アイテムのレビュー失敗",
             "Review_Id_Missing": "アイテムが見つかりませんでした",
+            "Sponsor": "スポンサー",
+            "Sponsors": "スポンサー",
             "Switch": "スイッチ",
             "Unfreeze": "非フリーズ",
             "Unfreeze_Failed": "非フリーズアカウントに失敗",

@@ -108,6 +108,8 @@
             "Review": "Preskúmanie",
             "Review_Failed": "Nepodarilo sa skontrolovať položku",
             "Review_Id_Missing": "Nepodarilo sa nájsť položku ID",
+            "Sponsor": "Sponzor",
+            "Sponsors": "Sponzori",
             "Switch": "Prepínač",
             "Unfreeze": "Odmrazovanie",
             "Unfreeze_Failed": "Nepodarilo sa zmraziť účet",

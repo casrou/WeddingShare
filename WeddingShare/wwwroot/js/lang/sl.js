@@ -108,6 +108,8 @@
             "Review": "Pregled",
             "Review_Failed": "Postavka ni bila pregledana",
             "Review_Id_Missing": "Ni moč najti ID postavke",
+            "Sponsor": "Sponzor",
+            "Sponsors": "Sponzorji",
             "Switch": "Stikalo",
             "Unfreeze": "Odmrzni",
             "Unfreeze_Failed": "Račun odmrznitve ni uspel",

@@ -108,6 +108,8 @@
             "Review": "Review",
             "Review_Failed": "נכשל בבדיקת הפריט",
             "Review_Id_Missing": "לא מצאתי פריט",
+            "Sponsor": "ספונסר",
+            "Sponsors": "מניות",
             "Switch": "Switch",
             "Unfreeze": "Un-Freeze",
             "Unfreeze_Failed": "נכשלת בחשבון un-freeze",

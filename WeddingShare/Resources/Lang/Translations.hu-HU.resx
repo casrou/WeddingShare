@@ -451,6 +451,9 @@
   <data name="Max_File_Size" xml:space="preserve">
     <value>Max. fájlméret</value>
   </data>
+  <data name="Members" xml:space="preserve">
+    <value>Tagok</value>
+  </data>
   <data name="MultiFactor_Token_Set_Failed" xml:space="preserve">
     <value>Nem sikerült létrehozni a 2FA-t</value>
   </data>
@@ -754,6 +757,12 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>QR-kód megjelenítése</value>
   </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+    <value>Ha a QR-kód megadja a kijelző nyelvét</value>
+  </data>
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
+    <value>A kultúra belefoglalása a QR-be</value>
+  </data>
   <data name="Settings_Gallery_Quote_Help" xml:space="preserve">
     <value>Idézet a galéria tetején</value>
   </data>
@@ -999,6 +1008,12 @@
   </data>
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Használat</value>
+  </data>
+  <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
+    <value>Jelenleg nincsenek szponzorok. Miért nem leszel te az első!</value>
+  </data>
+  <data name="Sponsors_Load_Error" xml:space="preserve">
+    <value>Nem sikerült betölteni a szponzorok listáját</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Időbélyegző</value>

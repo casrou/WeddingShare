@@ -108,6 +108,8 @@
             "Review": "Révision",
             "Review_Failed": "Échec de l ' examen",
             "Review_Id_Missing": "Impossible de trouver Id élément",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsors",
             "Switch": "Commutateur",
             "Unfreeze": "Ne pas geler",
             "Unfreeze_Failed": "Impossible de dégeler le compte",

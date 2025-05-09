@@ -9,16 +9,12 @@
     {
         foreach (var resource in Model)
         {
-            <div class="custom-resource col-12 col-lg-4 mb-4 mb-lg-0 mb-1 mb-lg-4">
+            <div class="custom-resource col-12 col-lg-4 mb-1 mb-lg-4">
                 <div class="card">
                     <a href="/custom_resources/@resource.FileName" class="media-viewer-item" data-media-viewer-type="image" data-media-viewer-collection="@resource.Id" data-media-viewer-author="@resource?.FileName" data-media-viewer-download="false">
                         <img src="/custom_resources/@resource?.FileName" class="review-tile" loading="lazy" />
+                        <i class="fa fa-trash custom-resource-delete d-lg-none" data-id="@resource?.Id" data-name="@resource?.FileName"></i>
                     </a>
-                    <div class="card-body m-0 p-0">
-                        <div class="btn-group w-100" role="group" data-id="@resource?.Id">
-                            <button type="button" class="btn btn-danger custom-resource-delete" data-id="@resource.Id" data-name="@resource.FileName">@_localizer["Delete"].Value</button>
-                        </div>
-                    </div>
                 </div>
             </div>
         }

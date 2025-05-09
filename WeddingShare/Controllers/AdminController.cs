@@ -83,6 +83,8 @@ namespace WeddingShare.Controllers
         {
             try
             {
+                model.Username = model.Username.Trim();
+
                 var user = await _database.GetUser(model.Username);
                 if (user != null && user.State == AccountState.Active && !user.IsLockedOut)
                 {
@@ -129,6 +131,8 @@ namespace WeddingShare.Controllers
             { 
                 try
                 {
+                    model.Username = model.Username.Trim();
+
                     var user = await _database.GetUser(model.Username);
                     if (user != null && user.State == AccountState.Active && !user.IsLockedOut)
                     {

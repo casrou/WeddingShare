@@ -108,6 +108,8 @@
             "Review": "Review",
             "Review_Failed": "Gagal untuk meninjau item",
             "Review_Id_Missing": "Tidak dapat menemukan item Id",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsor",
             "Switch": "Tukar",
             "Unfreeze": "Tidak Beku",
             "Unfreeze_Failed": "Gagal melepaskan akun",

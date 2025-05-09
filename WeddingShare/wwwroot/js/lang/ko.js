@@ -108,6 +108,8 @@
             "Review": "(주)",
             "Review_Failed": "상품 리뷰 실패",
             "Review_Id_Missing": "아이템을 찾을 수 없습니다 Id",
+            "Sponsor": "지원하다",
+            "Sponsors": "지원하다",
             "Switch": "기타 제품",
             "Unfreeze": "무료 다운로드",
             "Unfreeze_Failed": "실패하지 않는 계정",

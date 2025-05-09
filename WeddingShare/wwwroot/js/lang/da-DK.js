@@ -108,6 +108,8 @@
             "Review": "Revision",
             "Review_Failed": "Kunne ikke gennemse elementet",
             "Review_Id_Missing": "Kunne ikke finde element Id",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsorer",
             "Switch": "Skift",
             "Unfreeze": "Stop",
             "Unfreeze_Failed": "Kunne ikke af- fryse konto",

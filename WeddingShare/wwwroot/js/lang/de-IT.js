@@ -108,6 +108,8 @@
             "Review": "Überprüfung",
             "Review_Failed": "Nicht zu überprüfen Artikel",
             "Review_Id_Missing": "Artikel nicht finden Id",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsoren",
             "Switch": "Schalter",
             "Unfreeze": "Keine Bewegung",
             "Unfreeze_Failed": "Nicht eingefrorenes Konto",

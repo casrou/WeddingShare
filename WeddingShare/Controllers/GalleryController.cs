@@ -60,6 +60,8 @@ namespace WeddingShare.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(string id = "default", string? key = null)
         {
+            id = id.Trim();
+
             var append = new List<KeyValuePair<string, string>>()
             {
                 new KeyValuePair<string, string>("id", id)
@@ -106,7 +108,7 @@ namespace WeddingShare.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public async Task<IActionResult> Index(string id = "default", string? key = null, ViewMode? mode = null, GalleryGroup group = GalleryGroup.None, GalleryOrder order = GalleryOrder.Descending, GalleryFilter filter = GalleryFilter.All, string? culture = null, bool partial = false)
         {
-            id = (!string.IsNullOrWhiteSpace(id) && !await _settings.GetOrDefault(Settings.Basic.SingleGalleryMode, false)) ? id.ToLower() : "default";
+            id = (!string.IsNullOrWhiteSpace(id) && !await _settings.GetOrDefault(Settings.Basic.SingleGalleryMode, false)) ? id.Trim().ToLower() : "default";
 
             if (!string.IsNullOrWhiteSpace(culture))
             { 

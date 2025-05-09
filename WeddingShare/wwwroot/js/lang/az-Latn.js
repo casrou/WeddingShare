@@ -108,6 +108,8 @@
             "Review": " Review",
             "Review_Failed": "Baxış maddəsi",
             "Review_Id_Missing": "Mən məhsul tapmaq",
+            "Sponsor": "Sponsorluq",
+            "Sponsors": "Sponsorlar",
             "Switch": "Qeydiyyat",
             "Unfreeze": "Pulsuz",
             "Unfreeze_Failed": "Un-freeze hesab",

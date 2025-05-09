@@ -108,6 +108,8 @@
             "Review": "Revizuirea",
             "Review_Failed": "Nu a reușit să revizuiască elementul",
             "Review_Id_Missing": "Nu s- a putut găsi elementul Id",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsori",
             "Switch": "Comută",
             "Unfreeze": "Dezgheață",
             "Unfreeze_Failed": "A eșuat dezghețarea contului",

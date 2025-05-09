@@ -127,12 +127,13 @@
                                 {
                                     <img src="/images/play-button.svg" class="media-viewer-play" loading="lazy" />
                                 }
+                                @if (User?.Identity != null && User.Identity.IsAuthenticated)
+                                {
+                                    <i class="fa fa-trash btnDeletePhoto d-lg-none" data-photo-id="@image?.Id" data-photo-name="@image?.Name"></i>
+                                }
                             </a>
-                            @if (User?.Identity != null && User.Identity.IsAuthenticated)
-                            {
-                                <button type="button" class="btn btn-danger btnDeletePhoto w-100" data-photo-id="@image?.Id" data-photo-name="@image?.Name">@_localizer["Delete"].Value</button>
-                            }
                         </div>
+
                         index += columnCount;
                     }
                 }

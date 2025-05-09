@@ -108,6 +108,8 @@
             "Review": "Przegląd",
             "Review_Failed": "Nie udało się dokonać przeglądu pozycji",
             "Review_Id_Missing": "Nie można znaleźć elementu Id",
+            "Sponsor": "Sponsor",
+            "Sponsors": "Sponsorzy",
             "Switch": "Przełącz",
             "Unfreeze": "Un- Freeze",
             "Unfreeze_Failed": "Nie udało się odblokować konta",
