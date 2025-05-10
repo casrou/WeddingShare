@@ -760,7 +760,7 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>Show QR Code</value>
   </data>
-  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Help" xml:space="preserve">
     <value>Should the QR code specify the display language</value>
   </data>
   <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">

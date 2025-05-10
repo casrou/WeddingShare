@@ -757,7 +757,7 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>QR 코드 보기</value>
   </data>
-  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Help" xml:space="preserve">
     <value>QR코드가 표시 언어를 지정해야 합니다</value>
   </data>
   <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">

@@ -757,7 +757,7 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>তারিখ প্রদর্শন করো (প)</value>
   </data>
-  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Help" xml:space="preserve">
     <value>ভুল কোড উল্লিখিত হলে তা উল্লেখ করা হবে</value>
   </data>
   <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">

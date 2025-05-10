@@ -757,7 +757,7 @@
   <data name="Settings_Gallery_QRCodeEnabled_Label" xml:space="preserve">
     <value>Lihat Kode QR</value>
   </data>
-  <data name="Settings_Gallery_QRCodeIncludeCulture_Hint" xml:space="preserve">
+  <data name="Settings_Gallery_QRCodeIncludeCulture_Help" xml:space="preserve">
     <value>Haruskah kode QR menentukan bahasa paparan</value>
   </data>
   <data name="Settings_Gallery_QRCodeIncludeCulture_Label" xml:space="preserve">
