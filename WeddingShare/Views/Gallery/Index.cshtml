@@ -69,4 +69,10 @@
     </div>
 </section>
 
+@if (await _settings.GetOrDefault(Settings.Gallery.FullWidth, false, Model?.GalleryName) && User?.Identity != null && User.Identity.IsAuthenticated && !(Model?.GalleryName ?? "Default").Equals("All", StringComparison.OrdinalIgnoreCase))
+{
+    <!-- Settings Button -->
+    <i id="btn-full-width-settings" class="fa-solid fa-gear btnGallerySettings" data-gallery-name="@Model?.GalleryName" data-gallery-id="@Model?.GalleryId"></i>
+}
+
 <script src="~/js/gallery.js" asp-append-version="true"></script>

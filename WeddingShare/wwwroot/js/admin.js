@@ -232,7 +232,7 @@ function selectActiveTab(tab) {
             }
         });
 
-        $(document).off('click', 'button.btnGallerySettings').on('click', 'button.btnGallerySettings', function (e) {
+        $(document).off('click', '.btnGallerySettings').on('click', '.btnGallerySettings', function (e) {
             preventDefaults(e);
 
             let galleryId = $(this).data('gallery-id');
