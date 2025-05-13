@@ -482,9 +482,12 @@ namespace WeddingShare.Controllers
                 var gallery = await _database.GetGallery(id);
                 if (gallery != null)
                 {
-                    if (secretKey != await _settings.GetOrDefault(Settings.Gallery.SecretKey, string.Empty, gallery.Name))
+                    secretKey = secretKey ?? string.Empty;
+
+                    var gallerySecret = await _settings.GetOrDefault(Settings.Gallery.SecretKey, string.Empty, gallery.Name);
+                    if (!secretKey.Equals(gallerySecret))
                     {
-                        return Json(new { success = false, message = _localizer["Failed_Download_Gallery"].Value });
+                        return Json(new { success = false, message = _localizer["Failed_Download_Gallery_Invalid_Key"].Value });
                     }
 
                     if (await _settings.GetOrDefault(Settings.Gallery.Download, true, gallery?.Name) || (User?.Identity != null && User.Identity.IsAuthenticated))

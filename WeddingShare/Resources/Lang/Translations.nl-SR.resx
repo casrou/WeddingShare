@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Kon galerij niet downloaden</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Kon galerij niet downloaden. De geheime sleutel was ongeldig</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Kon galerij niet bijwerken</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Nieuwe tabs</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Het pictogram dat getoond moet worden in koppen en tabbladen</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Hoeveel galerijen zijn gebruikers toegestaan om te maken</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Miniatuurresolutie</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>De naam die getoond moet worden in koppen en tabbladen</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Titel</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Kon instellingen niet verkrijgen</value>

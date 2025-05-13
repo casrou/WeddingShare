@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Misslyckades med att ladda ner galleri</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Misslyckades med att ladda ner galleri. Den hemliga nyckeln var ogiltig</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Misslyckades med att uppdatera galleriet</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Nya Tab Links</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Ikonen att visa i rubriker och flikar</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logotyp</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Hur många gallerier är användare tillåtna att skapa</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Thumbnail resolution</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Namnet att visa i rubriker och flikar</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Titel</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Misslyckades med att få inställningar</value>

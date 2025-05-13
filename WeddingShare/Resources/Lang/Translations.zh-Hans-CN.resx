@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>下载相册失败</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>下载相册失败 。 密钥无效</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>更新画廊失败</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>新建标签链接</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>在信头和标签中显示的图标</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>标记</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>允许用户创建多少个画廊</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>缩略图分辨率</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>在信头和标签中显示的名称</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>标题</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>获取设置失败</value>

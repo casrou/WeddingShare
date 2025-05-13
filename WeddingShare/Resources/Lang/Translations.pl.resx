@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Nie udało się pobrać galerii</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Nie udało się pobrać galerii. Sekretny klucz był nieprawidłowy</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Nie udało się zaktualizować galerii</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Nowe odnośniki kart</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Ikona wyświetlana w nagłówkach i zakładkach</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Ile galerie użytkownicy mogą tworzyć</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Rozdzielczość miniatur</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Nazwa wyświetlana w nagłówkach i zakładkach</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Tytuł</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Nie udało się uzyskać ustawień</value>

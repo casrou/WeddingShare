@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>A eșuat descărcarea galeriei</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>A eșuat descărcarea galeriei. Cheia secretă era invalidă</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Eroare la actualizarea galeriei</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Linkuri de file noi</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Pictograma pentru a arăta în antete și file</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Câte galerii au voie utilizatorii să creeze</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Rezoluţia unghiilor</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Numele pentru a arăta în antete și file</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Titlu</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Obținerea setărilor a eșuat</value>

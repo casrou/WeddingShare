@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Nepodarilo sa stiahnuť galériu</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Nepodarilo sa stiahnuť galériu. Tajný kľúč bol neplatný</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Nepodarilo sa aktualizovať galériu</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Nové odkazy na kartu</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Ikona zobrazená v hlavičkách a záložkách</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Koľko galérií môžu užívatelia vytvoriť</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Rozlíšenie náhľadu</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Názov zobrazenia v hlavičkách a záložkách</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Názov</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Nepodarilo sa získať nastavenia</value>

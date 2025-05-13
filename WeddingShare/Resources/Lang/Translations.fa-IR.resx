@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>شکست برای دانلود گالری</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>موفق به دانلود گالری کلید مخفی بی اعتبار بود</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>شکست برای به روز رسانی گالری</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>New Tab Links</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>آیکون برای نشان دادن در هدر ها و زبانه ها</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>لوگو</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>چه تعداد از گالری ها مجاز به ایجاد</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>قطعنامه Thumbnail</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>نام برای نشان دادن در هدر ها و زبانه ها</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>عنوان</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>شکست در تنظیمات</value>

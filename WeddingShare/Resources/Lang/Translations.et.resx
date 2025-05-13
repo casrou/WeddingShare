@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Galerii allalaadimine nurjus</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Galerii allalaadimine nurjus. Salavõti oli vigane</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Galerii uuendamine nurjus</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Uued kaardilingid</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Ikoon, mida näidatakse päistes ja kaartidel</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Mitu galeriid on kasutajatel lubatud luua</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Pisipildi eraldusvõime</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Nimi, mida näidatakse päistes ja kaartidel</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Pealkiri</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Seadistuste hankimine nurjus</value>

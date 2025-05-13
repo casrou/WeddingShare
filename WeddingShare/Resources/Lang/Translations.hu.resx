@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Nem sikerült letölteni a galériát</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Nem sikerült letölteni a galériát. A titkos kulcs érvénytelen</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Nem sikerült frissíteni a galériát</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Új lap linkek</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Az ikon megjeleníteni fejlécek és fülek</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logó</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Hány galériát lehet létrehozni</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>A hüvelykujj felbontása</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>A név megjeleníteni fejlécek és fülek</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Cím</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Nem sikerült beállítani</value>

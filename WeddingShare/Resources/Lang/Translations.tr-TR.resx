@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Galeri indirmek için başarısız oldu</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Galeriyi indirmek için başarısız oldu. Gizli anahtar geçersizydi</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Galeriyi güncellemek için başarısız oldu</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Yeni Tab Links</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Başlıklarda ve sekmelerde göstermek için ikon</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Kaç galeri kullanıcı oluşturmak için izin verilir</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Katnail Çözümü</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Başlıklarda ve sekmelerde göstermek için isim</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Başlık:</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Ayarları almak için başarısız oldu</value>

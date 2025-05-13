@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Kunne ikke downloade galleri</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Kunne ikke downloade galleri. Den hemmelige nøgle var ugyldig</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Kunne ikke opdatere galleri</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Nyt fanebladskort</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Ikonet der skal vises i overskrifter og faneblade</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Hvor mange gallerier er brugere lov til at oprette</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Miniatureopløsning</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Navnet der skal vises i overskrifter og faneblade</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Titel</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Kunne ikke få indstillinger</value>

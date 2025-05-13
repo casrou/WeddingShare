@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Non se pode descargar a galería</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Non chegou a descargar a galería. A chave secreta era inválida</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Non se pode actualizar a galería</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Novo Tab Links</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>A icona para mostrar en cabeceiras e pestanas</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Cantas galerías están permitidas para crear</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Resolución de Tumbnail</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>O nome para mostrar en cabeceiras e pestanas</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Título</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Non chegou a configuración</value>

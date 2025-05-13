@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>ล้มเหลวในการดาวน์โหลดคลังภาพ</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>ล้มเหลวในการดาวน์โหลดคลังภาพ กุญแจลับใช้งานไม่ได้</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>ล้มเหลวในการอัปเดตคลังภาพ</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>ส่วนเชื่อมโยงแบบแท็บใหม่</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>ภาพไอคอนที่จะแสดงในส่วนหัวและแท็บ</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>ปูมบันทึก</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>ผู้ใช้ได้รับอนุญาตให้สร้างระเบียงได้กี่ห้อง</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>ความละเอียดภาพตัวอย่าง</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>ชื่อที่จะใช้แสดงในส่วนหัวและแท็บ</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>ชื่อ</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>ล้มเหลวในการรับการตั้งค่า</value>

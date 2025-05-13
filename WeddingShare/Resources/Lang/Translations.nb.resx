@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Klarte ikke å laste ned galleri</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Klarte ikke å laste ned galleri. Den hemmelige nøkkelen var ugyldig</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Klarte ikke å oppdatere galleri</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Ny fanelenker</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Ikonet som skal vises i overskrifter og faner</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Hvor mange gallerier er brukere tillatt å opprette</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Miniatyroppløsning</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Navnet som skal vises i overskrifter og faner</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Tittel</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Klarte ikke å hente innstillinger</value>
