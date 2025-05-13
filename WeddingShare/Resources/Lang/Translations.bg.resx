@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Грешка при изтегляне на галерията</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Грешка при изтегляне на галерията. Тайният ключ беше невалиден</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Грешка при обновяване на галерията</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Нов подпрозорец</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Иконата да се покаже в заглавни части и раздели</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Лого</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Колко галерии имат право да създават</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Резолюция на палеца</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Името да се покаже в заглавни части и раздели</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Заглавие</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Грешка при получаване на настройките</value>

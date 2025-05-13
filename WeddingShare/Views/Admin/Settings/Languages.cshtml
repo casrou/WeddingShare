@@ -30,7 +30,7 @@
         <div class="col-12">
             <label>@_localizer["Settings_Languages_Default_Label"].Value</label>
             <select class="setting-field form-control" data-setting-name="@Settings.Languages.Default">
-                @foreach (var option in _lang.DetectSupportedCultures())
+                @foreach (var option in _lang.DetectSupportedCultures().OrderBy(x => x.EnglishName))
                 {
                     var val = (option.EnglishName.Contains("(") ? option.EnglishName.Substring(0, option.EnglishName.IndexOf("(")) : option.EnglishName).Trim();
                     if (Model.GetValue(Settings.Languages.Default.ToUpper(), "en-GB").Equals(option.Name, StringComparison.OrdinalIgnoreCase))

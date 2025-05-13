@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Ha fallat en baixar la galeria</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Ha fallat en baixar la galeria. La clau secreta no era vàlida</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Ha fallat en actualitzar la galeria</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Enllaços de pestanya nous</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>La icona per mostrar en capçaleres i pestanyes</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logotip</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Quantes galeries poden crear els usuaris</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Resolució de miniatures</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>El nom a mostrar en capçaleres i pestanyes</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Títol</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Ha fallat en obtenir l' arranjament</value>

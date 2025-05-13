@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>সংকলন ডাউনলোড করতে ব্যর্থ</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>গ্যালারি ডাউনলোড করতে ব্যর্থ। গুপ্ত কী অবৈধ</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>সংকলন আপডেট করতে ব্যর্থ</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>নতুন ট্যাবের লিংক</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>হেডার ও ট্যাবের মধ্যে প্রদর্শিত আইকন</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>প্রতীকচিহ্ন</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>অসংখ্য গ্যালারি তৈরি করার অনুমতি রয়েছে</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>থাম্ব-নেইল রেসোলিউশন</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>হেডারের মধ্যে প্রদর্শনযোগ্য নাম ও ট্যাবের নাম</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>শিরোনাম</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>বৈশিষ্ট্য প্রাপ্ত করতে ব্যর্থ</value>

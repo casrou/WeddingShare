@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>ギャラリーのダウンロードに失敗</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>ギャラリーのダウンロードに失敗しました。 秘密鍵が無効だった</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>更新ギャラリーに失敗</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>新しいタブリンク</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>ヘッダとタブで表示するアイコン</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>ロゴマーク</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>ユーザーが作成できるギャラリーの数</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>サムネイルの決断</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>ヘッダとタブで表示する名前</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>タイトル</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>設定が失敗</value>

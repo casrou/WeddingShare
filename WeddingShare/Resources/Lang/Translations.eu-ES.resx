@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Huts egin du galeria deskargatzean</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Huts egin du galeria deskargatzean. Gako sekretua baliogabea zen</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Huts egin du galeria eguneratzean</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Fitxa berriaren estekak</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Goiburuetan eta fitxetan erakusteko ikonoa</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logotipoa</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Zenbat galeria sor ditzakete erabiltzaileek</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Koadro txikien bereizmena</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Goiburuetan eta fitxetan erakusteko izena</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Titulua</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Huts egin du ezarpenak lortzean</value>

@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>갤러리 다운로드 실패</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>갤러리 다운로드 실패. 비밀 키가 잘못되었습니다</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>업데이트 갤러리에 실패</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>새로운 탭 링크</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>헤더와 탭에 표시하는 아이콘</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>이름 *</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>얼마나 많은 갤러리는 사용자가 만들 수 있습니다</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Thumbnail 해결책</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>헤더와 탭에서 표시하는 이름</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>이름 *</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>설정에 실패</value>

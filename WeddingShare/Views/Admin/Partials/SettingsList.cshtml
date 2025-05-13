@@ -12,7 +12,7 @@
             </h2>
             <div id="collapse-basic" class="accordion-collapse collapse" aria-labelledby="heading-basic" data-bs-parent="#settings-accordion">
                 <div class="accordion-body mt-3 mt-lg-3">
-                    <partial name="~/Views/Admin/Settings/Basic.cshtml" model="Model.Settings" />
+                    <partial name="~/Views/Admin/Settings/Basic.cshtml" model="new WeddingShare.Views.Admin.Settings.BasicModel() { Settings = Model.Settings, CustomResources = Model.CustomResources }" />
                 </div>
             </div>
         </div>

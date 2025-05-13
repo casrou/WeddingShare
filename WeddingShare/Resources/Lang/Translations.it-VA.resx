@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Non ha scaricato la galleria</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Non ha scaricato la galleria. La chiave segreta era invalida</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Non è riuscito ad aggiornare la galleria</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Nuovi collegamenti della scheda</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>L'icona da mostrare intestazioni e schede</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Quante gallerie sono gli utenti autorizzati a creare</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Risoluzione del Thumbnail</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Il nome da mostrare in intestazioni e schede</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Titolo</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Non riuscito a ottenere le impostazioni</value>

@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Sawi sa pag-download ng galerya</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Sawi sa pagkuha ng galerya. Walang bisa ang sekretong susi</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Bigo sa update gallery</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Bagong mga Kaugnayan sa Tab</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Ang larawan upang ipakita sa mga header at tab</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Kung gaano karaming galerya ang pinapayagang gawin ng mga gumagamit</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Resolusyon sa Thumbnail</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Ang pangalan upang ipakita sa mga header at tab</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Titulo</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Sawi ang pagkuha ng mga setting</value>

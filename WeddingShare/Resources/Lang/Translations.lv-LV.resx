@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Neizdevās lejupielādēt galeriju</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Neizdevās lejupielādēt galeriju. Slepenā atslēga nebija derīga</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Neizdevās atjaunināt galeriju</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Jaunas cilnes saites</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Ikona, ko rādīt galvenēs un cilnēs</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logotips</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Cik galerijas ir lietotāji atļauts izveidot</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Sīktēla izšķirtspēja</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Nosaukums, ko rādīt galvenēs un cilnēs</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Nosaukums</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Neizdevās iegūt iestatījumus</value>

@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Qeydiyyatdan keçin</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Qeydiyyatdan istifadə etmək. gizli əsas qeyd edildi</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Gallery yeniləndirilməsi</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Yeni Tab Linklər</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Qalereya</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value> Logo</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Neçə sərgilər istifadəçilər yaratmaq üçün imkan verir</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Daxili qaynaq</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value> The  and  and  and</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Ümumi</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Sığorta almaq</value>

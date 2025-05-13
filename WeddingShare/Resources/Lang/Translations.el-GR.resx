@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Αποτυχία λήψης συλλογής</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Αποτυχία λήψης της συλλογής. Το μυστικό κλειδί δεν ήταν έγκυρο</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Αποτυχία ενημέρωσης της συλλογής</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Νέοι δεσμοί καρτέλας</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Το εικονίδιο για εμφάνιση σε κεφαλίδες και καρτέλες</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Λογότυπο</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Πόσες γκαλερί επιτρέπεται στους χρήστες να δημιουργήσουν</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Ανάλυση εικόνων επισκόπησης</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Το όνομα που θα εμφανίζεται σε κεφαλίδες και καρτέλες</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Τίτλος</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Αποτυχία λήψης ρυθμίσεων</value>

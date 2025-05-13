@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Galleriaa ei voitu ladata</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Galleriaa ei voitu ladata. Salainen avain oli virheellinen</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Gallerian päivitys epäonnistui</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Uudet välilehden linkit</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>Otsikkoihin ja välilehtiin näytettävä kuvake</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Tunnus</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Kuinka monta galleriaa käyttäjät voivat luoda</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Esimerkit</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>Nimi näyttää otsikoissa ja välilehdissä</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Nimi</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Asetusten saaminen epäonnistui</value>

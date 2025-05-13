@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>Falhado para baixar galeria</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>Falhado para baixar a galeria. A chave secreta era inválida</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>Falhado para atualizar galeria</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>Novo guia Links</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>O ícone para mostrar em cabeçalhos e guias</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>Logotipo</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>Quantas galerias são os usuários autorizados a criar</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>Resolução de Thumbnail</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>O nome para mostrar em cabeçalhos e guias</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>Título</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>Falhado para obter configurações</value>

@@ -295,6 +295,9 @@
   <data name="Failed_Download_Gallery" xml:space="preserve">
     <value>فشل في تنزيل المعرض</value>
   </data>
+  <data name="Failed_Download_Gallery_Invalid_Key" xml:space="preserve">
+    <value>فشل في تحميل المعرض. المفتاح السري غير صحيح</value>
+  </data>
   <data name="Failed_Edit_Gallery" xml:space="preserve">
     <value>فشل في تحديث المعرض</value>
   </data>
@@ -643,6 +646,12 @@
   <data name="Settings_Basic_LinksOpenNewTab_Label" xml:space="preserve">
     <value>New Tab Links</value>
   </data>
+  <data name="Settings_Basic_Logo_Help" xml:space="preserve">
+    <value>"الأيقونة التي تظهر في المُشاهدات والمقالات"</value>
+  </data>
+  <data name="Settings_Basic_Logo_Label" xml:space="preserve">
+    <value>لوجو</value>
+  </data>
   <data name="Settings_Basic_MaxGalleryCount_Help" xml:space="preserve">
     <value>كم عدد المجرات المسموح للمستعملين بصنعها</value>
   </data>
@@ -660,6 +669,12 @@
   </data>
   <data name="Settings_Basic_ThumbnailSize_Label" xml:space="preserve">
     <value>حل الإبهام</value>
+  </data>
+  <data name="Settings_Basic_Title_Help" xml:space="preserve">
+    <value>الإسم الذي سيظهر في العناوين</value>
+  </data>
+  <data name="Settings_Basic_Title_Label" xml:space="preserve">
+    <value>العنوان</value>
   </data>
   <data name="Settings_Failed" xml:space="preserve">
     <value>فشل في الحصول على الظروف</value>
