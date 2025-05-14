@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Noraidīt</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Laidiena versija</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Pārdēvēt</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Lietojums</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponsori</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Pašlaik sponsoru nav. Varbūt kļūsi par pirmo!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Neizdevās ielādēt sponsoru sarakstu</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Atbalstītāji</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Laika zīmogs</value>

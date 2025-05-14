@@ -1,4 +1,6 @@
 using Microsoft.Extensions.Logging;
+using System;
+using WeddingShare.Constants;
 using WeddingShare.Helpers;
 using WeddingShare.Helpers.Database;
 using WeddingShare.Models.Database;
@@ -170,6 +172,24 @@ namespace WeddingShare.UnitTests.Tests.Helpers
         {
             var actual = await new SettingsHelper(_database, _config, _logger).GetOrDefault(key, defaultValue);
             Assert.That(actual, Is.EqualTo(!string.IsNullOrWhiteSpace(expected) ? DateTime.Parse(expected) : null));
+        }
+
+        [TestCase("1.0.0", 3, "1.0.0")]
+        [TestCase("1.0.0", 4, "1.0.0.0")]
+        [TestCase("1.0.0.0", 3, "1.0.0")]
+        [TestCase("1.0.0.0", 4, "1.0.0.0")]
+        [TestCase("1.2.3.4", 2, "1.2")]
+        public async Task SettingsHelper_GetReleaseVersion(string version, int places, string expected)
+        {
+            var environment = Substitute.For<IEnvironmentWrapper>();
+            var configuration = ConfigurationHelper.MockConfiguration(new Dictionary<string, string?>()
+            {
+                { "Release:Version", version },
+            });
+            var config = new ConfigHelper(environment, configuration, Substitute.For<ILogger<ConfigHelper>>());
+            
+            var actual = await new SettingsHelper(_database, config, _logger).GetReleaseVersion(places);
+            Assert.That(actual, Is.EqualTo(expected));
         }
     }
 }

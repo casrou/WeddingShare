@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Respinge</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Versiune de lansare</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Redenumește</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Utilizare</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponsori</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>În prezent nu există sponsori. De ce nu devii tu primul!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Încărcarea listei sponsorilor a eșuat</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Suporteri</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Timestamp</value>

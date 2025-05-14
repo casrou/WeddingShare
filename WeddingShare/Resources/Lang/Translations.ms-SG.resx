@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Tolak</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Versi Keluaran Minuman</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Tukarnama</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Penggunaan Teropong</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponsor</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Saat ini tidak ada sponsor. Mengapa kau tidak menjadi yang pertama!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Gagal untuk memuat daftar sponsor</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Pendukung</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Timestamp</value>

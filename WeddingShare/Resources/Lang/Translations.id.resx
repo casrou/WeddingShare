@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Tolak</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Versi Rilis</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Ganti Nama</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Penggunaan</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponsor</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Saat ini tidak ada sponsor. Kenapa kau tidak menjadi yang pertama!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Gagal memuat daftar sponsor</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Pendukung</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Penanda waktu</value>

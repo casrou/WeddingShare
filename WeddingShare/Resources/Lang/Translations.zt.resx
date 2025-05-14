@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>拒絕</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>放出版本</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>重命名</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>用法</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>提案国</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>目前沒有提案国。 就想活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>載入发起人清單失敗</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>支持者</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>有時戳</value>

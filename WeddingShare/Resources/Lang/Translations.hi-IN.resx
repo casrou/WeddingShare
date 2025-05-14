@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>अस्वीकृति</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>रिलीज संस्करण</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>नाम बदलें</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>प्रयोग</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>प्रायोजक</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>वर्तमान में कोई प्रायोजक नहीं हैं। तुम क्यों नहीं बनो!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>प्रायोजक सूची लोड करने में विफल</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>समर्थक</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>टाइमस्टैम्प</value>

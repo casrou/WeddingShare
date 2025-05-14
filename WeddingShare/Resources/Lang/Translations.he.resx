@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Reject</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>גרסה חופשית</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>שם מקור</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>שימוש</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>מניות</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>כרגע אין ספונסרים. למה אתה לא הופך ראשון!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>נכשל לטעון את רשימת הספונסרים</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>תומכים</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Timestamp</value>

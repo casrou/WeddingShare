@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>_Refuzo</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Release Version</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Riemërto</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Përdorimi</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponsor</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Aktualisht nuk ka sponsorë. Pse nuk bëhesh i pari!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>I pamundur ngarkimi i listës së sponsorëve</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Përkrahësit</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Unit-format</value>

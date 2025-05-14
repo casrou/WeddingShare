@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Itakwil</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Release Version</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Muling Pangalan</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Paggamit</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Mga Sponsor</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Walang mga isponsor sa kasalukuyan. Bakit hindi ka ang maging una!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Sawi sa pag-load ng listahan ng mga isponsor</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Mga Tagataguyod</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Paglipas ng Panahon</value>

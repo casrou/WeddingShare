@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>관련 제품</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>버전 버전</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>이름 *</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>제품 정보</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>지원하다</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>현재 스폰서가 없습니다. 왜 첫 번째가되지 않습니다!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>스폰서 목록을로드 실패</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>지원자</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>스크린 샷</value>

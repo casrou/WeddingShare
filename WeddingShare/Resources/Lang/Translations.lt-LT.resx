@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Pašalinti</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Išleidimo versija</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Pervadinti</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Naudojimas</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Rėmėjai</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Rangovų šiuo metu nėra. Kodėl tau netapus pirmuoju!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Nepavyko įkelti rėmėjų sąrašo</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Rėmėjai</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Laikas</value>

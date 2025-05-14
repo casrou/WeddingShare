@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Reject</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Salı</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Rename</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Kullanımı</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponsorlar</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Şu anda sponsor yok. Neden ilk olman!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Sponsor listesini yüklemek için başarısız oldu</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Destekçiler</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Times</value>

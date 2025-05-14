@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Відправити</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Версія релізу</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Ім'я</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Проживання</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Спонсори</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Зараз немає спонсорів. Чому б ви не стали першими!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Не вдалося завантажити список спонсорів</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Підприємці</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Таймер</value>
