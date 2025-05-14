@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Déan teagmháil</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Naisc ábhartha eile</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Amharc ar gach eolas</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Uisce agus Séarachas</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Seirbhís do Chustaiméirí</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Níl aon urraitheoirí ann faoi láthair. Cén fáth nach bhfuil tú a bheith ar an chéad!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Failed a luchtú an liosta urraitheoirí</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Ag tacú le</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Déan teagmháil linn</value>

@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Απόρριψη</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Έκδοση έκδοσης</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Μετονομασία</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Χρήση</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Χορηγοί</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Προς το παρόν δεν υπάρχουν χορηγοί. Γιατί δεν γίνεσαι ο πρώτος!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Αποτυχία φόρτωσης της λίστας χορηγών</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Υποστηρικτές</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Χρονοσφραγίδα</value>

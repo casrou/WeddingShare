@@ -1,4 +1,6 @@
-﻿using WeddingShare.Helpers.Database;
+﻿using System.Text;
+using WeddingShare.Constants;
+using WeddingShare.Helpers.Database;
 using WeddingShare.Models.Database;
 
 namespace WeddingShare.Helpers
@@ -15,6 +17,7 @@ namespace WeddingShare.Helpers
         Task<DateTime?> GetOrDefault(string key, DateTime? defaultValue, string? gallery = "");
         Task<SettingModel?> SetSetting(string key, string value, string? gallery = "");
         Task<bool> DeleteSetting(string key, string? gallery = "");
+        Task<string> GetReleaseVersion(int places = 3);
     }
 
     public class SettingsHelper : ISettingsHelper
@@ -196,6 +199,37 @@ namespace WeddingShare.Helpers
         public async Task<bool> DeleteAllSettings(string? gallery = "")
         {
             return await _databaseHelper.DeleteAllSettings(gallery);
+        }
+
+        public async Task<string> GetReleaseVersion(int places = 3)
+        {
+            try
+            {
+                var versionNumberParts = (await this.GetOrDefault(Release.Version, "1.0.0"))?.Split(new char[] { '.' }, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+                if (versionNumberParts != null && versionNumberParts.Length > 0)
+                {
+                    var builder = new StringBuilder();
+                    for (var i = 0; i < places; i++)
+                    {
+                        if (i < versionNumberParts.Length)
+                        {
+                            builder.Append($".{versionNumberParts[i]}");
+                        }
+                        else
+                        {
+                            builder.Append(".0");
+                        }
+                    }
+
+                    return builder.ToString().Trim('.');
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Failed to build release version string - {ex?.Message}");
+            }
+                
+            return "1.0.0";
         }
     }
 }

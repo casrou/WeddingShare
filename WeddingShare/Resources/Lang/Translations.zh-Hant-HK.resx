@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>拒绝</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>发布版本</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>重命名</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>使用量</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>发起人</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>目前没有提案国。 你为什么不成为第一个!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>装入赞助商列表失败</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>支持者</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>时间戳</value>

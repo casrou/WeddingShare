@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Zavrni</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Različica izdaje</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Preimenuj</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Uporaba</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponzorji</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Trenutno ni sponzorjev. Zakaj ne postaneš prvi!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Nalaganje seznama sponzorjev ni uspelo</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Podporniki</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Časovni žig</value>

@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Tagasi lükata</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Vabasta versioon</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Ümbernimeta</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Kasutamine</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponsorid</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Praegu sponsoreid ei ole. Miks sa ei võiks olla esimene!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Sponsorite nimekirja laadimine nurjus</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Toetajad</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Ajatempel</value>

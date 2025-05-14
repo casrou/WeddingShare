@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Elutasítás</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Verzió</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Átnevezés</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Használat</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Támogatók</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Jelenleg nincsenek szponzorok. Miért nem leszel te az első!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Nem sikerült betölteni a szponzorok listáját</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Támogatók</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Időbélyegző</value>

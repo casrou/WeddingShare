@@ -31,7 +31,8 @@ namespace WeddingShare.Controllers
             try
             {
                 var client = _clientFactory.CreateClient("SponsorsClient");
-                model.SponsorsList = await client.GetFromJsonAsync<SponsorsList>(await _settings.GetOrDefault(Sponsors.Endpoint, "/sponsors.json"));
+                var endpoint = await _settings.GetOrDefault(Sponsors.Endpoint, "/sponsors.json");
+                model.SponsorsList = await client.GetFromJsonAsync<SponsorsList>(endpoint);
             }
             catch (Exception ex)
             {

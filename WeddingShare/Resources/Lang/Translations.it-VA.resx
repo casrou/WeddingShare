@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Rifiuti</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Versione di rilascio</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Rinomina</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Utilizzo</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponsor</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Attualmente non ci sono sponsor. Perché non diventi il primo!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Non caricare la lista degli sponsor</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Supporti</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Timestamp</value>

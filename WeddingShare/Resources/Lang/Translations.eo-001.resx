@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Rejekto</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Liberigo versio</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Renomo</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Uzante la</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponsors</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Ekzistas neniuj sponsoroj. Kial vi ne fariĝis la unua!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Malsukcesas ŝarĝi la sponsorojn-liston</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Subtenantoj</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>La tempo</value>

@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>انکار</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>نسخه آزاد</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Rename</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>استفاده از</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>حامیان</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>در حال حاضر هیچ اسپانسری وجود ندارد. چرا اول نمی شوی!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>شکست در بارگذاری لیست حامیان</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>حامیان</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Timestamp</value>

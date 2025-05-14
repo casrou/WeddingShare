@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Odmítnout</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Verze vydání</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Přejmenovat</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Použití</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponzoři</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>V současnosti nejsou žádní sponzoři. Proč se nestaneš první!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Nepodařilo se načíst seznam sponzorů</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Podpora</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Časový údaj</value>

@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Avvis</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Utgivelsesversjon</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Endre navn</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Bruk</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponsorer</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>For tiden er det ingen sponsorer. Hvorfor blir du ikke den første!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Klarte ikke å laste listen over sponsorer</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Supportere</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Timestamp</value>

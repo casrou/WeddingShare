@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>リジェクト</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>リリース版</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>リネーム</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>使用方法</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>スポンサー</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>現在、スポンサーはありません。 初めてになろう!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>スポンサーリストをロードできなかった</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>サポーター</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>タイムスタンプ</value>

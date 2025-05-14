@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value> Re</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Proqram</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Ad Soyad</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Daxil ol</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponsorlar</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Şu anda sponsor deyil. Niyə ilk olmaq deyil!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Sponsorlar siyahısı yükləyir</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value> Support</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Kateqoriya</value>

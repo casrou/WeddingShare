@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Отхвърляне</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Версия за освобождаване</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Преименуване</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Използване</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Спонсори</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Понастоящем няма спонсори. Защо не станеш първият!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Грешка при зареждане на списъка със спонсори</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Поддръжници</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Времеви печат</value>

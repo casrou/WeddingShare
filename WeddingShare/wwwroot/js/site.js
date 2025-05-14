@@ -374,10 +374,13 @@ function displayIdentityCheck(required, callbackFn) {
         $(document).off('click', 'i#btn-show-sponsors').on('click', 'i#btn-show-sponsors', function (e) {
             preventDefaults(e);
 
+            displayLoader(localization.translate('Loading'));
+
             $.ajax({
                 type: "GET",
                 url: '/Sponsors',
                 success: function (data) {
+                    hideLoader();
                     displayPopup({
                         Title: localization.translate('Sponsors'),
                         CustomHtml: data,
@@ -391,6 +394,9 @@ function displayIdentityCheck(required, callbackFn) {
                             Text: localization.translate('Close')
                         }]
                     });
+                },
+                error: function () {
+                    hideLoader();
                 }
             });
         });

@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Reject</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>الإصدار</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>الاسم</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Usage</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>الرعاة</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>ولا يوجد في الوقت الراهن رعاة. لماذا لا تصبح الأول؟!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>عدم تحميل قائمة مقدمي مشروع القرار</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>المؤيدون</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Timestamp</value>

@@ -496,6 +496,9 @@
   <data name="Reject" xml:space="preserve">
     <value>Hylkää</value>
   </data>
+  <data name="Release_Version" xml:space="preserve">
+    <value>Julkaisuversio</value>
+  </data>
   <data name="Rename" xml:space="preserve">
     <value>Nimeä uudelleen</value>
   </data>
@@ -1024,11 +1027,17 @@
   <data name="Space_Percent_Used" xml:space="preserve">
     <value>Käyttö</value>
   </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Sponsorit</value>
+  </data>
   <data name="Sponsors_BecomeTheFirst" xml:space="preserve">
     <value>Tällä hetkellä ei ole sponsoreita. Mikset ole ensimmäinen!</value>
   </data>
   <data name="Sponsors_Load_Error" xml:space="preserve">
     <value>Sponsorien luetteloa ei voitu ladata</value>
+  </data>
+  <data name="Supporters" xml:space="preserve">
+    <value>Tukijat</value>
   </data>
   <data name="Timestamp" xml:space="preserve">
     <value>Aikaleima</value>
