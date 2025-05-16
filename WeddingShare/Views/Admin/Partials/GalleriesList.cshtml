@@ -6,7 +6,11 @@
 @inject WeddingShare.Helpers.IFileHelper _file
 @inject WeddingShare.Helpers.IUrlHelper _url
 
-@if (Model != null && Model.Any())
+@{
+    var userPermissions = User?.Identity?.GetUserPermissions() ?? AccessPermissions.None;
+}
+
+@if (userPermissions.HasFlag(AccessPermissions.Gallery_View) && Model != null && Model.Any())
 {
     <table class="table table-rounded-border">
         <tr>
@@ -45,11 +49,26 @@
                     @(gallery.Name.Equals("all", StringComparison.OrdinalIgnoreCase) ? _file.BytesToHumanReadable(gallery.TotalGallerySize, 2) : $"{_file.BytesToHumanReadable(gallery.TotalGallerySize, 2)} ({gallery.CalculateUsage(await _settings.GetOrDefault(Settings.Gallery.MaxSizeMB, long.MaxValue, gallery?.Name))})")
                 </td>
                 <td>
-                    <i class="btnOpenGallery btn btn-outline-primary fa-solid fa-up-right-from-square" data-url="@_url.GenerateFullUrl(Context?.Request, "/Gallery", append)" data-target="@(await _settings.GetOrDefault(Settings.Basic.LinksOpenNewTab, true) ? "_blank" : "_self")" alt="Open"></i>
-                    <i class="btnDownloadGallery btn @(gallery.TotalItems > 0 ? "btn-outline-primary" : "btn-outline-disabled") fa-solid fa-download" alt="Download" @(gallery.TotalItems == 0 ? "disabled=disabled" : string.Empty)></i>
-                    <i class="btn @(gallery.Id > 1 ? "btnEditGallery btn-outline-success" : "btn-outline-disabled") fa-solid fa-pen-to-square" alt="Edit"></i>
-                    <i class="btn @(gallery.Id > 0 && gallery.TotalItems > 0 ? "btnWipeGallery btn-outline-danger" : "btn-outline-disabled") fa-solid fa-broom" alt="Wipe" @(gallery.TotalItems == 0 ? "disabled=disabled" : string.Empty)></i>
-                    <i class="btn @(gallery.Id > 1 ? "btnDeleteGallery btn-outline-danger" : "btn-outline-disabled") fa-solid fa-trash-can" alt="Delete"></i>
+                    @if (userPermissions.HasFlag(AccessPermissions.Gallery_View))
+                    {
+                        <i class="btnOpenGallery btn btn-outline-primary fa-solid fa-up-right-from-square" data-url="@_url.GenerateFullUrl(Context?.Request, "/Gallery", append)" data-target="@(await _settings.GetOrDefault(Settings.Basic.LinksOpenNewTab, true) ? "_blank" : "_self")" alt="Open"></i>
+                    }
+                    @if (userPermissions.HasFlag(AccessPermissions.Gallery_Download))
+                    {
+                        <i class="btnDownloadGallery btn @(gallery.TotalItems > 0 ? "btn-outline-primary" : "btn-outline-disabled") fa-solid fa-download" alt="Download" @(gallery.TotalItems == 0 ? "disabled=disabled" : string.Empty)></i>
+                    }
+                    @if (userPermissions.HasFlag(AccessPermissions.Gallery_Update))
+                    {
+                        <i class="btn @(gallery.Id > 1 ? "btnEditGallery btn-outline-success" : "btn-outline-disabled") fa-solid fa-pen-to-square" alt="Edit"></i>
+                    }
+                    @if (userPermissions.HasFlag(AccessPermissions.Gallery_Wipe))
+                    {
+                        <i class="btn @(gallery.Id > 0 && gallery.TotalItems > 0 ? "btnWipeGallery btn-outline-danger" : "btn-outline-disabled") fa-solid fa-broom" alt="Wipe" @(gallery.TotalItems == 0 ? "disabled=disabled" : string.Empty)></i>
+                    }
+                    @if (userPermissions.HasFlag(AccessPermissions.Gallery_Delete))
+                    {
+                        <i class="btn @(gallery.Id > 1 ? "btnDeleteGallery btn-outline-danger" : "btn-outline-disabled") fa-solid fa-trash-can" alt="Delete"></i>
+                    }
                 </td>
             </tr>
         }

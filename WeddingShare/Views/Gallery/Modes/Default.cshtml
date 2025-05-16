@@ -1,10 +1,10 @@
 ﻿@model WeddingShare.Models.PhotoGallery
 
 @using WeddingShare.Constants
-@using WeddingShare.Enums
 @using WeddingShare.Views.Gallery.Modes
 
 @{
+    var userPermissions = User?.Identity?.GetUserPermissions() ?? AccessPermissions.None;
     var columnCount = await _settings.GetOrDefault(Settings.Gallery.Columns, 4, Model?.GalleryName);
     var identityEnabled = await _settings.GetOrDefault(Settings.IdentityCheck.Enabled, true);
 
@@ -127,7 +127,7 @@
                                 {
                                     <img src="/images/play-button.svg" class="media-viewer-play" loading="lazy" />
                                 }
-                                @if (User?.Identity != null && User.Identity.IsAuthenticated)
+                                @if (User?.Identity != null && User.Identity.IsAuthenticated && userPermissions.HasFlag(AccessPermissions.Review_Delete))
                                 {
                                     <i class="fa fa-trash btnDeletePhoto d-lg-none" data-photo-id="@image?.Id" data-photo-name="@image?.Name"></i>
                                 }

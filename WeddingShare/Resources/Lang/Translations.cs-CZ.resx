@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>Zavřít</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>Kontaktujte prosím správce stránek, aby poskytl přístup</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Vytvořit</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>V současné době nemáte přístup</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>Vlastní zdroje</value>

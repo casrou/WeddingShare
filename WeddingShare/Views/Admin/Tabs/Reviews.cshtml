@@ -1,12 +1,16 @@
 ﻿@model ReviewsModel
 @using WeddingShare.Views.Admin.Tabs
 
+@{
+    var userPermissions = User?.Identity?.GetUserPermissions() ?? AccessPermissions.None;
+}
+
 <section class="pnl-admin pnl-admin-reviews pb-0 pb-lg-4 d-none">
     <div class="container px-3 px-lg-1 my-3 my-lg-0">
         <div class="row">
             <div class="col-12">
                 <h1 class="display-6">@_localizer["Pending_Uploads"].Value
-                    @if (Model?.PendingRequests != null && Model.PendingRequests.Any())
+                    @if (Model?.PendingRequests != null && Model.PendingRequests.Any() && userPermissions.HasFlag(AccessPermissions.Review_Approve) && userPermissions.HasFlag(AccessPermissions.Review_Reject))
                     {
                         <span class="header-actions">
                             <span class="action text-success pointer">

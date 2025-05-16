@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>Aizvērt</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>Lai nodrošinātu piekļuvi, sazinieties ar vietnes administratoru</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Izveidot</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>Jums šobrīd nav piekļuves</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>Pielāgoti resursi</value>

@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>Sluiten</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>Neem contact op met een beheerder van de site om toegang te bieden</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Aanmaken</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>U heeft momenteel geen toegang</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>Aangepaste bronnen</value>

@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>بندکرو</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>رسائی فراہم کرنے کے لیے سائٹ کے منتظم سے رابطہ کریں</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>بنائیں</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>آپ اب تک رسائی حاصل نہیں ہے</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>دوبارہ استعمال</value>

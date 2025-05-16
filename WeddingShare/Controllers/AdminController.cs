@@ -6,10 +6,11 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
-using Org.BouncyCastle.Asn1.Ocsp;
 using TwoFactorAuthNet;
+using WeddingShare.Attributes;
 using WeddingShare.Constants;
 using WeddingShare.Enums;
+using WeddingShare.Extensions;
 using WeddingShare.Helpers;
 using WeddingShare.Helpers.Database;
 using WeddingShare.Helpers.Notifications;
@@ -184,7 +185,7 @@ namespace WeddingShare.Controllers
         {
             await _audit.LogAction(User?.Identity?.Name, _localizer["Audit_LoggedOut"].Value);
             await this.HttpContext.SignOutAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Admin");
         }
 
         [HttpGet]
@@ -206,7 +207,7 @@ namespace WeddingShare.Controllers
 
             try
             {
-                var user = await _database.GetUser(int.Parse(((ClaimsIdentity)User.Identity).Claims.FirstOrDefault(x => string.Equals(ClaimTypes.Sid, x.Type, StringComparison.OrdinalIgnoreCase))?.Value ?? "-1"));
+                var user = await _database.GetUser(User.Identity.GetUserId());
                 if (user != null)
                 { 
                     if (!await _settings.GetOrDefault(Settings.Basic.SingleGalleryMode, false))
@@ -248,6 +249,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpGet]
+        [RequiresRole(Permission = AccessPermissions.Gallery_View)]
         public async Task<IActionResult> GalleriesList()
         {
             if (User?.Identity == null || !User.Identity.IsAuthenticated)
@@ -259,7 +261,7 @@ namespace WeddingShare.Controllers
 
             try
             {
-                var user = await _database.GetUser(int.Parse(((ClaimsIdentity)User.Identity).Claims.FirstOrDefault(x => string.Equals(ClaimTypes.Sid, x.Type, StringComparison.OrdinalIgnoreCase))?.Value ?? "-1"));
+                var user = await _database.GetUser(User.Identity.GetUserId());
                 if (user != null)
                 {
                     if (!await _settings.GetOrDefault(Settings.Basic.SingleGalleryMode, false))
@@ -293,6 +295,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpGet]
+        [RequiresRole(Permission = AccessPermissions.Review_View)]
         public async Task<IActionResult> PendingReviews()
         {
             if (User?.Identity == null || !User.Identity.IsAuthenticated)
@@ -304,7 +307,7 @@ namespace WeddingShare.Controllers
 
             try
             {
-                var user = await _database.GetUser(int.Parse(((ClaimsIdentity)User.Identity).Claims.FirstOrDefault(x => string.Equals(ClaimTypes.Sid, x.Type, StringComparison.OrdinalIgnoreCase))?.Value ?? "-1"));
+                var user = await _database.GetUser(User.Identity.GetUserId());
                 if (user != null)
                 {
                     if (!await _settings.GetOrDefault(Settings.Basic.SingleGalleryMode, false))
@@ -330,6 +333,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpGet]
+        [RequiresRole(Permission = AccessPermissions.User_View)]
         public async Task<IActionResult> UsersList()
         {
             if (User?.Identity == null || !User.Identity.IsAuthenticated)
@@ -341,7 +345,7 @@ namespace WeddingShare.Controllers
 
             try
             {
-                var user = await _database.GetUser(int.Parse(((ClaimsIdentity)User.Identity).Claims.FirstOrDefault(x => string.Equals(ClaimTypes.Sid, x.Type, StringComparison.OrdinalIgnoreCase))?.Value ?? "-1"));
+                var user = await _database.GetUser(User.Identity.GetUserId());
                 if (user != null)
                 {
                     result = await _database.GetAllUsers();
@@ -356,6 +360,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpGet]
+        [RequiresRole(Permission = AccessPermissions.CustomResource_View)]
         public async Task<IActionResult> CustomResources()
         {
             if (User?.Identity == null || !User.Identity.IsAuthenticated)
@@ -378,6 +383,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpGet]
+        [RequiresRole(Permission = AccessPermissions.Settings_View)]
         public async Task<IActionResult> SettingsPartial()
         {
             if (User?.Identity == null || !User.Identity.IsAuthenticated)
@@ -401,6 +407,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPost]
+        [RequiresRole(Permission = AccessPermissions.Audit_View)]
         public async Task<IActionResult> AuditList(string term = "", int limit = 100)
         {
             if (User?.Identity == null || !User.Identity.IsAuthenticated)
@@ -424,6 +431,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpGet]
+        [RequiresRole(Permission = AccessPermissions.Settings_Gallery_Update)]
         [Route("Admin/Settings/{galleryId}")]
         public async Task<IActionResult> GallerySettingsPartial(int galleryId)
         {
@@ -452,6 +460,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPost]
+        [RequiresRole(Permission = AccessPermissions.Review_View)]
         public async Task<IActionResult> ReviewPhoto(int id, ReviewAction action)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -512,6 +521,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPost]
+        [RequiresRole(Permission = AccessPermissions.Review_View)]
         public async Task<IActionResult> BulkReview(ReviewAction action)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -571,6 +581,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPost]
+        [RequiresRole(Permission = AccessPermissions.Gallery_Create)]
         public async Task<IActionResult> AddGallery(GalleryModel model)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -584,6 +595,8 @@ namespace WeddingShare.Controllers
                         {
                             if (await _database.GetGalleryCount() < await _settings.GetOrDefault(Settings.Basic.MaxGalleryCount, 1000000))
                             {
+                                model.Owner = User.Identity.GetUserId();
+
                                 await _audit.LogAction(User?.Identity?.Name, $"{_localizer["Audit_CreatedGallery"].Value} '{model?.Name}'");
                                 return Json(new { success = string.Equals(model?.Name, (await _database.AddGallery(model))?.Name, StringComparison.OrdinalIgnoreCase) });
                             }
@@ -612,6 +625,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPut]
+        [RequiresRole(Permission = AccessPermissions.Gallery_Update)]
         public async Task<IActionResult> EditGallery(GalleryModel model)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -658,6 +672,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpDelete]
+        [RequiresRole(Permission = AccessPermissions.Gallery_Wipe)]
         public async Task<IActionResult> WipeGallery(int id)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -704,6 +719,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpDelete]
+        [RequiresRole(Permission = AccessPermissions.Gallery_Wipe)]
         public async Task<IActionResult> WipeAllGalleries()
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -744,6 +760,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpDelete]
+        [RequiresRole(Permission = AccessPermissions.Gallery_Delete)]
         public async Task<IActionResult> DeleteGallery(int id)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -780,6 +797,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpDelete]
+        [RequiresRole(Permission = AccessPermissions.Review_Delete)]
         public async Task<IActionResult> DeletePhoto(int id)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -815,6 +833,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPost]
+        [RequiresRole(Permission = AccessPermissions.User_Create)]
         public async Task<IActionResult> AddUser(UserModel model)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -853,11 +872,12 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPut]
+        [RequiresRole(Permission = AccessPermissions.User_Update)]
         public async Task<IActionResult> EditUser(UserModel model)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
             {
-                if (model?.Id != null && !string.IsNullOrWhiteSpace(model?.Password) && string.Equals(model.Password, model.CPassword))
+                if (model?.Id != null)
                 {
                     try
                     {
@@ -865,8 +885,8 @@ namespace WeddingShare.Controllers
                         if (user != null)
                         {
                             user.Email = model.Email;
-                            user.Password = _encryption.Encrypt(model.Password, user.Username.ToLower());
-
+                            user.Level = model.Level;
+                         
                             await _audit.LogAction(User?.Identity?.Name, $"{_localizer["Audit_UpdatedUser"].Value} '{user?.Username}'");
 
                             return Json(new { success = string.Equals(user?.Username, (await _database.EditUser(user))?.Username, StringComparison.OrdinalIgnoreCase) });
@@ -891,6 +911,45 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPut]
+        [RequiresRole(Permission = AccessPermissions.User_Change_Password)]
+        public async Task<IActionResult> ChangeUserPassword(UserModel model)
+        {
+            if (User?.Identity != null && User.Identity.IsAuthenticated)
+            {
+                if (model?.Id != null && !string.IsNullOrWhiteSpace(model?.Password) && string.Equals(model.Password, model.CPassword))
+                {
+                    try
+                    {
+                        var user = await _database.GetUser(model.Id);
+                        if (user != null)
+                        {
+                            user.Password = _encryption.Encrypt(model.Password, user.Username.ToLower());
+
+                            await _audit.LogAction(User?.Identity?.Name, $"{_localizer["Audit_UpdatedUser"].Value} '{user?.Username}'");
+
+                            return Json(new { success = await _database.ChangePassword(user) });
+                        }
+                        else
+                        {
+                            return Json(new { success = false, message = _localizer["Failed_Edit_User"].Value });
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex, $"{_localizer["Failed_Edit_User"].Value} - {ex?.Message}");
+                    }
+                }
+                else
+                {
+                    return Json(new { success = false, message = _localizer["Failed_Edit_User"].Value });
+                }
+            }
+
+            return Json(new { success = false });
+        }
+
+        [HttpPut]
+        [RequiresRole(Permission = AccessPermissions.User_Freeze)]
         public async Task<IActionResult> FreezeUser(int id)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -921,6 +980,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPut]
+        [RequiresRole(Permission = AccessPermissions.User_Freeze)]
         public async Task<IActionResult> UnfreezeUser(int id)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -951,6 +1011,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpDelete]
+        [RequiresRole(Permission = AccessPermissions.User_Delete)]
         public async Task<IActionResult> DeleteUser(int id)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -984,6 +1045,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPut]
+        [RequiresRole(Permission = AccessPermissions.Settings_Update)]
         public async Task<IActionResult> UpdateSettings(List<UpdateSettingsModel> model, int? galleryId = null)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -1042,6 +1104,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPost]
+        [RequiresRole(Permission = AccessPermissions.Data_Export)]
         public async Task<IActionResult> ExportBackup(ExportOptions options)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -1127,6 +1190,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPost]
+        [RequiresRole(Permission = AccessPermissions.Data_Import)]
         public async Task<IActionResult> ImportBackup()
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -1205,6 +1269,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPost]
+        [RequiresRole(Permission = AccessPermissions.Login)]
         public async Task<IActionResult> RegisterMultifactorAuth(string secret, string code)
         {
             if (!string.IsNullOrWhiteSpace(secret) && !string.IsNullOrWhiteSpace(code))
@@ -1216,7 +1281,7 @@ namespace WeddingShare.Controllers
                         var tfa = new TwoFactorAuth(await _settings.GetOrDefault(Settings.Basic.Title, "WeddingShare"));
                         if (tfa.VerifyCode(secret, code))
                         {
-                            var userId = int.Parse(((ClaimsIdentity)User.Identity).Claims.FirstOrDefault(x => string.Equals(ClaimTypes.Sid, x.Type, StringComparison.OrdinalIgnoreCase))?.Value ?? "-1");
+                            var userId = User.Identity.GetUserId();
                             if (userId > 0)
                             {
                                 var set = await _database.SetMultiFactorToken(userId, secret);
@@ -1241,6 +1306,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpDelete]
+        [RequiresRole(Permission = AccessPermissions.User_Reset_MFA)]
         public async Task<IActionResult> ResetMultifactorAuth()
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -1249,8 +1315,7 @@ namespace WeddingShare.Controllers
                 {
                     await _audit.LogAction(User?.Identity?.Name, _localizer["Audit_MultiFactorReset"].Value);
 
-                    var userId = int.Parse(((ClaimsIdentity)User.Identity).Claims.FirstOrDefault(x => string.Equals(ClaimTypes.Sid, x.Type, StringComparison.OrdinalIgnoreCase))?.Value ?? "-1");
-                    return await ResetMultifactorAuthForUser(userId);
+                    return await ResetMultifactorAuthForUser(User.Identity.GetUserId());
                 }
                 catch (Exception ex)
                 {
@@ -1262,6 +1327,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpDelete]
+        [RequiresRole(Permission = AccessPermissions.User_Reset_MFA)]
         public async Task<IActionResult> ResetMultifactorAuthForUser(int userId)
         {
             if (User?.Identity != null && User.Identity.IsAuthenticated)
@@ -1276,7 +1342,7 @@ namespace WeddingShare.Controllers
                             var cleared = await _database.SetMultiFactorToken(userId, string.Empty);
                             if (cleared)
                             {
-                                var currentUserId = int.Parse(((ClaimsIdentity)User.Identity).Claims.FirstOrDefault(x => string.Equals(ClaimTypes.Sid, x.Type, StringComparison.OrdinalIgnoreCase))?.Value ?? "-1");
+                                var currentUserId = User.Identity.GetUserId();
                                 if (userId == currentUserId)
                                 { 
                                     HttpContext.Session.SetString(SessionKey.MultiFactorTokenSet, "false");
@@ -1299,6 +1365,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpPost]
+        [RequiresRole(Permission = AccessPermissions.CustomResource_Create)]
         public async Task<IActionResult> UploadCustomResource()
         {
             Response.StatusCode = (int)HttpStatusCode.BadRequest;
@@ -1330,12 +1397,14 @@ namespace WeddingShare.Controllers
                                     _fileHelper.CreateDirectoryIfNotExists(CustomResourcesDirectory);
                                     await _fileHelper.SaveFile(file, filePath, FileMode.Create);
 
+                                    var userId = User.Identity.GetUserId();
                                     var item = await _database.AddCustomResource(new CustomResourceModel()
                                     {
                                         FileName = file.FileName,
-                                        UploadedBy = User?.Identity.Name
+                                        UploadedBy = User?.Identity.Name,
+                                        Owner = userId
                                     });
-                                                                        
+
                                     if (item?.Id > 0)
                                     {
                                         uploaded++;
@@ -1368,6 +1437,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpDelete]
+        [RequiresRole(Permission = AccessPermissions.CustomResource_Delete)]
         public async Task<IActionResult> RemoveCustomResource(int id)
         {
             Response.StatusCode = (int)HttpStatusCode.BadRequest;
@@ -1404,6 +1474,7 @@ namespace WeddingShare.Controllers
         }
 
         [HttpGet]
+        [RequiresRole(Permission = AccessPermissions.Login)]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public async Task<IActionResult> CheckAccountState()
         {
@@ -1413,7 +1484,7 @@ namespace WeddingShare.Controllers
             {
                 try
                 {
-                    var user = await _database.GetUser(int.Parse(((ClaimsIdentity)User.Identity).Claims.FirstOrDefault(x => string.Equals(ClaimTypes.Sid, x.Type, StringComparison.OrdinalIgnoreCase))?.Value ?? "-1"));
+                    var user = await _database.GetUser(User.Identity.GetUserId());
                     if (user != null)
                     {
                         Response.StatusCode = (int)HttpStatusCode.OK;
@@ -1437,7 +1508,8 @@ namespace WeddingShare.Controllers
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Sid, user.Id.ToString()),
-                    new Claim(ClaimTypes.Name, user.Username.ToLower())
+                    new Claim(ClaimTypes.Name, user.Username.ToLower()),
+                    new Claim(ClaimTypes.Role, user.Level.ToString()),
                 };
 
                 var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);

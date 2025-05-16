@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>Qeydiyyat</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>E-poçt ünvanı</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Yapon</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>Şu anda giriş deyil</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>Xüsusi Resurslar</value>

@@ -341,6 +341,7 @@
 
             var id = $(this).data('photo-id');
             var name = $(this).data('photo-name');
+            var tile = $(this).closest('.image-tile');
 
             displayPopup({
                 Title: localization.translate('Delete_Item'),
@@ -369,7 +370,7 @@
                         })
                             .done(data => {
                                 if (data.success === true) {
-                                    $(`tr[data-gallery-id=${id}]`).remove();
+                                    tile.remove();
                                     displayMessage(localization.translate('Delete_Item'), localization.translate('Delete_Item_Success'), null, function () {
                                         refreshGalleryPage();
                                     });

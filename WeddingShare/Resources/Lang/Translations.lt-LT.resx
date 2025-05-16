@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>Užverti</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>Prašome susisiekti su svetainės administratoriumi, kad suteiktų prieigą</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Sukurti</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>Jūs šiuo metu neturite prieigos</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>Paprasti ištekliai</value>

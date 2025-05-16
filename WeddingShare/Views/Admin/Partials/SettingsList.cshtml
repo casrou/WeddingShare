@@ -1,7 +1,12 @@
 ﻿@model WeddingShare.Views.Admin.Partials.SettingsListModel
+@using WeddingShare.Extensions
 @using WeddingShare.Views.Admin.Tabs
 
-@if (Model != null)
+@{
+    var userPermissions = User?.Identity?.GetUserPermissions() ?? AccessPermissions.None;
+}
+
+@if (userPermissions.HasFlag(AccessPermissions.Settings_View) && Model != null)
 {
     <div class="accordion" id="settings-accordion">
         <div class="accordion-item">

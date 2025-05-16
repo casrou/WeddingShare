@@ -13,6 +13,7 @@ namespace WeddingShare.Models.Database
         public DateTime? LockoutUntil { get; set; }
         public string? MultiFactorToken { get; set; }
         public AccountState State { get; set; } = AccountState.Active;
+        public UserLevel Level { get; set; } = UserLevel.Basic;
 
         public bool IsLockedOut
         {

@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>نزدیک</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>لطفا با یک مدیر سایت برای ارائه دسترسی تماس بگیرید</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>ایجاد آفرینش</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>شما در حال حاضر دسترسی ندارید</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>منابع سفارشی</value>

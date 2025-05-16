@@ -66,7 +66,8 @@ namespace WeddingShare.UnitTests.Tests.Helpers
                 SecretKey = "123456",
                 ApprovedItems = 0,
                 PendingItems = 0,
-                TotalItems = 0
+                TotalItems = 0,
+				Owner = 0
             }));
 			_database.AddGalleryItem(Arg.Any<GalleryItemModel>()).Returns(Task.FromResult<GalleryItemModel?>(MockData.MockGalleryItem()));
 

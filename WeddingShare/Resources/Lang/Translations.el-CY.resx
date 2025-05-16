@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>Κλείσιμο</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>Παρακαλούμε επικοινωνήστε με έναν διαχειριστή του site για να παρέχουν πρόσβαση</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Δημιουργία</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>Προς το παρόν δεν έχετε πρόσβαση</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>Προσαρμοσμένοι πόροι</value>

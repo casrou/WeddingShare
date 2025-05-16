@@ -1,9 +1,12 @@
 ﻿@model List<UserModel>
-@using WeddingShare.Enums
 @using WeddingShare.Views.Admin
 @using WeddingShare.Models.Database
 
-@if (Model != null && Model.Any())
+@{
+    var userPermissions = User?.Identity?.GetUserPermissions() ?? AccessPermissions.None;
+}
+
+@if (userPermissions.HasFlag(AccessPermissions.User_View) && Model != null && Model.Any())
 {
     <table class="table table-rounded-border">
         <tr>
@@ -12,20 +15,36 @@
         </tr>
         @foreach (var user in Model.OrderBy(x => x.Username.ToLower()))
         {
-            <tr data-user-id="@user.Id" data-user-name="@user.Username" data-user-email="@user.Email">
+            <tr data-user-id="@user.Id" data-user-name="@user.Username" data-user-email="@user.Email" data-user-level="@((int)user.Level)">
                 <td class="user-name text-capitalize">@user.Username</td>
                 <td>
-                    <i class="btn @(user.Id > 1 ? "btnEditUser btn-outline-success" : "btn-outline-disabled") fa-solid fa-pen-to-square" alt="Edit"></i>
-                    <i class="btn @(user.Id > 1 ? "btnWipe2FA btn-outline-danger" : "btn-outline-disabled") fa-solid fa-key" alt="Wipe 2FA"></i>
-                    @if (user.State == AccountState.Frozen)
+                    @if (userPermissions.HasFlag(AccessPermissions.User_Update))
                     {
-                        <i class="btn @(user.Id > 1 ? "btnUnfreezeUser btn-outline-primary" : "btn-outline-disabled") fa-solid fa-fire" alt="Unfreeze"></i>
+                        <i class="btn @(user.Id > 1 ? "btnEditUser btn-outline-success" : "btn-outline-disabled") fa-solid fa-pen-to-square" alt="Edit"></i>
                     }
-                    else
+                    @if (userPermissions.HasFlag(AccessPermissions.User_Change_Password))
                     {
-                        <i class="btn @(user.Id > 1 ? "btnFreezeUser btn-outline-danger" : "btn-outline-disabled") fa-solid fa-snowflake" alt="Freeze"></i>
+                        <i class="btn @(user.Id > 1 ? "btnChangePassword btn-outline-success" : "btn-outline-disabled") fa-solid fa-unlock-keyhole" alt="Change Password"></i>
                     }
-                    <i class="btn @(user.Id > 1 ? "btnDeleteUser btn-outline-danger" : "btn-outline-disabled") fa-solid fa-trash-can" alt="Delete"></i>
+                    @if (userPermissions.HasFlag(AccessPermissions.User_Reset_MFA))
+                    {
+                        <i class="btn @(user.Id > 1 ? "btnWipe2FA btn-outline-danger" : "btn-outline-disabled") fa-solid fa-key" alt="Wipe 2FA"></i>
+                    }
+                    @if (userPermissions.HasFlag(AccessPermissions.User_Freeze))
+                    {
+                        if (user.State == AccountState.Frozen)
+                        {
+                            <i class="btn @(user.Id > 1 ? "btnUnfreezeUser btn-outline-primary" : "btn-outline-disabled") fa-solid fa-fire" alt="Unfreeze"></i>
+                        }
+                        else
+                        {
+                            <i class="btn @(user.Id > 1 ? "btnFreezeUser btn-outline-danger" : "btn-outline-disabled") fa-solid fa-snowflake" alt="Freeze"></i>
+                        }
+                    }
+                    @if (userPermissions.HasFlag(AccessPermissions.User_Delete))
+                    {
+                        <i class="btn @(user.Id > 1 ? "btnDeleteUser btn-outline-danger" : "btn-outline-disabled") fa-solid fa-trash-can" alt="Delete"></i>
+                    }
                 </td>
             </tr>
         }

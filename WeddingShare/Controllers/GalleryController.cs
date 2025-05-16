@@ -77,7 +77,8 @@ namespace WeddingShare.Controllers
                         await _database.AddGallery(new GalleryModel()
                         {
                             Name = id.ToLower(),
-                            SecretKey = key
+                            SecretKey = key,
+                            Owner = 0
                         });
                     }
                     else

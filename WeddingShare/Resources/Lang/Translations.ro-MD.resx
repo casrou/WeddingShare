@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>Închide</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>Vă rugăm să contactați un administrator de site pentru a oferi acces</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Creează</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>În prezent nu aveți acces</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>Resurse personalizate</value>

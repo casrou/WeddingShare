@@ -341,6 +341,34 @@ function selectActiveTab(tab) {
                     Hint: localization.translate('User_Confirm_Password_Hint'),
                     Type: "password",
                     Class: 'confirm-password'
+                },
+                {
+                    Id: 'user-level',
+                    Name: localization.translate('User_Level'),
+                    Hint: localization.translate('User_Level_Hint'),
+                    Type: 'select',
+                    SelectOptions: [
+                        {
+                            key: '0',
+                            selected: true,
+                            value: 'Basic'
+                        },
+                        {
+                            key: '1',
+                            selected: false,
+                            value: 'Reviewer'
+                        },
+                        {
+                            key: '2',
+                            selected: false,
+                            value: 'Moderator'
+                        },
+                        {
+                            key: '3',
+                            selected: false,
+                            value: 'Admin'
+                        }
+                    ]
                 }],
                 FooterHtml: passwordValidation,
                 Buttons: [{
@@ -380,10 +408,16 @@ function selectActiveTab(tab) {
                             return;
                         }
 
+                        let level = $('#popup-modal-field-user-level').val();
+                        if (level == undefined || level.length == 0) {
+                            displayMessage(localization.translate('User_Create'), localization.translate('User_Invalid_Level'));
+                            return;
+                        }
+
                         $.ajax({
                             url: '/Admin/AddUser',
                             method: 'POST',
-                            data: { Username: username, Email: email, Password: password, CPassword: cpassword }
+                            data: { Username: username, Email: email, Password: password, CPassword: cpassword, Level: level }
                         })
                             .done(data => {
                                 if (data.success === true) {
@@ -1051,15 +1085,6 @@ function selectActiveTab(tab) {
                 return;
             }
 
-            let passwordValidation = `<ul class="password-validator" data-input="input#popup-modal-field-user-password"> \
-                    <li class="lbl-lower">Lower case letters</li> \
-                    <li class="lbl-upper">Upper case letter</li> \
-                    <li class="lbl-number">Numbers</li> \
-                    <li class="lbl-special">Special characters</li> \
-                    <li class="lbl-length">At least 8 characters</li> \
-                    <li class="lbl-confirm visually-hidden">Confirm password matches</li> \
-                </ul><script>initPasswordValidation();</script>`;
-
             let row = $(this).closest('tr');
             displayPopup({
                 Title: localization.translate('User_Edit'),
@@ -1078,6 +1103,107 @@ function selectActiveTab(tab) {
                     Name: localization.translate('User_Email'),
                     Value: row.data('user-email'),
                     Hint: localization.translate('User_Email_Hint')
+                }, {
+                    Id: 'user-level',
+                    Name: localization.translate('User_Level'),
+                    Hint: localization.translate('User_Level_Hint'),
+                    Type: 'select',
+                    SelectOptions: [
+                        {
+                            key: '0',
+                            selected: row.data('user-level') == '0',
+                            value: 'Basic'
+                        },
+                        {
+                            key: '1',
+                            selected: row.data('user-level') == '1',
+                            value: 'Reviewer'
+                        },
+                        {
+                            key: '2',
+                            selected: row.data('user-level') == '2',
+                            value: 'Moderator'
+                        },
+                        {
+                            key: '3',
+                            selected: row.data('user-level') == '3',
+                            value: 'Admin'
+                        }
+                    ]
+                }],
+                Buttons: [{
+                    Text: localization.translate('Update'),
+                    Class: 'btn-success',
+                    Callback: function () {
+                        displayLoader(localization.translate('Loading'));
+
+                        let id = $('#popup-modal-field-user-id').val();
+                        if (id == undefined || id.length == 0) {
+                            displayMessage(localization.translate('User_Edit'), localization.translate('User_Missing_Id'));
+                            return;
+                        }
+
+                        let email = $('#popup-modal-field-user-email').val();
+                        const emailRegex = /^((?!\.)[\w\-_.]*[^.])(@[\w\-_]+)(\.\w+(\.\w+)?[^.\W])$/;
+                        if (email != undefined && email.length > 0 && !emailRegex.test(email)) {
+                            displayMessage(localization.translate('User_Create'), localization.translate('User_Invalid_Email'));
+                            return;
+                        }
+
+                        let level = $('#popup-modal-field-user-level').val();
+                        if (level == undefined || level.length == 0) {
+                            displayMessage(localization.translate('User_Edit'), localization.translate('User_Invalid_Level'));
+                            return;
+                        }
+
+                        $.ajax({
+                            url: '/Admin/EditUser',
+                            method: 'PUT',
+                            data: { Id: id, Email: email, Level: level }
+                        })
+                            .done(data => {
+                                if (data.success === true) {
+                                    updateUsersList();
+                                    displayMessage(localization.translate('User_Edit'), localization.translate('User_Edit_Success'));
+                                } else if (data.message) {
+                                    displayMessage(localization.translate('User_Edit'), localization.translate('User_Edit_Failed'), [data.message]);
+                                } else {
+                                    displayMessage(localization.translate('User_Edit'), localization.translate('User_Edit_Failed'));
+                                }
+                            })
+                            .fail((xhr, error) => {
+                                displayMessage(localization.translate('User_Edit'), localization.translate('User_Edit_Failed'), [error]);
+                            });
+                    }
+                }, {
+                    Text: localization.translate('Close')
+                }]
+            });
+        });
+
+        $(document).off('click', 'i.btnChangePassword').on('click', 'i.btnChangePassword', function (e) {
+            preventDefaults(e);
+
+            if ($(this).attr('disabled') == 'disabled') {
+                return;
+            }
+
+            let passwordValidation = `<ul class="password-validator" data-input="input#popup-modal-field-user-password"> \
+                    <li class="lbl-lower">Lower case letters</li> \
+                    <li class="lbl-upper">Upper case letter</li> \
+                    <li class="lbl-number">Numbers</li> \
+                    <li class="lbl-special">Special characters</li> \
+                    <li class="lbl-length">At least 8 characters</li> \
+                    <li class="lbl-confirm visually-hidden">Confirm password matches</li> \
+                </ul><script>initPasswordValidation();</script>`;
+
+            let row = $(this).closest('tr');
+            displayPopup({
+                Title: localization.translate('User_Edit'),
+                Fields: [{
+                    Id: 'user-id',
+                    Value: row.data('user-id'),
+                    Type: 'hidden'
                 }, {
                     Id: 'user-password',
                     Name: localization.translate('User_Password'),
@@ -1105,13 +1231,6 @@ function selectActiveTab(tab) {
                             return;
                         }
 
-                        let email = $('#popup-modal-field-user-email').val();
-                        const emailRegex = /^((?!\.)[\w\-_.]*[^.])(@[\w\-_]+)(\.\w+(\.\w+)?[^.\W])$/;
-                        if (email != undefined && email.length > 0 && !emailRegex.test(email)) {
-                            displayMessage(localization.translate('User_Create'), localization.translate('User_Invalid_Email'));
-                            return;
-                        }
-
                         let password = $('#popup-modal-field-user-password').val();
                         if (password == undefined || password.length < 8) {
                             displayMessage(localization.translate('User_Create'), localization.translate('User_Invalid_Password'));
@@ -1119,15 +1238,15 @@ function selectActiveTab(tab) {
                         }
 
                         let cpassword = $('#popup-modal-field-user-cpassword').val();
-                        if (password !== cpassword) {
+                        if (password == undefined || password !== cpassword) {
                             displayMessage(localization.translate('User_Create'), localization.translate('User_Invalid_CPassword'));
                             return;
                         }
 
                         $.ajax({
-                            url: '/Admin/EditUser',
+                            url: '/Admin/ChangeUserPassword',
                             method: 'PUT',
-                            data: { Id: id, Email: email, Password: password, CPassword: cpassword }
+                            data: { Id: id, Password: password, CPassword: cpassword }
                         })
                             .done(data => {
                                 if (data.success === true) {

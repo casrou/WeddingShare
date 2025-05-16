@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>Dún na nGall</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>Téigh i dteagmháil le riarthóir suímh chun rochtain a sholáthar</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Tréimhse saoil: ilbhliantúil</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>Níl rochtain agat faoi láthair</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>Acmhainní an Chustaim</value>
