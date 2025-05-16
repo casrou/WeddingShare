@@ -50,7 +50,8 @@ namespace WeddingShare.Extensions
                             | AccessPermissions.Review_View
                             | AccessPermissions.Review_Approve
                             | AccessPermissions.Review_Reject
-                            | AccessPermissions.Review_Delete;
+                            | AccessPermissions.Review_Delete
+                            | AccessPermissions.Gallery_View;
                     case UserLevel.Moderator:
                         return
                             AccessPermissions.Login
@@ -60,6 +61,7 @@ namespace WeddingShare.Extensions
                             | AccessPermissions.Review_Delete
                             | AccessPermissions.Gallery_View
                             | AccessPermissions.Gallery_Update
+                            | AccessPermissions.Gallery_Upload
                             | AccessPermissions.Gallery_Download
                             | AccessPermissions.User_View
                             | AccessPermissions.User_Reset_MFA
@@ -77,6 +79,7 @@ namespace WeddingShare.Extensions
                             | AccessPermissions.Gallery_Create
                             | AccessPermissions.Gallery_Update
                             | AccessPermissions.Gallery_Delete
+                            | AccessPermissions.Gallery_Upload
                             | AccessPermissions.Gallery_Download
                             | AccessPermissions.User_View
                             | AccessPermissions.User_Create
@@ -103,6 +106,7 @@ namespace WeddingShare.Extensions
                             | AccessPermissions.Gallery_Create
                             | AccessPermissions.Gallery_Update
                             | AccessPermissions.Gallery_Delete
+                            | AccessPermissions.Gallery_Upload
                             | AccessPermissions.Gallery_Download
                             | AccessPermissions.Gallery_Wipe
                             | AccessPermissions.User_View

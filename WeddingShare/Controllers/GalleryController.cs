@@ -204,7 +204,8 @@ namespace WeddingShare.Controllers
                 var allowedFileTypes = (await _settings.GetOrDefault(Settings.Gallery.AllowedFileTypes, ".jpg,.jpeg,.png,.mp4,.mov", gallery?.Name)).Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
                 var items = (await _database.GetAllGalleryItems(gallery?.Id, GalleryItemState.Approved, mediaType, orientation, group, order, itemsPerPage, currentPage))?.Where(x => allowedFileTypes.Any(y => string.Equals(Path.GetExtension(x.Title).Trim('.'), y.Trim('.'), StringComparison.OrdinalIgnoreCase)));
 
-                var isAdmin = User?.Identity != null && User.Identity.IsAuthenticated;
+                var userPermissions = User?.Identity?.GetUserPermissions() ?? AccessPermissions.None;
+                var isAdmin = User?.Identity != null && User.Identity.IsAuthenticated && userPermissions.HasFlag(AccessPermissions.Gallery_Upload);
 
                 FileUploader? fileUploader = null;
                 if (!string.Equals("All", gallery?.Name, StringComparison.OrdinalIgnoreCase) && (await _settings.GetOrDefault(Settings.Gallery.Upload, true, gallery?.Name) || isAdmin))

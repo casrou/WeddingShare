@@ -16,6 +16,7 @@
         Gallery_Create = 64,
         Gallery_Update = 128,
         Gallery_Delete = 256,
+        Gallery_Upload = 1073741824,
         Gallery_Download = 512,
         Gallery_Wipe = 1024,
 
