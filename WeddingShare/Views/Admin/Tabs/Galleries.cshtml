@@ -3,12 +3,16 @@
 @using WeddingShare.Helpers
 @using WeddingShare.Views.Admin.Tabs
 
+@{
+    var userPermissions = User?.Identity?.GetUserPermissions() ?? AccessPermissions.None;
+}
+
 <section class="pnl-admin pnl-admin-galleries pb-0 pb-lg-4 d-none">
     <div class="container px-3 px-lg-1 my-3 my-lg-0">
         <div class="row">
             <div class="col-12">
                 <h1 class="display-6">@_localizer["Galleries"].Value
-                    @if (!await _settings.GetOrDefault(Settings.Basic.SingleGalleryMode, false))
+                    @if (!await _settings.GetOrDefault(Settings.Basic.SingleGalleryMode, false) && userPermissions.HasFlag(AccessPermissions.Gallery_Create))
                     {
                         <span class="header-actions">
                             <span class="action text-success pointer">

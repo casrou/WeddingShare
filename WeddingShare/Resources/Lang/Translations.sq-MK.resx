@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>Mbyll</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>Vihu në kontakt me administratorin e sitit për të krijuar hyrje</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Krijo</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>Aktualisht nuk keni qasje</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>Gjëndja</value>

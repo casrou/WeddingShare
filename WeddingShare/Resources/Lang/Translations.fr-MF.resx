@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>Fermer</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>Veuillez contacter un administrateur du site pour fournir un accès</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Créer</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>Vous n'avez actuellement pas d'accès</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>Ressources personnalisées</value>

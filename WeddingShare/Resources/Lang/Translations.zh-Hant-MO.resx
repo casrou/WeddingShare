@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>关闭</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>请联系网站管理员提供访问</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>创建</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>您目前无法访问</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>自定义资源</value>

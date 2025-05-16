@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>Klon</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>Sila hubungi administrator situs untuk memberikan akses</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Cipta</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>Anda saat ini tidak memiliki akses</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>Sumber Daya Listom</value>

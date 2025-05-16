@@ -2,7 +2,11 @@
 @using WeddingShare.Views.Admin
 @using WeddingShare.Models.Database
 
-@if (Model != null && Model.Any())
+@{
+    var userPermissions = User?.Identity?.GetUserPermissions() ?? AccessPermissions.None;
+}
+
+@if (userPermissions.HasFlag(AccessPermissions.Audit_View) && Model != null && Model.Any())
 {
     <table class="table table-rounded-border">
         <tr>

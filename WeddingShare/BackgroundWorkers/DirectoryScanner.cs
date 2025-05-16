@@ -67,7 +67,8 @@ namespace WeddingShare.BackgroundWorkers
                                 {
                                     galleryItem = await databaseHelper.AddGallery(new GalleryModel()
                                     {
-                                        Name = id
+                                        Name = id,
+                                        Owner = 0
                                     });
                                 }
                             }
@@ -98,7 +99,7 @@ namespace WeddingShare.BackgroundWorkers
                                                         MediaType = imageHelper.GetMediaType(file),
                                                         State = GalleryItemState.Approved,
                                                         UploadedDate = await fileHelper.GetCreationDatetime(file),
-                                                        FileSize = fileHelper.FileSize(file),
+                                                        FileSize = fileHelper.FileSize(file)
                                                     });
                                                 }
 
@@ -221,7 +222,8 @@ namespace WeddingShare.BackgroundWorkers
                         await databaseHelper.AddCustomResource(new CustomResourceModel()
                         {
                             FileName = filename,
-                            UploadedBy = "DirectoryScanner"
+                            UploadedBy = "DirectoryScanner",
+                            Owner = 0
                         });
                     }
                 }

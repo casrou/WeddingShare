@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>Закрити</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>Будь ласка, зв'яжіться з адміністратором сайту, щоб забезпечити доступ</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Зареєструватися</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>Ви не маєте доступу</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>Ресурси</value>

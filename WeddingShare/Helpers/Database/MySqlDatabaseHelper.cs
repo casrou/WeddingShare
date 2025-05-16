@@ -238,12 +238,13 @@ namespace WeddingShare.Helpers.Database
 
             using (var conn = await GetConnection())
             {
-                var cmd = CreateCommand($"INSERT INTO `galleries` (`name`, `secret_key`) VALUES (@Name, @SecretKey); SELECT g.*, COUNT(gi.`id`) AS `total`, SUM(CASE WHEN gi.`state`=@ApprovedState THEN 1 ELSE 0 END) AS `approved`, SUM(CASE WHEN gi.`state`=@PendingState THEN 1 ELSE 0 END) AS `pending`, SUM(gi.file_size) AS `total_gallery_size` FROM `galleries` AS g LEFT JOIN `gallery_items` AS gi ON g.`id` = gi.`gallery_id` WHERE g.`id`=LAST_INSERT_ID();", conn);
+                var cmd = CreateCommand($"INSERT INTO `galleries` (`name`, `secret_key`, `owner`) VALUES (@Name, @SecretKey, @Owner); SELECT g.*, COUNT(gi.`id`) AS `total`, SUM(CASE WHEN gi.`state`=@ApprovedState THEN 1 ELSE 0 END) AS `approved`, SUM(CASE WHEN gi.`state`=@PendingState THEN 1 ELSE 0 END) AS `pending`, SUM(gi.file_size) AS `total_gallery_size` FROM `galleries` AS g LEFT JOIN `gallery_items` AS gi ON g.`id` = gi.`gallery_id` WHERE g.`id`=LAST_INSERT_ID();", conn);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("Name", model.Name.ToLower());
                 cmd.Parameters.AddWithValue("SecretKey", !string.IsNullOrWhiteSpace(model.SecretKey) ? model.SecretKey : DBNull.Value);
                 cmd.Parameters.AddWithValue("ApprovedState", (int)GalleryItemState.Approved);
                 cmd.Parameters.AddWithValue("PendingState", (int)GalleryItemState.Pending);
+                cmd.Parameters.AddWithValue("Owner", model.Owner);
 
                 await conn.OpenAsync();
                 var tran = await CreateTransaction(conn);
@@ -283,13 +284,14 @@ namespace WeddingShare.Helpers.Database
 
             using (var conn = await GetConnection())
             {
-                var cmd = CreateCommand($"UPDATE `galleries` SET `name`=@Name, `secret_key`=@SecretKey WHERE `id`=@Id; SELECT g.*, COUNT(gi.`id`) AS `total`, SUM(CASE WHEN gi.`state`=@ApprovedState THEN 1 ELSE 0 END) AS `approved`, SUM(CASE WHEN gi.`state`=@PendingState THEN 1 ELSE 0 END) AS `pending`, SUM(gi.file_size) AS `total_gallery_size` FROM `galleries` AS g LEFT JOIN `gallery_items` AS gi ON g.`id` = gi.`gallery_id` WHERE g.`id`=@Id;", conn);
+                var cmd = CreateCommand($"UPDATE `galleries` SET `name`=@Name, `secret_key`=@SecretKey, `owner`=@Owner WHERE `id`=@Id; SELECT g.*, COUNT(gi.`id`) AS `total`, SUM(CASE WHEN gi.`state`=@ApprovedState THEN 1 ELSE 0 END) AS `approved`, SUM(CASE WHEN gi.`state`=@PendingState THEN 1 ELSE 0 END) AS `pending`, SUM(gi.file_size) AS `total_gallery_size` FROM `galleries` AS g LEFT JOIN `gallery_items` AS gi ON g.`id` = gi.`gallery_id` WHERE g.`id`=@Id;", conn);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("Id", model.Id);
                 cmd.Parameters.AddWithValue("Name", model.Name?.ToLower());
                 cmd.Parameters.AddWithValue("SecretKey", !string.IsNullOrWhiteSpace(model.SecretKey) ? model.SecretKey : DBNull.Value);
                 cmd.Parameters.AddWithValue("ApprovedState", (int)GalleryItemState.Approved);
                 cmd.Parameters.AddWithValue("PendingState", (int)GalleryItemState.Pending);
+                cmd.Parameters.AddWithValue("Owner", model.Owner);
 
                 await conn.OpenAsync();
                 var tran = await CreateTransaction(conn);
@@ -739,11 +741,12 @@ namespace WeddingShare.Helpers.Database
 
             using (var conn = await GetConnection())
             {
-                var cmd = CreateCommand($"UPDATE `users` SET `username`=@Username, `password`=@Password WHERE `id`=@Id;", conn);
+                var cmd = CreateCommand($"UPDATE `users` SET `username`=@Username, `password`=@Password, `level`=@Level WHERE `id`=@Id;", conn);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("Id", 1);
                 cmd.Parameters.AddWithValue("Username", model.Username.ToLower());
                 cmd.Parameters.AddWithValue("Password", model.Password);
+                cmd.Parameters.AddWithValue("Level", (int)UserLevel.Owner);
 
                 await conn.OpenAsync();
                 result = await cmd.ExecuteNonQueryAsync() > 0;
@@ -841,12 +844,13 @@ namespace WeddingShare.Helpers.Database
 
             using (var conn = await GetConnection())
             {
-                var cmd = CreateCommand($"INSERT INTO `users` (`username`, `email`, `password`, `state`) VALUES (@Username, @Email, @Password, @State); SELECT * FROM `users` WHERE `id`=LAST_INSERT_ID();", conn);
+                var cmd = CreateCommand($"INSERT INTO `users` (`username`, `email`, `password`, `state`, `level`) VALUES (@Username, @Email, @Password, @State, @Level); SELECT * FROM `users` WHERE `id`=LAST_INSERT_ID();", conn);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("Username", model.Username.ToLower());
                 cmd.Parameters.AddWithValue("Email", !string.IsNullOrEmpty(model.Email) ? model.Email : DBNull.Value);
                 cmd.Parameters.AddWithValue("Password", model.Password);
                 cmd.Parameters.AddWithValue("State", (int)AccountState.Active);
+                cmd.Parameters.AddWithValue("Level", (int)model.Level);
 
                 await conn.OpenAsync();
                 var tran = await CreateTransaction(conn);
@@ -877,12 +881,13 @@ namespace WeddingShare.Helpers.Database
 
             using (var conn = await GetConnection())
             {
-                var cmd = CreateCommand($"UPDATE `users` SET `username`=@Username, `email`=@Email, `state`=@State, `failed_logins`=@FailedLogins, `lockout_until`=@LockoutUntil WHERE `id`=@Id; SELECT * FROM `users` WHERE `id`=@Id;", conn);
+                var cmd = CreateCommand($"UPDATE `users` SET `username`=@Username, `email`=@Email, `state`=@State, `level`=@Level, `failed_logins`=@FailedLogins, `lockout_until`=@LockoutUntil WHERE `id`=@Id; SELECT * FROM `users` WHERE `id`=@Id;", conn);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("Id", model.Id);
                 cmd.Parameters.AddWithValue("Username", model.Username.ToLower());
                 cmd.Parameters.AddWithValue("Email", !string.IsNullOrEmpty(model.Email) ? model.Email : DBNull.Value);
                 cmd.Parameters.AddWithValue("State", (int)model.State);
+                cmd.Parameters.AddWithValue("Level", (int)model.Level);
                 cmd.Parameters.AddWithValue("FailedLogins", model.FailedLogins);
                 cmd.Parameters.AddWithValue("LockoutUntil", model.LockoutUntil != null ? ((DateTime)model.LockoutUntil - new DateTime(1970, 1, 1)).TotalSeconds : DBNull.Value);
 
@@ -959,7 +964,7 @@ namespace WeddingShare.Helpers.Database
                 try
                 {
                     cmd.Transaction = tran;
-                    result = (int)(await cmd.ExecuteScalarAsync() ?? 0) > 0;
+                    result = (int)(await cmd.ExecuteNonQueryAsync()) > 0;
                     await tran.CommitAsync();
                 }
                 catch
@@ -1163,10 +1168,11 @@ namespace WeddingShare.Helpers.Database
 
             using (var conn = await GetConnection())
             {
-                var cmd = CreateCommand($"INSERT INTO `custom_resources` (`file_name`, `uploaded_by`) VALUES (@FileName, @UploadedBy); SELECT * FROM `custom_resources` WHERE `id`=LAST_INSERT_ID();", conn);
+                var cmd = CreateCommand($"INSERT INTO `custom_resources` (`file_name`, `uploaded_by`, `owner`) VALUES (@FileName, @UploadedBy, @Owner); SELECT * FROM `custom_resources` WHERE `id`=LAST_INSERT_ID();", conn);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("FileName", model.FileName);
                 cmd.Parameters.AddWithValue("UploadedBy", !string.IsNullOrEmpty(model.UploadedBy) ? model.UploadedBy : DBNull.Value);
+                cmd.Parameters.AddWithValue("Owner", model.Owner);
 
                 await conn.OpenAsync();
                 var tran = await CreateTransaction(conn);
@@ -1197,11 +1203,12 @@ namespace WeddingShare.Helpers.Database
 
             using (var conn = await GetConnection())
             {
-                var cmd = CreateCommand($"UPDATE `custom_resource` SET `file_name`=@FileName, `uploaded_by`=@UploadedBy WHERE `id`=@Id; SELECT * FROM `custom_resources` WHERE `id`=@Id;", conn);
+                var cmd = CreateCommand($"UPDATE `custom_resource` SET `file_name`=@FileName, `uploaded_by`=@UploadedBy, `owner`=@Owner WHERE `id`=@Id; SELECT * FROM `custom_resources` WHERE `id`=@Id;", conn);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("Id", model.Id);
                 cmd.Parameters.AddWithValue("FileName", model.FileName);
                 cmd.Parameters.AddWithValue("UploadedBy", !string.IsNullOrEmpty(model.UploadedBy) ? model.UploadedBy : DBNull.Value);
+                cmd.Parameters.AddWithValue("Owner", model.Owner);
 
                 await conn.OpenAsync();
                 var tran = await CreateTransaction(conn);
@@ -1697,7 +1704,8 @@ namespace WeddingShare.Helpers.Database
                                 TotalItems = !await reader.IsDBNullAsync("total") ? reader.GetInt32("total") : 0,
                                 ApprovedItems = !await reader.IsDBNullAsync("approved") ? reader.GetInt32("approved") : 0,
                                 PendingItems = !await reader.IsDBNullAsync("pending") ? reader.GetInt32("pending") : 0,
-                                TotalGallerySize = !await reader.IsDBNullAsync("total_gallery_size") ? reader.GetInt64("total_gallery_size") : 0
+                                TotalGallerySize = !await reader.IsDBNullAsync("total_gallery_size") ? reader.GetInt64("total_gallery_size") : 0,
+                                Owner = !await reader.IsDBNullAsync("owner") ? reader.GetInt32("owner") : 0
                             });
                         }
                     }
@@ -1808,6 +1816,7 @@ namespace WeddingShare.Helpers.Database
                                 Username = !await reader.IsDBNullAsync("failed_logins") ? reader.GetString("username").ToLower() : string.Empty,
                                 Email = !await reader.IsDBNullAsync("email") ? reader.GetString("email") : null,
                                 State = !await reader.IsDBNullAsync("state") ? (AccountState)reader.GetInt32("state") : AccountState.Active,
+                                Level = !await reader.IsDBNullAsync("level") ? (UserLevel)reader.GetInt32("level") : UserLevel.Basic,
                                 Password = null,
                                 FailedLogins = !await reader.IsDBNullAsync("failed_logins") ? reader.GetInt32("failed_logins") : 0,
                                 LockoutUntil = !await reader.IsDBNullAsync("lockout_until") ? DateTime.UnixEpoch.AddSeconds(reader.GetInt32("lockout_until")) : null,
@@ -1842,7 +1851,8 @@ namespace WeddingShare.Helpers.Database
                             {
                                 Id = id,
                                 FileName = !await reader.IsDBNullAsync("file_name") ? reader.GetString("file_name") : string.Empty,
-                                UploadedBy = !await reader.IsDBNullAsync("uploaded_by") ? reader.GetString("uploaded_by") : null
+                                UploadedBy = !await reader.IsDBNullAsync("uploaded_by") ? reader.GetString("uploaded_by") : null,
+                                Owner = !await reader.IsDBNullAsync("owner") ? reader.GetInt32("owner") : 0
                             });
                         }
                     }

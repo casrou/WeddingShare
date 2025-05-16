@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>뚱 베어</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>사이트 관리자에 문의하여 액세스</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>이름 *</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>현재 접속이 없습니다</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>회사 소개</value>

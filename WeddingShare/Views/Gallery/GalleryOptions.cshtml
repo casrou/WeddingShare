@@ -1,12 +1,12 @@
 @model WeddingShare.Models.PhotoGallery
 @using System.Text
 @using WeddingShare.Constants
-@using WeddingShare.Enums
 @using WeddingShare.Helpers
 @using WeddingShare.Views.Gallery
 @inject WeddingShare.Helpers.IUrlHelper _url
 
 @{
+    var userPermissions = User?.Identity?.GetUserPermissions() ?? AccessPermissions.None;
     var qrCodeEnabled = await _settings.GetOrDefault(Settings.Gallery.QRCode.Enabled, true, Model?.GalleryName);
 }
 
@@ -35,7 +35,7 @@
 {
     <div class="row px-4 mb-4 presentation-hidden">
         <div class="col-12 px-2 px-xl-0">
-            @if (User?.Identity != null && User.Identity.IsAuthenticated && !(Model?.GalleryName ?? "Default").Equals("All", StringComparison.OrdinalIgnoreCase))
+            @if (User?.Identity != null && User.Identity.IsAuthenticated && userPermissions.HasFlag(AccessPermissions.Settings_Gallery_Update) && !(Model?.GalleryName ?? "Default").Equals("All", StringComparison.OrdinalIgnoreCase))
             {
                 <div class="btn-group w-100 mb-2">
                     <button class="btnGallerySettings btn btn-danger btn-sm" type="button" data-gallery-name="@Model?.GalleryName" data-gallery-id="@Model?.GalleryId">

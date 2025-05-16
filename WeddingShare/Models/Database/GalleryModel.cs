@@ -8,7 +8,8 @@
         public int TotalItems { get; set; }
         public int ApprovedItems { get; set; }
         public int PendingItems { get; set; }
-        public long TotalGallerySize { get; set; }  
+        public long TotalGallerySize { get; set; }
+        public int Owner { get; set; }
         
         public string CalculateUsage(long maxSizeMB = long.MaxValue)
         {

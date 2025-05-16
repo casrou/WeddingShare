@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>Itxi</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>Jar zaitez guneko administratzailearekin harremanetan sarbidea emateko</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Sortu</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>Une honetan ez duzu sarbiderik</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>Baliabide pertsonalizatuak</value>

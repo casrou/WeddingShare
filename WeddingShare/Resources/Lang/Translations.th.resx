@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>ปิด</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>โปรดติดต่อผู้ดูแลเว็บไซต์เพื่อให้เข้าถึง</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>สร้าง</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>คุณยังไม่มีสิทธิ์ในการใช้งาน</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>ตั้งค่าทรัพยากรเอง</value>

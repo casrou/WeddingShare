@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>Malapit</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>Pakisuyong makipag - ugnayan sa isang administrador ng site upang makagamit</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>Gumawa</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>Sa kasalukuyan ay wala kang makuha</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>Kaugaliang Yaman</value>

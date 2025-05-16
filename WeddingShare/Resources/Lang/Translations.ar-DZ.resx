@@ -232,8 +232,14 @@
   <data name="Close" xml:space="preserve">
     <value>اقترب</value>
   </data>
+  <data name="Contact_Admin_For_Access" xml:space="preserve">
+    <value>يرجى الاتصال بمدير الموقع لتوفير إمكانية الوصول</value>
+  </data>
   <data name="Create" xml:space="preserve">
     <value>الإبداع</value>
+  </data>
+  <data name="Currently_No_Access" xml:space="preserve">
+    <value>أنت حالياً لا تستطيع الوصول</value>
   </data>
   <data name="Custom_Resources" xml:space="preserve">
     <value>الموارد العرفية</value>
