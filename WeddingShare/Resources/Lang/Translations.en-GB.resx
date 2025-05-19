@@ -860,7 +860,7 @@
     <value>Access Token</value>
   </data>
   <data name="Settings_IdentityCheck" xml:space="preserve">
-    <value>Identity Check</value>
+    <value>Guest Name</value>
   </data>
   <data name="Settings_IdentityCheck_Enabled_Help" xml:space="preserve">
     <value>Prompt users for their name</value>
@@ -869,13 +869,13 @@
     <value>Enabled</value>
   </data>
   <data name="Settings_IdentityCheck_PageLoad_Help" xml:space="preserve">
-    <value>Should the identity check be displayed at page load</value>
+    <value>Should the guest name check be displayed at page load</value>
   </data>
   <data name="Settings_IdentityCheck_PageLoad_Label" xml:space="preserve">
     <value>Page Load Prompt</value>
   </data>
   <data name="Settings_IdentityCheck_Upload_Help" xml:space="preserve">
-    <value>Should the identity check be required to upload media</value>
+    <value>Should the guest name check be required to upload media</value>
   </data>
   <data name="Settings_IdentityCheck_Upload_Label" xml:space="preserve">
     <value>Upload Prompt</value>

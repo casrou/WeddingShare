@@ -254,7 +254,7 @@
     <div class="row mb-4 mb-lg-4">
         <div class="col-12">
             <label>@_localizer["Settings_Gallery_MaxFileSizeMb_Label"].Value</label>
-            <input class="setting-field form-control" data-setting-name="@Settings.Gallery.MaxFileSizeMB" placeholder="10" value="@Model.Settings.GetValue(Settings.Gallery.MaxFileSizeMB.ToUpper(), string.Empty)" type="number" min="1" step="1" />
+            <input class="setting-field form-control" data-setting-name="@Settings.Gallery.MaxFileSizeMB" placeholder="50" value="@Model.Settings.GetValue(Settings.Gallery.MaxFileSizeMB.ToUpper(), string.Empty)" type="number" min="1" step="1" />
             <div class="form-text">@_localizer["Settings_Gallery_MaxFileSizeMb_Help"].Value</div>
         </div>
     </div>
