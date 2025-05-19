@@ -314,7 +314,7 @@ namespace WeddingShare.Controllers
                         return Json(new { success = false, uploaded = 0, errors = new List<string>() { _localizer["Invalid_Secret_Key_Warning"].Value } });
                     }
 
-                    string uploadedBy = HttpContext.Session.GetString(SessionKey.ViewerIdentity) ?? "Anonymous";
+                    string uploadedBy = HttpContext.Session.GetString(SessionKey.ViewerIdentity)?.Trim() ?? "Anonymous";
                 
                     var files = Request?.Form?.Files;
                     if (files != null && files.Count > 0)
@@ -347,7 +347,7 @@ namespace WeddingShare.Controllers
                                 }
                                 else
                                 {
-                                    var fileName = $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
+                                    var fileName = _fileHelper.SanitizeFilename($"{(!string.IsNullOrWhiteSpace(uploadedBy) ? $"{uploadedBy.Replace(" ", "_")}-" : string.Empty)}{Guid.NewGuid()}{Path.GetExtension(file.FileName)}");
                                     galleryPath = requiresReview ? Path.Combine(galleryPath, "Pending") : galleryPath;
                                     
                                     _fileHelper.CreateDirectoryIfNotExists(galleryPath);

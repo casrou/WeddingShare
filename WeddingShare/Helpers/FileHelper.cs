@@ -1,6 +1,7 @@
 ﻿using System.Numerics;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace WeddingShare.Helpers
 {
@@ -22,6 +23,7 @@ namespace WeddingShare.Helpers
         Task<string> GetChecksum(string path);
         Task<DateTime?> GetCreationDatetime(string path);
         string BytesToHumanReadable(long bytes, int decimalPlaces = 0);
+        string SanitizeFilename(string filename);
     }
 
     public class FileHelper : IFileHelper
@@ -210,6 +212,14 @@ namespace WeddingShare.Helpers
             }
 
             return total.ToString($"{decimalFormat.TrimEnd('.')} {sizes[place]}");
+        }
+
+        public string SanitizeFilename(string filename)
+        {
+            var invalidChars = Regex.Escape(new string(Path.GetInvalidFileNameChars()));
+            var regex = string.Format(@"([{0}]*\.+$)|([{0}]+)", invalidChars);
+
+            return Regex.Replace(filename, regex, string.Empty, RegexOptions.Compiled);
         }
     }
 }
