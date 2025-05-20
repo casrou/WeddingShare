@@ -19,7 +19,7 @@
                             {
                                 foreach (var sponsor in platform.Sponsors)
                                 {
-                                    if (platform.Name.Equals("Github"))
+                                    if (platform.Name.Equals("Github", StringComparison.OrdinalIgnoreCase))
                                     {
                                         <a href="@((await _settings.GetOrDefault(Sponsors.Github.ProfileUrl, string.Empty))?.TrimEnd('/'))/@sponsor" class="sponsor-card">
                                             <img src="@((await _settings.GetOrDefault(Sponsors.Github.ProfileUrl, string.Empty))?.TrimEnd('/'))/@($"{sponsor}.png")" class="sponsor-card-logo" alt="@sponsor" onerror="this.src = '/images/@(platform.Name.ToLower())_avatar.png';" />
@@ -57,12 +57,20 @@
                 {
                     if (platform?.Sponsors != null && platform.Sponsors.Any())
                     {
-                        @foreach (var sponsor in platform.Sponsors)
+                        foreach (var sponsor in platform.Sponsors)
                         {
-                            <a href="@((await _settings.GetOrDefault(Sponsors.Github.ProfileUrl, string.Empty))?.TrimEnd('/'))/@sponsor" class="sponsor-card">
-                                <img src="@((await _settings.GetOrDefault(Sponsors.Github.ProfileUrl, string.Empty))?.TrimEnd('/'))/@($"{sponsor}.png")" class="sponsor-card-logo" alt="@sponsor" onerror="this.src = '/images/@(platform.Name.ToLower())_avatar.png';" />
-                                <p class="sponsor-card-name">@sponsor</p>
-                            </a>
+                            if (platform.Name.Equals("Github", StringComparison.OrdinalIgnoreCase))
+                            {
+                                <a href="@((await _settings.GetOrDefault(Sponsors.Github.ProfileUrl, string.Empty))?.TrimEnd('/'))/@sponsor" class="sponsor-card sponsor-card-small">
+                                    <img src="@((await _settings.GetOrDefault(Sponsors.Github.ProfileUrl, string.Empty))?.TrimEnd('/'))/@($"{sponsor}.png")" class="sponsor-card-logo" alt="@sponsor" onerror="this.src = '/images/@(platform.Name.ToLower())_avatar.png';" />
+                                </a>
+                            }
+                            else
+                            {
+                                <div class="sponsor-card sponsor-card-small">
+                                    <img src="@((await _settings.GetOrDefault(Sponsors.Github.ProfileUrl, string.Empty))?.TrimEnd('/'))/@($"{sponsor}.png")" class="sponsor-card-logo" alt="@sponsor" onerror="this.src = '/images/@(platform.Name.ToLower())_avatar.png';" />
+                                </div>
+                            }
                         }
                     }
                 }

@@ -311,3 +311,12 @@ tr td i {
         padding: 0px;
         display: inline-block;
     }
+
+.sponsor-card-small {
+    margin: 20px 0px 0px !important;
+}
+
+    .sponsor-card-small .sponsor-card-logo {
+        width: 35px !important;
+        height: 35px !important;
+    }
