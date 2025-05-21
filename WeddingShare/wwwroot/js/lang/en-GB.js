@@ -76,7 +76,7 @@
             "Identity_Check_Name": "Name",
             "Identity_Check_Placeholder": "E.g., Jane Doe, Jimmy, Uncle Bob",
             "Identity_Check_Set_Failed": "Failed to set user identity",
-            "Identity_Check_Stay_Anonymous": "Share Anonymously",
+            "Identity_Check_Stay_Anonymous": "Don't Tell Us",
             "Identity_Check_Tell_Us": "Tell Us",
             "Import": "Import",
             "Import_Data": "Import Data",
