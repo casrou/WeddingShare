@@ -16,10 +16,7 @@
                     <use href="#icon-image-upload"></use>
                 </svg>
 
-                <h2 class="strong my-2">@_localizer["Upload_Media"].Value</h2>
-                <p class="small my-2">@(ViewBag.IsMobile ?? false ? _localizer["Click_To_Upload"].Value : _localizer["Drag_And_Drop"].Value)</p>
-                <p class="small my-2">(@string.Join(", ", allowedFileTypes).ToLower())</p>
-
+                <h2 class="strong my-2">Upload</h2>
                 <input class="position-absolute invisible upload-input" data-post-gallery-id="@Model?.GalleryId" data-post-url="@Model?.UploadUrl" data-post-key="@Model?.SecretKey" data-post-allow-camera="@(((ViewBag.IsMobile ?? false) && await _settings.GetOrDefault(Settings.Gallery.CameraUploads, false)).ToString().ToLower())" type="file" multiple accept="image/*,video/*" />
             </fieldset>
         </form>

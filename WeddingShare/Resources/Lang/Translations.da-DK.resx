@@ -281,7 +281,7 @@
     <value>Træk</value>
   </data>
   <data name="Duplicate_Item_Detected" xml:space="preserve">
-    <value>Duplikeret fil detekteret</value>
+    <value>Filen er allerede blevet uploadet</value>
   </data>
   <data name="Export" xml:space="preserve">
     <value>Eksport</value>
